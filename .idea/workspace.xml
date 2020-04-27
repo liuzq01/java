@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Dinstall/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Dinstall\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b7fA6gXF5OiZoxTjjDsXqIX3Dc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="" />
+      <created>1587987905934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587987905934</updated>
+      <workItem from="1587987907506" duration="2165000" />
+      <workItem from="1587990099835" duration="3599000" />
+    </task>
+    <task id="LOCAL-00001" summary="Java SE note">
+      <created>1587988227964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587988227964</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Java SE note">
+      <created>1587988316717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587988316717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Java SE note">
+      <created>1587994636547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587994636547</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Java SE note">
+      <created>1587995052954</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587995052954</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Java SE note" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java SE note" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1040" y="135" key="CommitChangelistDialog2" timestamp="1587995051545">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1040" y="135" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1587995051545" />
+    <state x="1201" y="298" key="FileChooserDialogImpl" timestamp="1587988901579">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1201" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1587988901579" />
+    <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog" timestamp="1587989149791">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587989149791" />
+    <state x="922" y="185" key="SettingsEditor" timestamp="1587990075758">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="922" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1587990075758" />
+    <state x="1032" y="276" key="Vcs.Push.Dialog.v2" timestamp="1587995089725">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1032" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1587995089725" />
+    <state x="1270" y="334" key="svn.repositoryBrowser" timestamp="1587989108560">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1270" y="334" key="svn.repositoryBrowser/0.0.1920.1080@0.0.1920.1080" timestamp="1587989108560" />
+  </component>
+</project>
