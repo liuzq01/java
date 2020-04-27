@@ -17,9 +17,18 @@
 
     1.子父类的方法名、形参列表相同
     2.权限修饰符：子类 >= 父类
-        p.s. 子类不能重写父类 **private** 的方法
+        p.s. 子类不能重写父类 ~~private~~的方法
     3.返回值类型：
         -父类void,子类也必须是void
         -父类是A类型（Object），子类是A或A的子类(Object,String...)
         -父类是基本数据类型（double），子类与其相同(double,不能是其它的，int,float等不行)
-        
+    4.静态（**static**）的方法随着类的加载而加载，不能被重写
+    
+### 权限修饰符
+|       |类内部|同一个包|不同包的子类|整个工程|
+|  ---  |  ----| ---|---- | ---|
+|private |  yes   |    |     |    |
+|缺省 |   yes  |  yes  |     |    |
+|protected |   yes  |  yes  |  yes   |    |
+|public |   yes  |  yes  |  yes   |  yes  |        
+
