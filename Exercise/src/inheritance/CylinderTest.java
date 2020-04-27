@@ -1,4 +1,4 @@
-package cylinderTest;
+package inheritance;
 
 public class CylinderTest
 {
