@@ -23,4 +23,6 @@ public class GeometricTest
     {
         return g.findArea();
     }
+
 }
+
