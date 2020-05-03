@@ -214,6 +214,6 @@ super: **在子类中**调用父类的属性、方法、构造器。
 ### 异常（*Exception*)
 - 常见异常
 
-| 编译时异常|IOException(FileNotFoundException) |ClassNotFoundException | | |
-|--- |--- |--- |--- |--- |
-| 运行时异常|| NullPointerException| ArrayIndexOutOfBoundsException| ClassCastException| NumberFormatException|
+| 编译时异常|IOException(FileNotFoundException) |ClassNotFoundException | |
+|--- |--- |--- |--- |
+| 运行时异常| NullPointerException| ArrayIndexOutOfBoundsException| ClassCastException| NumberFormatException|
