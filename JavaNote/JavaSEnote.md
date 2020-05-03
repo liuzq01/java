@@ -210,3 +210,10 @@ super: **在子类中**调用父类的属性、方法、构造器。
 - 接口的使用，体现了多态
 - 接口中的静态方法：只能通过接口调用，对实现类不可见
 - 接口冲突：实现类实现了多个接口中都定义了同名同参的**默认方法**，在实现类中重写此默认方法，可解决冲突
+
+### 异常（*Exception*)
+- 常见异常
+
+| 编译时异常|IOException(FileNotFoundException) |ClassNotFoundException | |
+|--- |--- |--- |--- |
+| NullPointerException| ArrayIndexOutOfBoundsException| ClassCastException| NumberFormatException|
