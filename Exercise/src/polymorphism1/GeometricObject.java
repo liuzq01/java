@@ -1,6 +1,6 @@
 package polymorphism1;
 
-public class GeometricObject
+public abstract class GeometricObject
 {
     private String color;
     private double weight;
@@ -30,9 +30,5 @@ public class GeometricObject
      {
          this.weight=weight;
      }
-     public double findArea()
-     {
-         System.out.println("我是父类findArea()");
-         return 0.0;
-     }
+     public abstract double findArea();
 }
