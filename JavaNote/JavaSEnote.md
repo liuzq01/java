@@ -219,7 +219,7 @@ super: **在子类中**调用父类的属性、方法、构造器。
 | 运行时异常| NullPointerException| ArrayIndexOutOfBoundsException| ClassCastException| NumberFormatException|
 
 - try-catch-finally:finally{}中的语句一定会执行
-- 运行时异常往往不处理，找到错误，修改代码，解决异常
+- 对运行时异常往往不处理，找到错误，修改代码，解决异常
 - throws 异常：暂时抛给别人，最终还得用try-catch来处理掉异常
 - 方法被别的方法调用，先throws，最后再统一处理
 - 手动抛异常： **throw**  new Exception()/ **throw**  new RuntimeException()    
