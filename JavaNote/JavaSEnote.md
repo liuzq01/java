@@ -11,6 +11,13 @@
 - [多态  （polymorphism）](#%e5%a4%9a%e6%80%81-polymorphism)
 - [包装类、基本数据类型、toString的转换](#%e5%8c%85%e8%a3%85%e7%b1%bb%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8btostring%e7%9a%84%e8%bd%ac%e6%8d%a2)
 - [static 关键字、变量的分类](#static-%e5%85%b3%e9%94%ae%e5%ad%97%e5%8f%98%e9%87%8f%e7%9a%84%e5%88%86%e7%b1%bb)
+- [单例模式](#%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f)
+- [代码块](#%e4%bb%a3%e7%a0%81%e5%9d%97)
+- [final](#final)
+- [抽象类、抽象方法 (*abstract*)](#%e6%8a%bd%e8%b1%a1%e7%b1%bb%e6%8a%bd%e8%b1%a1%e6%96%b9%e6%b3%95-abstract)
+- [接口（interface）](#%e6%8e%a5%e5%8f%a3interface)
+- [异常（*Exception*)](#%e5%bc%82%e5%b8%b8exception)
+- [多线程](#%e5%a4%9a%e7%ba%bf%e7%a8%8b)
 
 <!-- /code_chunk_output -->
 
@@ -223,3 +230,39 @@ super: **在子类中**调用父类的属性、方法、构造器。
 - throws 异常：暂时抛给别人，最终还得用try-catch来处理掉异常
 - 方法被别的方法调用，先throws，最后再统一处理
 - 手动抛异常： **throw**  new Exception()/ **throw**  new RuntimeException()    
+
+### 多线程
+
+|程序（program)|静态的代码|
+|---|---|
+|进程（process）|运行的程序|
+|线程（thread)|一个进程可有多个线程|
+
+    P.S. Java程序至少具有3个线程：main()的主线程、Exception相关的线程、垃圾回收器的线程
+
+创建多线程的2种方法：
+
+1. 继承Thread类
+
+``` 
+            a. 继承Thread类
+class PrimeThread extends Thread {
+         long minPrime;
+         PrimeThread(long minPrime) {
+             this.minPrime = minPrime;
+         }
+            b. 重写run()
+         public void run() {
+             // compute primes larger than minPrime
+              . . .
+         }
+     }
+              . . .
+
+     PrimeThread p = new PrimeThread(143);  c. new一个该类的对象p
+     p.start();                             **d. p.start()**
+```
+
+2. 实现Runnable接口
+
+
