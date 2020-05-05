@@ -259,10 +259,28 @@ class PrimeThread extends Thread {
      }
               . . .
 
-     PrimeThread p = new PrimeThread(143);  c. new一个该类的对象p
-     p.start();                             **d. p.start()**
+     PrimeThread p = new PrimeThread(143);  c. new一个该类的对象 p
+     p.start();                             d. 启动线程：p.start()
 ```
 
 2. 实现Runnable接口
+```
+              a.实现Runnable接口
+class PrimeRun implements Runnable {
+         long minPrime;
+         PrimeRun(long minPrime) {
+             this.minPrime = minPrime;
+         }
+              b.重写run（）
+         public void run() {
+             // compute primes larger than minPrime
+              . . .
+         }
+     }
+              . . .
+        PrimeRun p = new PrimeRun(143); c. new一个该类的对象 p
+        new Thread(p).start();          d. 启动线程：new Thread(p).start()
+
+```
 
 
