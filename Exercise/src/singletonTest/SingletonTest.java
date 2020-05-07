@@ -11,7 +11,7 @@ public class SingletonTest
     private static SingletonTest sin= new SingletonTest();  //在类内部造一个私有的、唯一的对象
     private static SingletonTest sin1;  //懒汉式
     //在类外部通过公有的方法来获取该对象
-    public static SingletonTest getInstance()
+    public static synchronized SingletonTest getInstance()
     {
         if (sin1 == null)
         {
