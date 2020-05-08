@@ -240,9 +240,12 @@ super: **在子类中**调用父类的属性、方法、构造器。
 
     P.S. Java程序至少具有3个线程：main()的主线程、Exception相关的线程、垃圾回收器的线程
 
-创建多线程的2种方法：
+**创建多线程的2种方法**
 
 1. 继承Thread类
+    - 重写run()
+    - new一个该类的对象 p
+    - 启动线程：p.start()
 
 ``` 
             a. 继承Thread类
@@ -264,6 +267,9 @@ class PrimeThread extends Thread {
 ```
 
 2. 实现Runnable接口
+    - 重写run（）
+    - new一个该实现类的对象 p
+    - 启动线程：new Thread(p).start()
 ```
               a.实现Runnable接口
 class PrimeRun implements Runnable {
@@ -284,7 +290,7 @@ class PrimeRun implements Runnable {
 ```
 ### 同步(*synchronized*)
 
-- 同步代码块
+- 同步代码块(同步法1)
     - 同步监视器（锁）：可以是任何对象。多个线程必须共用一把锁
     - 共享变量被改变的代码需要被同步
     - 代码块包住的代码既不可多，也不可少，恰好才行
@@ -296,7 +302,7 @@ class PrimeRun implements Runnable {
 }
 
 ```
-- 同步方法
+- 同步方法(同步法2)
     - 非静态方法：锁是当前对象(this)，可能不唯一，需将被同步的方法改成静态的
     - 静态方法：锁是当前的类
     
@@ -311,7 +317,7 @@ class PrimeRun implements Runnable {
     - 避免同步方法的嵌套
     - 使用Reentrantlock,把锁和对象分离
 
-- *Reentrantlock*
+- *Reentrantlock*(同步法3)
     - new 一个Reentrantlock的对象p
     - p.lock()加锁，p.unlock()解锁
     - 常常借用try-finally，解锁的语句放在finally中，保证一定会解锁
@@ -322,4 +328,23 @@ class PrimeRun implements Runnable {
     - 使用范围：同步代码块、同步方法的方法体中
     - 调用两方法的对象是当前的同步监视器
     - notify():唤醒被wait的线程，wait():当前线程进入阻塞状态，并释放锁
+
+### 创建多线程的新方法
+
+- 实现Callable接口
+    - 实现call()方法(将该线程执行的操作放在call方法中)
+    - new一个该实现类的对象 p
+    - q = new FutureTask(p)
+    - new Thread(q).start()
+    
+    优点：
+    - *q.get()可以获取call()的返回值*
+    - *call()可以抛异常*
+    - *Callable接口支持泛型*
+    
+- **使用线程池**
+
+
+
+
 
