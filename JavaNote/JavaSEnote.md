@@ -299,4 +299,20 @@ class PrimeRun implements Runnable {
 - 同步方法
     - 非静态方法：锁是当前对象(this)，可能不唯一，需将被同步的方法改成静态的
     - 静态方法：锁是当前的类
+    
+### 死锁
 
+- 死锁的原因：
+    - 线程A存在同步方法的嵌套(m-->n)：对象m调用同步方法F1(锁是m)，在F1的方法体中，对象n调用方法F2(锁是n)
+    - 线程B与A相反(n-->m)，对象n调用同步方法T1，T1中m调方法T2
+    - A和B都等对方释放自己所需的锁，陷入死锁状态
+- 解决方法
+    - 改变算法，避免m到n，n到m的顺序同时出现
+    - 避免同步方法的嵌套
+    - 使用Reentrantlock,把锁和对象分离
+
+- *Reentrantlock*
+    - new 一个Reentrantlock的对象p
+    - p.lock()加锁，p.unlock()解锁
+    - 常常借用try-finally，解锁的语句放在finally中，保证一定会解锁
+    
