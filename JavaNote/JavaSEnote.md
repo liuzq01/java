@@ -317,3 +317,9 @@ class PrimeRun implements Runnable {
     - 常常借用try-finally，解锁的语句放在finally中，保证一定会解锁
     - 继承Thread类创建的多线程，p不唯一，需设为静态的
     
+- 线程通信
+    - 可联合使用notify()-wait()
+    - 使用范围：同步代码块、同步方法的方法体中
+    - 调用两方法的对象是当前的同步监视器
+    - notify():唤醒被wait的线程，wait():当前线程进入阻塞状态，并释放锁
+
