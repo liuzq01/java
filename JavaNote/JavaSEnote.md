@@ -290,7 +290,7 @@ class PrimeRun implements Runnable {
 ```
 ### 同步(*synchronized*)
 
-- 同步代码块(同步法1)
+- **同步代码块(同步法1)**
     - 同步监视器（锁）：可以是任何对象。多个线程必须共用一把锁
     - 共享变量被改变的代码需要被同步
     - 代码块包住的代码既不可多，也不可少，恰好才行
@@ -302,7 +302,7 @@ class PrimeRun implements Runnable {
 }
 
 ```
-- 同步方法(同步法2)
+- **同步方法(同步法2)**
     - 非静态方法：锁是当前对象(this)，可能不唯一，需将被同步的方法改成静态的
     - 静态方法：锁是当前的类
     
@@ -317,7 +317,7 @@ class PrimeRun implements Runnable {
     - 避免同步方法的嵌套
     - 使用Reentrantlock,把锁和对象分离
 
-- *Reentrantlock*(同步法3)
+- ***Reentrantlock*(同步法3)**
     - new 一个Reentrantlock的对象p
     - p.lock()加锁，p.unlock()解锁
     - 常常借用try-finally，解锁的语句放在finally中，保证一定会解锁
@@ -344,7 +344,31 @@ class PrimeRun implements Runnable {
     
 - **使用线程池**
 
+    - Executors的静态方法
+        - newFixedThreadPool（int nThreads）
+        - newSingleThreadExecutor（）
+        - newCachedThreadPool（）
+        - newScheduledThreadPool（int corePoolSize）
+    - 步骤
+        - 调用Executors的静态方法，创建线程池 p
+        - 线程池对象 p 执行(execute)线程
+        - 关闭线程池
+        - 线程需执行的操作写在run()中，它所在的类实现了Runnable接口
+```java
+//    public static void main(String[] args)
+//    {
+//        ExecutorService executorService = Executors.newFixedThreadPool(10);  step1. 调用Executors的静态方法，创建线程池 p
+//        executorService.execute(new Even());  step2. 线程池对象 p 执行(execute)线程
+//        executorService.shutdown();           step3. 关闭线程池
+//    }
 
-
-
+class Even implements Runnable
+{
+    @Override
+    public void run()      // step4. 线程需执行的操作写在run()中，它所在的类实现了Runnable接口
+    {
+        //...
+    }
+}
+```
 
