@@ -322,6 +322,7 @@ class PrimeRun implements Runnable {
     - p.lock()加锁，p.unlock()解锁
     - 常常借用try-finally，解锁的语句放在finally中，保证一定会解锁
     - 继承Thread类创建的多线程，p不唯一，需设为静态的
+    - p不是同步监视器(此法中无此概念)，但可以当做锁来看
     
 - 线程通信
     - 可联合使用notify()-wait()
@@ -371,4 +372,18 @@ class Even implements Runnable
     }
 }
 ```
+
+### 值传递
+
+- function(int a){...}    基本数据类型，传递的是值
+
+- function(String a){...}     引用数据类型，传递的是地址值？不是a指向的对象？
+
+### 常用类
+- String
+    - String s1="abc";     //"abc" 存储在方法区的常量池中，仅有一份
+    - String s3=new String("abc");   //new String("abc")存储在堆中
+    - String s4="ab"+"cd";      //存储在常量池中
+    - String s5=s1+"cd";(String s1="ab")  //有变量s1参与，存储在堆中
+
 
