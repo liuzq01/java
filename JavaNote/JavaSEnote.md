@@ -18,6 +18,11 @@
 - [接口（interface）](#%e6%8e%a5%e5%8f%a3interface)
 - [异常（*Exception*)](#%e5%bc%82%e5%b8%b8exception)
 - [多线程](#%e5%a4%9a%e7%ba%bf%e7%a8%8b)
+- [同步(*synchronized*)](#%e5%90%8c%e6%ad%a5synchronized)
+- [死锁](#%e6%ad%bb%e9%94%81)
+- [创建多线程的新方法](#%e5%88%9b%e5%bb%ba%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%9a%84%e6%96%b0%e6%96%b9%e6%b3%95)
+- [值传递](#%e5%80%bc%e4%bc%a0%e9%80%92)
+- [常用类](#%e5%b8%b8%e7%94%a8%e7%b1%bb)
 
 <!-- /code_chunk_output -->
 
@@ -351,8 +356,8 @@ class PrimeRun implements Runnable {
         - newCachedThreadPool（）
         - newScheduledThreadPool（int corePoolSize）
     - 步骤
-        - 调用Executors的静态方法，创建线程池 p
-        - 线程池对象 p 执行(execute)线程
+        - 调用Executors的静态方法，创建线程池 service
+        - 线程池对象 service 执行(execute)线程
         - 关闭线程池
         - 线程需执行的操作写在run()中，它所在的类实现了Runnable接口
 ```java
@@ -386,4 +391,34 @@ class Even implements Runnable
     - String s4="ab"+"cd";      //存储在常量池中
     - String s5=s1+"cd";(String s1="ab")  //有变量s1参与，存储在堆中
 
+- StringBuffer、StringBuilder
+    - String: 不可变的字符序列，底层使用char[]存储
+    - StringBuffer：可变的字符序列，线程安全，效率低，底层用char[]存储
+    - StringBuilder：可变的字符序列，线程不安全，效率高，底层用char[]存储
+    
+### 时间、日期
 
+- jdk 8 之前的API
+    - System.currentTimeMillis()(系统时间以毫秒展示)
+    - java.util.Date(过时),java.sql.Date
+    - SimpleDateFormat(格式化：日期-->字符串；解析：字符串-->日期)
+    - Calendar(也不好用)
+    
+- jdk 8
+    - 类：**LocalDateTime**(LocalDate、LocalTime)
+        - 实例化(静态方法)
+            - LocalDateTime.of()：设置指定时间日期，获取对象
+            - LocalDateTime.now():获取当前时间日期的对象
+        - 方法：getXxx()
+        - 设置时间、日期：withXxx()
+    
+    - Instant: 时间戳的类
+        - Instant.now()：实例化/获取当前时间的对象
+        - toEpochMilli()：时间戳，毫秒数
+    - DateTimeFormatter
+        - 实例化
+            - DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss E")
+        - 格式化(日期-->字符串)  
+            - format()  
+        - 解析(字符串-->日期)
+            - parse()

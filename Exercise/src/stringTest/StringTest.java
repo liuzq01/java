@@ -150,7 +150,7 @@ public class StringTest
     @Test
     public void test9()
     {
-        //获取2个字符串中最大相同子串
+        //获取2个字符串中最大相同子串(假设只有一个)
         String s1 = "ksdhfkshellolkuinrgjgkdhjr";
         String s2 = "cvijhellojfurhe";
         //tips:将短串进行长度依此递减的字串与长串比较
@@ -171,6 +171,43 @@ public class StringTest
             }
         }
 
+    }
+    //将上面的过程封装成方法，并测试
+    public String common(String s1,String s2)
+    {
+        if(s1!=null&&s1!=""&&s2!=null&&s2!="")
+        {
+            //如果s1是短串，将它和s2交换
+            if(s1.length()<=s2.length())
+            {
+                String temp;
+                temp=s1;
+                s1=s2;
+                s2=temp;
+            }
+            int l;    //子串的长度
+            for (l = s2.length(); l >0; l--)
+            {
+                for (int m=0;m<s2.length()-l;m++)
+                {
+                    for (int j = 0; j < s1.length() - l; j++)   //可以使用contains()
+                    {
+                        if(s2.substring(m, m + l).equals(s1.substring(j, j + l)))
+                        {
+                           return s2.substring(m, m + l);
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+    @Test
+    public void test11()
+    {
+        String s1 = "ksdhfksHELLOlkuinrgjgkdhjrSHELL";
+        String s2 = "cvijHELLOjfurheSHELL";
+        System.out.println("最大相同子串是："+ common(s2,s1));
     }
 
     @Test
