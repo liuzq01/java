@@ -320,7 +320,7 @@ class PrimeRun implements Runnable {
 - 解决方法
     - 改变算法，避免m到n，n到m的顺序同时出现
     - 避免同步方法的嵌套
-    - 使用Reentrantlock,把锁和对象分离
+    - 使用Reentrantlock,把锁和对象分离(或者说没有锁的概念)
 
 - ***Reentrantlock*(同步法3)**
     - new 一个Reentrantlock的对象p
@@ -377,6 +377,15 @@ class Even implements Runnable
     }
 }
 ```
+    - 优点
+        - 提高线程的重复利用率，效率高，节约内存
+        - Executors功能更丰富，便于线程的管理
+        
+```
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ThreadPoolExecutor executorService1 = (ThreadPoolExecutor) executorService;   //转换为ThreadPoolExecutor类型后，
+        executorService1.setCorePoolSize(15);                                           可设置、管理线程池
+```
 
 ### 值传递
 
@@ -422,3 +431,14 @@ class Even implements Runnable
             - format()  
         - 解析(字符串-->日期)
             - parse()
+
+### Comparable、Comparator
+
+- Comparable
+    - 自然排序(假设需要排序的数组为array)
+    - 自定义类(Class A)需实现Comparable，并重写compareTo(),才能进行排序
+    - Arrays.sort(array)
+- Comparator
+    - 自定义排序（临时性质的，每次指定排序规则）
+    - 匿名类的匿名对象：a=new Comparator(){}，重写compare(Object o1,Object o2)
+    - Arrays.sort(array,a)
