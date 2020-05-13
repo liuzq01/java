@@ -14,7 +14,8 @@ public class TimeTest
     //LocalDateTime类及其方法的测试(LocalDate、LocalTime)
     @Test
     public void test1()
-    {   //now()
+    {
+        //now()
         LocalDateTime localDateTime=LocalDateTime.now();
         System.out.println(localDateTime);
         //of()

@@ -23,6 +23,10 @@
 - [创建多线程的新方法](#%e5%88%9b%e5%bb%ba%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%9a%84%e6%96%b0%e6%96%b9%e6%b3%95)
 - [值传递](#%e5%80%bc%e4%bc%a0%e9%80%92)
 - [常用类](#%e5%b8%b8%e7%94%a8%e7%b1%bb)
+- [时间、日期](#%e6%97%b6%e9%97%b4%e6%97%a5%e6%9c%9f)
+- [Comparable、Comparator](#comparablecomparator)
+- [Enum类](#enum%e7%b1%bb)
+- [注解（*Annotation*）](#%e6%b3%a8%e8%a7%a3annotation)
 
 <!-- /code_chunk_output -->
 
@@ -420,25 +424,123 @@ class Even implements Runnable
             - LocalDateTime.now():获取当前时间日期的对象
         - 方法：getXxx()
         - 设置时间、日期：withXxx()
-    
-    - Instant: 时间戳的类
-        - Instant.now()：实例化/获取当前时间的对象
-        - toEpochMilli()：时间戳，毫秒数
-    - DateTimeFormatter
-        - 实例化
-            - DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss E")
-        - 格式化(日期-->字符串)  
-            - format()  
-        - 解析(字符串-->日期)
-            - parse()
+```
+        //now()
+        LocalDateTime localDateTime=LocalDateTime.now();
+        System.out.println(localDateTime);
+        //of()
+        LocalDateTime localDateTime1=LocalDateTime.of(2020,5,1,14,30);
+        System.out.println(localDateTime1);
+        //getXxx()
+        System.out.println(localDateTime.getDayOfMonth());
+        //设置时间、日期：withXxx()
+        // （不可变性）
+        LocalDateTime localDateTime2 = localDateTime.withDayOfMonth(17);
+        System.out.println(localDateTime2);
+        System.out.println(localDateTime);
+```  
+  
+- Instant: 时间戳的类
+    - Instant.now()：实例化/获取当前时间的对象
+    - toEpochMilli()：时间戳，毫秒数
+        
+```
+        Instant instant=Instant.now();      //实例化/获取当前时间的对象
+        System.out.println(instant);
+        long l = instant.toEpochMilli();    //时间戳，毫秒数
+        System.out.println(l);
+
+```        
+        
+- DateTimeFormatter
+    - 实例化
+        - DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss E")
+    - 格式化(日期-->字符串)  
+        - format()  
+    - 解析(字符串-->日期)
+        - parse()
+
+```
+        DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        //格式化
+        String s= dateTimeFormatter.format(LocalDateTime.now());
+        System.out.println(s);
+        //解析
+        String ss="2020-06-07 11:43:22";
+        TemporalAccessor parse = dateTimeFormatter.parse(ss);
+        System.out.println(parse );
+
+```
 
 ### Comparable、Comparator
 
 - Comparable
     - 自然排序(假设需要排序的数组为array)
-    - 自定义类(Class A)需实现Comparable，并重写compareTo(),才能进行排序
+    - 自定义类(Class A)需实现Comparable，并重写**compareTo**(),才能进行排序
     - Arrays.sort(array)
+    
+```
+    @Override       //重写compareTo()方法
+    public int **compareTo**(Object o)
+    {
+        if (o instanceof Goods)
+        {
+            Goods goods = (Goods) o;
+            if (this.price < goods.price) return -1;
+            if (this.price == goods.price) return 0;
+            if (this.price > goods.price) return 1;
+
+            //或者   return Double.compare(this.price,goods.price);
+        }
+        throw new RuntimeException("输入数据有误");
+    }
+
+```    
+    
 - Comparator
     - 自定义排序（临时性质的，每次指定排序规则）
-    - 匿名类的匿名对象：a=new Comparator(){}，重写compare(Object o1,Object o2)
+    - 匿名类的匿名对象：a=new Comparator(){...}，重写**compare**(Object o1,Object o2)
     - Arrays.sort(array,a)
+    
+### Enum类
+
+- 步骤
+    - 给出枚举的对象，用逗号隔开
+    - 私有化属性，并设为常量
+    - 私有化构造器
+
+```
+    //enum修饰类名
+enum Season
+{
+    //给出枚举的对象，用逗号隔开
+    SPRING("春天","暖"),
+    SUMMER("夏天","热"),
+    FALL("秋天","凉"),
+    WINTER("冬天","冷");
+
+    //私有化属性，并设为常量
+    private final String name;
+    private final  String describe;
+
+    //私有化构造器
+ private  Season(String name , String describe)
+    {
+        this.name=name;
+        this.describe=describe;
+    }
+    ...
+        //通过类直接调用枚举对象
+        System.out.println(Season.SPRING);
+```
+
+- 常用静态方法
+    - values()：返回包含所有枚举对象的数组
+    - valueOf(str)：返回名为str的枚举对象
+
+- 用enum定义的枚举类实现接口
+    - 可像普通类那样重写接口的抽象方法
+    - 也可以对每个枚举对象，分别重写其抽象方法
+    
+### 注解（*Annotation*）
+
