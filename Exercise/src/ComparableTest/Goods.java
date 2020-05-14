@@ -60,5 +60,4 @@ public class Goods implements Comparable
                 ", price=" + price +
                 '}';
     }
-
 }

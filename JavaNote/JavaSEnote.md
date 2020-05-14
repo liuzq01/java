@@ -544,3 +544,18 @@ enum Season
     
 ### 注解（*Annotation*）
 
+- 注解是一种标记，其作用类似于配置文件。在框架中通过反射读取注解，从而确定如何执行代码。
+- 元注解
+    - Retention:指定Annotation的生命周期(Source/Class/Runtime)
+    - Target:指定Annotation可以修饰的结构(FIELD, METHOD, PARAMETER, CONSTRUCTOR...)
+    - Documented
+    - Inherited
+    
+```
+@Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE, MODULE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface SuppressWarnings {
+
+    String[] value();
+}
+```
