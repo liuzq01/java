@@ -559,3 +559,30 @@ public @interface SuppressWarnings {
     String[] value();
 }
 ```
+
+### 集合
+- Collection接口：存储一个一个的对象
+    - list:有序可重复("动态"数组)
+        -ArrayList
+        - LinkedList
+        - Vector
+    - set：无序不可重复(数学定义中的"集合")
+        - HashSet
+        - LinkedHashSet
+        - TreeSet
+    - 常用方法
+        - add(),addAll(),clear(),isEmpty()
+        - contains(new A())： A需重写equals()方法    
+        - remove(a)：A需重写equals()方法
+        - coll.removeAll(collection)
+            - collection包含a ，A需重写equals()方法
+            - 取差集并赋值给原集合:coll=coll-collection
+        - A.retainAll(B)： 取交集并赋值给A，A=A∩B
+        - equals():比较两个集合是否相同，比较的是元素。对于list，元素相同，顺序不同，返回false。
+        
+- Map接口：存储一对一对（key-value）的数据（数学定义上的映射）
+    - HashMap
+    - LinkedHashMap
+    - TreeMap
+    - Hashtable
+    - Properties
