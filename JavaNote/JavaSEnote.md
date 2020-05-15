@@ -579,6 +579,7 @@ public @interface SuppressWarnings {
             - 取差集并赋值给原集合:coll=coll-collection
         - A.retainAll(B)： 取交集并赋值给A，A=A∩B
         - equals():比较两个集合是否相同，比较的是元素。对于list，元素相同，顺序不同，返回false。
+        - toArray(),Arrays.asList()
         
 - Map接口：存储一对一对（key-value）的数据（数学定义上的映射）
     - HashMap
@@ -586,3 +587,20 @@ public @interface SuppressWarnings {
     - TreeMap
     - Hashtable
     - Properties
+- Iterator 
+    - 用于遍历Collection(非Map)
+    - iterator() <-- iterator
+    - iterator.hasNext()
+    - iterator.next()
+    - iterator.remove()
+    
+```
+//不涉及集合的细节
+    Iterator iterator=collection.iterator();
+    while(iterator.hasNext())
+        {
+            System.out.println(iterator.next()); 
+        }
+    这时候指针已经到容器底部了，再次遍历，需生成新的iterator对象
+    iterator=collection.iterator();
+```

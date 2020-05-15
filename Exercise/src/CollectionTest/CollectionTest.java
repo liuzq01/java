@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class CollectionTest
 {
@@ -93,7 +94,6 @@ public class CollectionTest
         coll.add(666);
         coll.add(444);
         coll.add(new Person("liu", 100));
-
         Collection coll2 = Arrays.asList("li",666,444,new Person("liu", 100));
 
         Collection coll3 = Arrays.asList("li",444,666,new Person("liu", 100));
@@ -101,5 +101,22 @@ public class CollectionTest
         System.out.println(coll.equals(coll2));     //true
         System.out.println(coll.equals(coll3));     //false  比较两个集合是否相同，比较的是元素。
                                                     // list是有序的，元素相同，顺序不同，返回false。
+        //iterator()
+        Iterator iterator = coll.iterator();
+//        while (iterator.hasNext())
+//        {
+//            System.out.println(iterator.next());
+//        }
+        //remove()
+        while (iterator.hasNext())
+        {
+            Object next = iterator.next();
+            if(next.equals(666))
+            {
+                iterator.remove();
+            }
+        }
+        System.out.println("*******");
+        System.out.println(coll);
     }
 }
