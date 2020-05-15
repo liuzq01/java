@@ -604,3 +604,8 @@ public @interface SuppressWarnings {
     这时候指针已经到容器底部了，再次遍历，需生成新的iterator对象
     iterator=collection.iterator();
 ```
+- list
+    - ArrayList
+    - LinkedList
+    - vector
+    
