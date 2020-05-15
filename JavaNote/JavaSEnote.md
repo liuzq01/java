@@ -571,7 +571,7 @@ public @interface SuppressWarnings {
         - LinkedHashSet
         - TreeSet
     - 常用方法
-        - add(),addAll(),clear(),isEmpty()
+        - size(),add(),addAll(),clear(),isEmpty()
         - contains(new A())： A需重写equals()方法    
         - remove(a)：A需重写equals()方法
         - coll.removeAll(collection)
@@ -604,8 +604,35 @@ public @interface SuppressWarnings {
     这时候指针已经到容器底部了，再次遍历，需生成新的iterator对象
     iterator=collection.iterator();
 ```
-- list
+- **list**
     - ArrayList
+        - 常用，线程不安全，效率高，底层用Object[]存储
     - LinkedList
+        - 插入、删除数据时常用，底层用双向链表存储
     - vector
-    
+    - 方法(Collection的方法也可以用)
+        - size,add,addAll
+        - remove(index)
+        - set
+        - get(index)
+        - indexOf(obj),lastIndexOf(obj)
+        - subList
+- **Map**
+    - HashMap
+    - LinkedHashMap
+    - TreeMap
+    - Hashtable
+    - Properties
+- set
+     - HashSet
+        - 常用，线程不安全，效率高,可存储null值
+     - LinkedHashSet
+        - HashSet的子类，可以按照添加的顺序遍历元素
+     - TreeSet
+        - 所有元素必须属于同一个类，可按照对象的属性排序
+     - 无序不可重复
+        - 无序：元素的存储位置由hash值确定，与添加的先后顺序无关 
+        - 不可重复：用equals()和hashCode()判断元素是否重复
+            - 元素所属的类A重写了equals()和hashCode()，多次new A()是重复的元素
+            - 没重写或只重写了equals()，多次new A()不是重复的元素
+        - 只用equals()判断是否重复的缺点：新元素需要与所有元素都比较一遍，效率低

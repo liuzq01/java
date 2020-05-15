@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JavaNote/gitWords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/ListTest/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/ListTest/ListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +73,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11 (2)" />
     <property name="last_opened_file_path" value="D:/a新建文件夹/Java学习笔记/src" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -92,20 +94,7 @@
       <recent name="D:\GithubRepository\java\Exercise" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionTest.test4">
-    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EnumTest.EnumTest" />
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EnumTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ListTest.test">
     <configuration name="CollectionTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
@@ -170,13 +159,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ListTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ListTest" />
+      <option name="MAIN_CLASS_NAME" value="ListTest.ListTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ListTest.test" />
         <item itemvalue="JUnit.CollectionTest.test4" />
         <item itemvalue="JUnit.CollectionTest.test3" />
         <item itemvalue="JUnit.CollectionTest.test2" />
         <item itemvalue="JUnit.CollectionTest.test1" />
-        <item itemvalue="Application.EnumTest" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +237,8 @@
       <workItem from="1589520690653" duration="7208000" />
       <workItem from="1589550329590" duration="53000" />
       <workItem from="1589550578521" duration="2282000" />
+      <workItem from="1589553202739" duration="987000" />
+      <workItem from="1589554212787" duration="11377000" />
     </task>
     <task id="LOCAL-00001" summary="Java SE note">
       <created>1587988227964</created>
@@ -540,10 +547,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1017" y="192" key="#StringTest.test4/0.0.1920.1080@0.0.1920.1080" timestamp="1589119410576" />
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1589470445024">
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1589556525233">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1589470445024" />
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1589556525233" />
     <state x="1040" y="135" key="CommitChangelistDialog2" timestamp="1589549754577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -556,22 +563,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587989149791" />
-    <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1589538228174">
+    <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1589562880907">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589538228174" />
-    <state width="914" height="282" key="GridCell.Tab.0.center" timestamp="1589538228174">
+    <state width="914" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589562880907" />
+    <state width="914" height="282" key="GridCell.Tab.0.center" timestamp="1589562880907">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589538228174" />
-    <state width="914" height="282" key="GridCell.Tab.0.left" timestamp="1589538228173">
+    <state width="914" height="282" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589562880907" />
+    <state width="914" height="282" key="GridCell.Tab.0.left" timestamp="1589562880907">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589538228173" />
-    <state width="914" height="282" key="GridCell.Tab.0.right" timestamp="1589538228174">
+    <state width="914" height="282" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589562880907" />
+    <state width="914" height="282" key="GridCell.Tab.0.right" timestamp="1589562880907">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589538228174" />
+    <state width="914" height="282" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589562880907" />
     <state width="914" height="363" key="GridCell.Tab.1.bottom" timestamp="1589273044961">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -588,10 +595,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="914" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589273044961" />
-    <state x="880" y="185" key="SettingsEditor" timestamp="1589449496587">
+    <state x="880" y="185" key="SettingsEditor" timestamp="1589556642767">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="880" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589449496587" />
+    <state x="880" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589556642767" />
     <state x="1032" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589552407556">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -616,10 +623,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1096" y="252" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588616553129" />
-    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1589449492226">
+    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1589566517684">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1589449492226" />
+    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1589566517684" />
     <state x="1270" y="334" key="svn.repositoryBrowser" timestamp="1587989108560">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -1,0 +1,10 @@
+
+
+
+
+cd D:/GithubRepository/java
+git add .
+git commit -m "JavaSE Note Update"
+git push origin master
+
+git push -u origin master
