@@ -577,7 +577,7 @@ public @interface SuppressWarnings {
         - coll.removeAll(collection)
             - collection包含a ，A需重写equals()方法
             - 取差集并赋值给原集合:coll=coll-collection
-        - A.retainAll(B)： 取交集并赋值给A，A=A∩B
+        - A.retainAll(B)： 取交集并赋值给A，A=A∩B (对于list，取交集后可能有重复的元素，不是严格的数学定义上的交集)
         - equals():比较两个集合是否相同，比较的是元素。对于list，元素相同，顺序不同，返回false。
         - toArray(),Arrays.asList()
         
@@ -604,12 +604,12 @@ public @interface SuppressWarnings {
     这时候指针已经到容器底部了，再次遍历，需生成新的iterator对象
     iterator=collection.iterator();
 ```
-- **list**
+- **List**
     - ArrayList
         - 常用，线程不安全，效率高，底层用Object[]存储
     - LinkedList
         - 插入、删除数据时常用，底层用双向链表存储
-    - vector
+    - Vector
     - 方法(Collection的方法也可以用)
         - size,add,addAll
         - remove(index)
@@ -623,7 +623,7 @@ public @interface SuppressWarnings {
     - TreeMap
     - Hashtable
     - Properties
-- set
+- Set
      - HashSet
         - 常用，线程不安全，效率高,可存储null值
      - LinkedHashSet
@@ -633,6 +633,6 @@ public @interface SuppressWarnings {
      - 无序不可重复
         - 无序：元素的存储位置由hash值确定，与添加的先后顺序无关 
         - 不可重复：用equals()和hashCode()判断元素是否重复
-            - 元素所属的类A重写了equals()和hashCode()，多次new A()是重复的元素
+            - 元素所属的类A重写了equals()和hashCode()，多次new A()一般来说是重复的元素
             - 没重写或只重写了equals()，多次new A()不是重复的元素
         - 只用equals()判断是否重复的缺点：新元素需要与所有元素都比较一遍，效率低
