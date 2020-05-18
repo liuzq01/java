@@ -581,14 +581,14 @@ public @interface SuppressWarnings {
         - equals():比较两个集合是否相同，比较的是元素。对于list，元素相同，顺序不同，返回false。
         - toArray(),Arrays.asList()
         
-- Map接口：存储一对一对（key-value）的数据（数学定义上的映射）
+- Map接口：存储一对一对（key-value）的数据（类似于数学定义上的映射）
     - HashMap
     - LinkedHashMap
     - TreeMap
     - Hashtable
     - Properties
 - Iterator 
-    - 用于遍历Collection(非Map)
+    - 用于遍历Collection(非Map，Map的keySet、entrySet可以)
     - iterator() <-- iterator
     - iterator.hasNext()
     - iterator.next()
@@ -604,7 +604,7 @@ public @interface SuppressWarnings {
     这时候指针已经到容器底部了，再次遍历，需生成新的iterator对象
     iterator=collection.iterator();
 ```
-- **List**
+#### **List**
     - ArrayList
         - 常用，线程不安全，效率高，底层用Object[]存储
     - LinkedList
@@ -617,17 +617,58 @@ public @interface SuppressWarnings {
         - get(index)
         - indexOf(obj),lastIndexOf(obj)
         - subList
-- **Map**
+#### **Map**
     - HashMap
+        - 常用，线程不安全，效率高；可存储<null,null>
     - LinkedHashMap
+        - HashMap的子类，可按添加的顺序遍历元素，适用于频繁遍历的情况
     - TreeMap
+        - 存储方式为红黑树，可按添加的顺序排序、遍历
     - Hashtable
     - Properties
+        - 处理配置文件
+- <key,value>
+    - key是无序不可重复的，用set来存；value无序可重复
+    - node<key,value>是Map的存储单位，无序不可重复
+    - 对于HashMap，key所在的类需重写equals()和hashCode()，value所在的类需重写equals()
+    
+- HashMap的底层实现原理
+    - 存储结构：数组+链表+红黑树
+```
+        HashMap hashMap= new HashMap(); //实例化时没创建数组
+        ...
+        hashMap.put(key,value1);     //创建一个长度16的Node[]
+        hashMap.put(key,value);     //替换了(key,value1)，视为修改了元素
+```    
+        
+    - 计算key的hash值，找到Node[]上对应的位置，没有元素，这一对(key,value)添加成功；
+    - 有元素，该位置上的元素以链表的方式存储。需要把新元素与链表上的所有元素做对比，比较两者的key的hash值，都不相同，添加成功；
+    - 有相同的，调用equals()比较两者的key，不同，添加成功；
+    - 相同，以新的(key,value)替换掉原来的(key,value1)，相当于修改了元素。
+    - 缺点：需要遍历链表上所有的元素并逐个做对比，当元素过多，效率变低
+    - 解决方法：当链表上的元素 >8 && Node[]的元素 > 64，不用链表，改为红黑树
+    - 扩容：默认为原来的2倍，把原数组的元素都复制到新数组来
+    - CAPACITY(起始默认容量):16,FACTOR(加载因子):0.75,threshold(扩容临界值):16*0.75=12
+
+- Map常用方法 
+    - 增、删、改
+        - put,putAll,remove,clear
+    - 查
+        - get,containsKey,containsValue,size,isEmpty,equals
+    - 元视图操作方法(可借用Iterator遍历Map)
+        - keySet：返回一个Set集合,包含所有的key
+        - values：返回一个Collection集合，包含所有的value
+        - entrySet:返回一个Set集合,包含所有的(key,value)对
+    - TreeMap、TreeSet排序
+        - 需借用Comparable、Comparator
+        - TreeMap的key必须属于同一个类，才可以按key排序，无法按value排序
+        
+    
 - Set
      - HashSet
-        - 常用，线程不安全，效率高,可存储null值
+        - 常用，线程不安全，效率高,可存储null值，适用于快速查找元素，无需和所有元素作比较
      - LinkedHashSet
-        - HashSet的子类，可以按照添加的顺序遍历元素
+        - HashSet的子类，可按添加的顺序遍历元素
      - TreeSet
         - 所有元素必须属于同一个类，可按照对象的属性排序
      - 无序不可重复
@@ -635,4 +676,19 @@ public @interface SuppressWarnings {
         - 不可重复：用equals()和hashCode()判断元素是否重复
             - 元素所属的类A重写了equals()和hashCode()，多次new A()一般来说是重复的元素
             - 没重写或只重写了equals()，多次new A()不是重复的元素
+            - 数学定义中的"集合"是理想情况，Set达不到，例子见HashSetTest
         - 只用equals()判断是否重复的缺点：新元素需要与所有元素都比较一遍，效率低
+### Collections
+    - 操作List、Set、Map等集合的工具类
+    - 提供了一些静态方法，可对集合中的元素进行改、查、排等操作
+    - Arrays是操作数组的工具类
+- 常用方法
+    - List
+        - reverse,sort,copy,replaceAll
+        - shuffle:随机排序
+        - swap:交换位置
+    - Collection
+        - max,min,frequency
+    - sort,min,max,涉及排序，需要元素都是同一个类的
+    - 把List、Set、Map变成线程安全的
+        - Collections.synchronizedList(),Collections.synchronizedMap(),Collections.synchronizedSet()
