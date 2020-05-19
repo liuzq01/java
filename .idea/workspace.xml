@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionExercise1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/MapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/HashSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/HashSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/helloTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/hiTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/GenericTest/GenericTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/GenericTest/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/GenericTest/SubStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/GenericTest/WildcardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/MapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaNote/gitWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/gitWords.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,70 +100,82 @@
       <recent name="D:\GithubRepository\java\Exercise" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionExercise1.test1">
-    <configuration name="CollectionExercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionExercise" />
+  <component name="RunManager" selected="JUnit.FileTest.test">
+    <configuration name="FileTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="PATTERN" value="IOtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.FileTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionExercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionExercise1" />
+    <configuration name="FileTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="PATTERN" value="IOtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionExercise1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionExercise1" />
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.FileTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionExercise.exercise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="PATTERN" value="IOtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionExercise" />
-      <option name="METHOD_NAME" value="exercise" />
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.FileTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionsTest" />
-      <option name="METHOD_NAME" value="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.FileTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TimeTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TimeTest" />
+      <option name="MAIN_CLASS_NAME" value="TimeTest.TimeTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectionExercise1.test1" />
-        <item itemvalue="Application.CollectionExercise1" />
-        <item itemvalue="Application.CollectionExercise" />
-        <item itemvalue="JUnit.CollectionExercise.exercise" />
-        <item itemvalue="JUnit.CollectionsTest.test" />
+        <item itemvalue="JUnit.FileTest.test" />
+        <item itemvalue="JUnit.FileTest.test3" />
+        <item itemvalue="JUnit.FileTest.test2" />
+        <item itemvalue="JUnit.FileTest.test1" />
+        <item itemvalue="JUnit.TimeTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +248,9 @@
       <workItem from="1589626935323" duration="230000" />
       <workItem from="1589627168536" duration="8000" />
       <workItem from="1589628059516" duration="4795000" />
-      <workItem from="1589682227694" duration="32856000" />
+      <workItem from="1589682227694" duration="40945000" />
+      <workItem from="1589863360889" duration="2207000" />
+      <workItem from="1589873434868" duration="15664000" />
     </task>
     <task id="LOCAL-00001" summary="Java SE note">
       <created>1587988227964</created>
@@ -544,10 +559,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1017" y="192" key="#StringTest.test4/0.0.1920.1080@0.0.1920.1080" timestamp="1589119410576" />
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1589811397935">
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1589823489418">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1589811397935" />
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1589823489418" />
     <state x="1040" y="135" key="CommitChangelistDialog2" timestamp="1589549754577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -560,22 +575,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587989149791" />
-    <state width="914" height="301" key="GridCell.Tab.0.bottom" timestamp="1589812732485">
+    <state width="914" height="310" key="GridCell.Tab.0.bottom" timestamp="1589898786578">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589812732485" />
-    <state width="914" height="301" key="GridCell.Tab.0.center" timestamp="1589812732484">
+    <state width="914" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589898786578" />
+    <state width="914" height="310" key="GridCell.Tab.0.center" timestamp="1589898786578">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="301" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589812732484" />
-    <state width="914" height="301" key="GridCell.Tab.0.left" timestamp="1589812732484">
+    <state width="914" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589898786578" />
+    <state width="914" height="310" key="GridCell.Tab.0.left" timestamp="1589898786578">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="301" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589812732484" />
-    <state width="914" height="301" key="GridCell.Tab.0.right" timestamp="1589812732485">
+    <state width="914" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589898786578" />
+    <state width="914" height="310" key="GridCell.Tab.0.right" timestamp="1589898786578">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="301" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589812732485" />
+    <state width="914" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589898786578" />
     <state width="914" height="363" key="GridCell.Tab.1.bottom" timestamp="1589273044961">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

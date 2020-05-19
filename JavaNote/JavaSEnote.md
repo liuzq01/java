@@ -692,3 +692,111 @@ public @interface SuppressWarnings {
     - sort,min,max,涉及排序，需要元素都是同一个类的
     - 把List、Set、Map变成线程安全的
         - Collections.synchronizedList(),Collections.synchronizedMap(),Collections.synchronizedSet()
+        
+### 泛型(*generic*)
+ 
+- 指定集合中元素的类型(都是引用数据类型)，安全，便于排序
+    - 静态方法中不能调用带泛型的属性：泛型在实例化时才指定具体类型，晚于静态方法的加载
+    - 泛型方法调用时，指明其具体类型，跟实例化无关，故泛型方法可以是静态的
+    - 泛型方法的泛型参数，跟它所在类的泛型参数无关
+```java
+HashMap<String,Integer> hashmap=new HashMap<>();
+```
+- 自定义泛型类
+```java
+//定义类型T
+public class Student<T>
+{
+    private String name;
+    private int age;
+    private T id;
+      ...
+    //泛型方法，这里是E，跟T没关系(可以是静态的)
+    public <E> List<E> copyArraytoList(E[] array)
+    {
+        ArrayList<E> list=new ArrayList<>();
+        for(E e:array)
+        {
+            list.add(e);
+        }
+        return list;
+    }
+
+      ...
+}
+    
+//实例化时指定T的具体类型(假设为String)
+        Student<String> stu= new Student<>("liu",2,"007");
+        stu.setId("996");   //相关方法的参数只能为String
+          ...
+        Integer[] array=new Integer[]{1,2,3};
+//泛型方法调用时，指明其具体类型(假设为Integer)，跟类型T没有关系
+//(跟实例化没关系，所以泛型方法可以是静态的)
+        List<Integer> integers = student.copyArraytoList(array);
+        System.out.println(integers);
+        ...
+//子类继承泛型类时，指定了类型(假设为Integer)，则子类为普通类
+    public class SubStudent extends Student<Integer>
+    {
+        ...
+    }
+    //子类可以保留泛型
+    public class SubStudent<T> extends Student<T>
+    {
+        ...
+    }
+```
+- 通配符 ?
+    - ArrayList<?>是ArrayList<String>、ArrayList<Object>的父类，可以用多态写通用方法
+- 有限制的通配符 
+    - List<? extends Person>是List<Person>、List<Student>的父类(Student是Person的子类)
+        - 可读不可写
+    - List<? super Person>是List<Person>、List<Object>的父类
+        - 可读可写( 可add (Person及Person子类的对象) )
+```java
+ @Test
+    public void test()
+    {
+        ArrayList<String> list1 =new ArrayList<>();
+        ArrayList<Object> list2 =new ArrayList<>();
+//        ArrayList<?> list =new ArrayList<>();
+        list1.add("2333");list1.add("666");list2.add(22);list2.add(88);
+//        list2=list1; 不可以
+//        list=list1; //可以
+//        list=list2; //可以
+        WildcardTest.traverseList(list1);
+        WildcardTest.traverseList(list2);
+    }
+
+    list1 和 list2 都可以调用的通用方法
+    public static void traverseList(ArrayList<?> list)
+    {
+//        Iterator<?> iterator = list.iterator();
+//            while (iterator.hasNext())
+//            {
+//                System.out.println(iterator.next());
+//            }
+        for (Object arr:list)
+        {
+            System.out.println(arr); //无法add元素，可以get元素(可读不可写)
+        }
+    } 
+```
+### IO流
+- File类实例化
+    - File的对象是文件或文件夹
+```java
+        File file = new File("helloTest.txt");  //文件
+        File file2 =new File("D:/GithubRepository/java/Exercise");  //文件夹
+```
+- File类常用方法
+    - getAbsolutePath,getPath,getName,getParent
+    - length,lastModified,renameTo，delete,createNewFile
+    - list(),listFiles():返回所有的文件和文件夹
+    - isDirectory(),isFile(),exists(),canRead(),canWrite(),isHidden()
+    - mkdir;mkdirs:创建目录，上层目录不存在，不创建；创建
+### 网络编程
+
+### 反射
+
+### lambda表达式

@@ -67,7 +67,7 @@ public class MapTest
         while (iterator.hasNext())
         {
             Object o = iterator.next();
-            Map.Entry entry = (Map.Entry) o; // Entry是Map的内部类
+            Map.Entry entry = (Map.Entry) o; // Entry是Map的内部接口
             System.out.println(entry);
         }
 
