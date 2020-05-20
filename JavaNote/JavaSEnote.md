@@ -27,6 +27,15 @@
 - [Comparable、Comparator](#comparablecomparator)
 - [Enum类](#enum%e7%b1%bb)
 - [注解（*Annotation*）](#%e6%b3%a8%e8%a7%a3annotation)
+- [集合](#%e9%9b%86%e5%90%88)
+  - [**List**](#list)
+  - [**Map**](#map)
+- [Collections](#collections)
+- [泛型(*generic*)](#%e6%b3%9b%e5%9e%8bgeneric)
+- [IO流](#io%e6%b5%81)
+- [网络编程](#%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8b)
+- [反射](#%e5%8f%8d%e5%b0%84)
+- [lambda表达式](#lambda%e8%a1%a8%e8%be%be%e5%bc%8f)
 
 <!-- /code_chunk_output -->
 
@@ -161,9 +170,9 @@ super: **在子类中**调用父类的属性、方法、构造器。
         
         - static修饰的方法中，不能使用this、super(没有对象)
         
-| 属性 | 方法 | 代码块   |
-| -------- | -------- | ---------- |
-| 随着类的加载而加载 | 随着类的加载而加载| 随着类的加载而**执行** |
+| 属性               | 方法               | 代码块                 |
+| ------------------ | ------------------ | ---------------------- |
+| 随着类的加载而加载 | 随着类的加载而加载 | 随着类的加载而**执行** |
 
 ### 单例模式
 步骤：
@@ -171,10 +180,10 @@ super: **在子类中**调用父类的属性、方法、构造器。
 - 在类内部造一个私有的、唯一的对象
 - 在类外部通过公有的方法来获取该对象
 
-|   |缺点|优点|
-| -------- | -------- | -------- | 
-| 懒汉式| 线程不安全 |随用随造，延迟对象的创建|
-| 饿汉式 | 对象加载时间过长|线程安全|
+|        | 缺点             | 优点                     |
+| ------ | ---------------- | ------------------------ |
+| 懒汉式 | 线程不安全       | 随用随造，延迟对象的创建 |
+| 饿汉式 | 对象加载时间过长 | 线程安全                 |
 
 ### 代码块
 - 静态代码块
@@ -200,9 +209,9 @@ super: **在子类中**调用父类的属性、方法、构造器。
     - 局部变量：常量，不可再被修改、赋值
     - 静态变量： 全局常量
      
-|  初始化常量属性 | 显示初始化| 代码块中| 构造器中|
-| -------- | -------- | -------- |---- |
-| 使用场景| 所有对象的属性值相同（国籍） |复杂的操作、判断等| 每个对象的属性值不同，都是常量（身份证号码）|
+| 初始化常量属性 | 显示初始化                   | 代码块中           | 构造器中                                     |
+| -------------- | ---------------------------- | ------------------ | -------------------------------------------- |
+| 使用场景       | 所有对象的属性值相同（国籍） | 复杂的操作、判断等 | 每个对象的属性值不同，都是常量（身份证号码） |
  
 ### 抽象类、抽象方法 (*abstract*)
 
@@ -230,10 +239,11 @@ super: **在子类中**调用父类的属性、方法、构造器。
 ### 异常（*Exception*)
 - 常见异常
 
-| 编译时异常|IOException(FileNotFoundException) |ClassNotFoundException | |
-|--- |--- |--- |--- |
-| 运行时异常| NullPointerException| ArrayIndexOutOfBoundsException| ClassCastException| NumberFormatException|
+| 编译时异常 | IOException(FileNotFoundException) | ClassNotFoundException         |                    |
+| ---------- | ---------------------------------- | ------------------------------ | ------------------ |
+| 运行时异常 | NullPointerException               | ArrayIndexOutOfBoundsException | ClassCastException | NumberFormatException |
 
+- why:出异常被catch住，使得后面的代码可以继续执行
 - try-catch-finally:finally{}中的语句一定会执行
 - 对运行时异常往往不处理，找到错误，修改代码，解决异常
 - throws 异常：暂时抛给别人，最终还得用try-catch来处理掉异常
@@ -242,10 +252,10 @@ super: **在子类中**调用父类的属性、方法、构造器。
 
 ### 多线程
 
-|程序（program)|静态的代码|
-|---|---|
-|进程（process）|运行的程序|
-|线程（thread)|一个进程可有多个线程|
+| 程序（program)  | 静态的代码           |
+| --------------- | -------------------- |
+| 进程（process） | 运行的程序           |
+| 线程（thread)   | 一个进程可有多个线程 |
 
     P.S. Java程序至少具有3个线程：main()的主线程、Exception相关的线程、垃圾回收器的线程
 
@@ -689,20 +699,26 @@ public @interface SuppressWarnings {
         - swap:交换位置
     - Collection
         - max,min,frequency
-    - sort,min,max,涉及排序，需要元素都是同一个类的
+    - sort,min,max,涉及比较、排序，需要元素都是同一个类的
     - 把List、Set、Map变成线程安全的
         - Collections.synchronizedList(),Collections.synchronizedMap(),Collections.synchronizedSet()
         
 ### 泛型(*generic*)
- 
-- 指定集合中元素的类型(都是引用数据类型)，安全，便于排序
-    - 静态方法中不能调用带泛型的属性：泛型在实例化时才指定具体类型，晚于静态方法的加载
+
+- 泛型 
+    - 指定集合中元素的类型(都是引用数据类型)，安全，便于排序
+    - 静态方法中不能调用带泛型的属性：泛型在类的实例化时才指定具体类型，晚于静态方法的加载
+    - 适用范围：集合
+- 泛型方法
+    - 使用场景：不确定传入参数的类型
+    - 优点：提高方法的通用性
     - 泛型方法调用时，指明其具体类型，跟实例化无关，故泛型方法可以是静态的
     - 泛型方法的泛型参数，跟它所在类的泛型参数无关
 ```java
 HashMap<String,Integer> hashmap=new HashMap<>();
 ```
 - 自定义泛型类
+    - 使用场景：不确定类的某一属性的类型
 ```java
 //定义类型T
 public class Student<T>
@@ -795,6 +811,49 @@ public class Student<T>
     - list(),listFiles():返回所有的文件和文件夹
     - isDirectory(),isFile(),exists(),canRead(),canWrite(),isHidden()
     - mkdir;mkdirs:创建目录，上层目录不存在，不创建；创建
+    - 目录下有文件，无法删除该目录，需先删除所有文件，再遍历目录并由里到外删除所有目录
+    
+- IO流
+    - 字节流(1B),字符流(2B ? )
+    - 输入流，输出流
+    - 节点=流，处理流
+    
+| 抽象基类 | 字节流       | 字符流 |
+| -------- | ------------ | ------ |
+| 输入流   | InputStream  | Reader |
+| 输出流   | OutputStream | Writer |
+
+| 分类       | 字节输入流              | 字节输出流               | 字符输入流            | 字符输出流             |
+| ---------- | ----------------------- | ------------------------ | --------------------- | ---------------------- |
+| 抽象基类   | ==InputStream==         | ==OutputStream==         | ==Reader==            | ==Writer==             |
+| 访问文件   | ==FileInputStream==     | ==FileOutputStream==     | ==FileReader==        | ==FileWriter==         |
+| 访问数组   | ByteArrayInputStream    | ByteArrayOutputStream    | CharArrayReader       | CharArrayWriter        |
+| 访问管道   | PipedInputStream        | PipedOutputStream        | PipedReader           | PipedWriter            |
+| 访问字符串 |                         |                          | StringReader          | StringWriter           |
+| 缓冲流     | ==BufferedInputStream== | ==BufferedOutputStream== | ==BufferedReader==    | ==BufferedWriter==     |
+| 转换流     |                         |                          | ==InputStreamReader== | ==OutputStreamWriter== |
+| 对象流     | ==ObjectInputStream==   | ==ObjectOutputStream==   |                       |                        |
+|            | FilterInputStream       | FilterOutputStream       | FilterReader          | FilterWriter           |
+| 打印流     |                         | PrintStream              |                       | PrintWriter            |
+| 推回输入流 | PushbackInputStream     |                          | PushbackReader        |                        |
+| 特殊流     | DataInputStream         | DataOutputStream         |                       |                        |
+
+- 文件流
+    - FileReader、FileWriter、FileInputStream、FileOutputStream
+    - 文件对象-->文件流对象-->读入或写出-->关闭文件流
+    - 字符流只可以处理字符类文件，对图片、视频等字节文件无效
+    - 方法
+        - read():每次读一个字符，以数字的形式返回该字符
+        - read(char[] char):读字符存入char，每次存满，存了几个作为返回值
+        - write():写出str到文件，不存在会自动创建
+```java
+        File file=new File("D:\\a新建文件夹\\Java学习笔记\\file\\testDir\\regret.txt");
+        FileWriter fileWriter = new FileWriter(file,true);//true:追加而不覆盖原文件；false:覆盖
+        fileWriter.write("liu");
+        fileWriter.write("zhiQiang");
+        fileWriter.close();
+```
+ 
 ### 网络编程
 
 ### 反射

@@ -84,5 +84,12 @@ public class FileTest
         File file3=new File("D:/aa/tt");
         System.out.println(file3.mkdirs());
     }
-
+    @Test
+    public void test4()
+    {
+        File file = new File("D:\\a新建文件夹\\Java学习笔记\\file\\dirTest\\str.txt");
+        File file1 = new File("D:\\a新建文件夹\\Java学习笔记\\file\\");
+        System.out.println(file.getParent()); //D:\a新建文件夹\Java学习笔记\file\dirTest
+        System.out.println(file1.getParent()); //D:\a新建文件夹\Java学习笔记
+    }
 }
