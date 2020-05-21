@@ -812,11 +812,13 @@ public class Student<T>
     - isDirectory(),isFile(),exists(),canRead(),canWrite(),isHidden()
     - mkdir;mkdirs:创建目录，上层目录不存在，不创建；创建
     - 目录下有文件，无法删除该目录，需先删除所有文件，再遍历目录并由里到外删除所有目录
+    - 工具类：Files
+    - 升级版 File类: NIO.2的Path 
     
 - IO流
     - 字节流(1B),字符流(2B ? )
     - 输入流，输出流
-    - 节点=流，处理流
+    - 节点流，处理流
     
 | 抽象基类 | 字节流       | 字符流 |
 | -------- | ------------ | ------ |
@@ -841,7 +843,7 @@ public class Student<T>
 - 文件流
     - FileReader、FileWriter、FileInputStream、FileOutputStream
     - 文件对象-->文件流对象-->读入或写出-->关闭文件流
-    - 字符流只可以处理字符类文件，对图片、视频等字节文件无效
+    - 字符流只可以处理字符类文件(文本文件：.txt,.java)，对图片、视频等字节文件无效(字节流-->字节文件，字符类-->字符文件)
     - 方法
         - read():每次读一个字符，以数字的形式返回该字符
         - read(char[] char):读字符存入char，每次存满，存了几个作为返回值
@@ -853,9 +855,28 @@ public class Student<T>
         fileWriter.write("zhiQiang");
         fileWriter.close();
 ```
- 
+- 缓冲流
+    -  BufferedInputStream、BufferedOutputStream、BufferedReader、BufferedWriter
+    - 作用：提升流的读写速度
+    - 文件对象-->文件流对象-->缓冲流对象-->读入或写出-->关闭**缓冲流**(文件流会自动关闭)
+- 对象流
+    - 序列化：把Java对象转换成二进制文件保存到硬盘里面
+    - 反序列化：把Java对象从硬盘读取到内存当中
+    - 使自定义类(的对象)可序列化
+        - 实现Serializable接口
+        - 给定唯一的ID号
+        - 类(对象)的所有属性也是可序列化的(基本数据类型、String都可以直接用)
+        - static、transient修饰的属性属于类，对应的对象不可序列化
+    
 ### 网络编程
 
+- InetAddress
+    - 用途：获取、操作IP地址
+    - 实例化：InetAddress.getByName(ip/domain name),InetAddress.getLocalHost()
+    - 常用方法：getHostName,getHostAddress
+    
+    
+    
 ### 反射
 
 ### lambda表达式

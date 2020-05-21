@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/Dir.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FileExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FileExercise2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FileExercise3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FileStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/IOtest/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/StreamExercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +75,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -99,71 +94,7 @@
       <recent name="ExceptionTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileStreamTest.test2">
-    <configuration name="FileExercise3.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOtest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOtest" />
-      <option name="MAIN_CLASS_NAME" value="IOtest.FileExercise3" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileExercise3.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOtest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOtest" />
-      <option name="MAIN_CLASS_NAME" value="IOtest.FileExercise3" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileStreamTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOtest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOtest" />
-      <option name="MAIN_CLASS_NAME" value="IOtest.FileStreamTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileStreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOtest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOtest" />
-      <option name="MAIN_CLASS_NAME" value="IOtest.FileStreamTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StreamExercise.test3">
     <configuration name="FileStreamTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
@@ -180,13 +111,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamExercise.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.StreamExercise" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamExercise.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.StreamExercise" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamExercise.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.StreamExercise" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamExercise.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IOtest" />
+      <option name="MAIN_CLASS_NAME" value="IOtest.StreamExercise" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StreamExercise.test3" />
+        <item itemvalue="JUnit.StreamExercise.test2" />
+        <item itemvalue="JUnit.StreamExercise.test" />
+        <item itemvalue="JUnit.StreamExercise.test1" />
         <item itemvalue="JUnit.FileStreamTest.test2" />
-        <item itemvalue="JUnit.FileStreamTest.test1" />
-        <item itemvalue="JUnit.FileStreamTest.test" />
-        <item itemvalue="JUnit.FileExercise3.test1" />
-        <item itemvalue="JUnit.FileExercise3.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +248,9 @@
       <workItem from="1589902833807" duration="147000" />
       <workItem from="1589903226574" duration="15144000" />
       <workItem from="1589944505414" duration="4769000" />
-      <workItem from="1589959521173" duration="15725000" />
+      <workItem from="1589959521173" duration="28399000" />
+      <workItem from="1590030900910" duration="2513000" />
+      <workItem from="1590052073181" duration="4761000" />
     </task>
     <task id="LOCAL-00001" summary="Java SE note">
       <created>1587988227964</created>
@@ -582,22 +579,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587989149791" />
-    <state width="927" height="113" key="GridCell.Tab.0.bottom" timestamp="1589985321840">
+    <state width="928" height="113" key="GridCell.Tab.0.bottom" timestamp="1590005796868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="927" height="113" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589985321840" />
-    <state width="927" height="113" key="GridCell.Tab.0.center" timestamp="1589985321839">
+    <state width="928" height="113" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590005796868" />
+    <state width="928" height="113" key="GridCell.Tab.0.center" timestamp="1590005796868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="927" height="113" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589985321839" />
-    <state width="927" height="113" key="GridCell.Tab.0.left" timestamp="1589985321839">
+    <state width="928" height="113" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590005796868" />
+    <state width="928" height="113" key="GridCell.Tab.0.left" timestamp="1590005796868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="927" height="113" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589985321839" />
-    <state width="927" height="113" key="GridCell.Tab.0.right" timestamp="1589985321839">
+    <state width="928" height="113" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590005796868" />
+    <state width="928" height="113" key="GridCell.Tab.0.right" timestamp="1590005796868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="927" height="113" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589985321839" />
+    <state width="928" height="113" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590005796868" />
     <state width="1176" height="295" key="GridCell.Tab.1.bottom" timestamp="1589919270734">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -614,10 +611,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1176" height="295" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589919270733" />
-    <state x="880" y="185" key="SettingsEditor" timestamp="1589728553015">
+    <state x="880" y="185" key="SettingsEditor" timestamp="1590049701120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="880" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589728553015" />
+    <state x="880" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590049701120" />
     <state x="1032" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589552407556">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
