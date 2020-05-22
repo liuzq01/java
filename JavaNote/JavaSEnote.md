@@ -874,9 +874,15 @@ public class Student<T>
     - 用途：获取、操作IP地址
     - 实例化：InetAddress.getByName(ip/domain name),InetAddress.getLocalHost()
     - 常用方法：getHostName,getHostAddress
-    
-    
-    
+    - socket=ip+端口号 
+- TCP编程
+    - client: socket对象(ip+端口号)-->输出流-->写出数据-->关闭流、socket    
+    - server: socket对象(端口号)-->调用accept-->输入流-->读入数据-->资源关闭
+    - socket.shutdownOutput(); : 客户端发送完毕，主动关闭输出
+- UDP编程
+    - sender: DatagramSocket对象socket-->DatagramPacket对象packet-->socket.sent(packet)-->关闭socket    
+    - receiver: DatagramSocket对象socket-->DatagramPacket对象packet-->socket.receive(packet)-->关闭socket    
+    - 
 ### 反射
 
 ### lambda表达式
