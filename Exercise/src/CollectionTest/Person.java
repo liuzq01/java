@@ -7,6 +7,10 @@ public class Person
     private String name;
     private int age;
 
+    public Person()
+    {
+    }
+
     public Person(String name, int age)
     {
         this.name = name;
@@ -31,6 +35,11 @@ public class Person
     public void setAge(int age)
     {
         this.age = age;
+    }
+    private String subName(String name)
+    {
+        String substring = name.substring(0, 3);
+        return substring;
     }
 
     @Override

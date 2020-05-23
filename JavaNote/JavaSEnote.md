@@ -882,7 +882,68 @@ public class Student<T>
 - UDP编程
     - sender: DatagramSocket对象socket-->DatagramPacket对象packet-->socket.sent(packet)-->关闭socket    
     - receiver: DatagramSocket对象socket-->DatagramPacket对象packet-->socket.receive(packet)-->关闭socket    
-    - 
-### 反射
+     
+### 反射(reflection )
+    - why：通过反射可以获取类的所有结构，包括属性、方法、构造器，私有的也能获取
+    - when: 在程序运行起来以后，根据用户的反馈（或者根据具体的场景），才能确定需要获取类的哪个属性（方法、构造器）,
+    
+- Class类
+    - 跟小写的class没有关系
+    - 加载到内存中的类（如Person类），是Class的一个实例
+- 获取Class实例的方法    
+    - a、b、c三种方法获取的都是同一个实例
+    - 接口、数组、基本数据类型等都可以是Class的实例
+```java
+        Class aClass=String.class;  //a: 显示赋值
 
+        Class aClass1 = Class.forName("java.lang.String"); //b: 调静态方法
+
+        String str = new String("abc");
+        Class aClass2 = str.getClass();     //c: getClass()方法
+                                            //d: 使用ClassLoader
+        System.out.println(aClass==aClass1);    //true
+        System.out.println(aClass==aClass2);    //true
+        ...
+        Class c1=Object.class ;
+        Class c2=int[].class ;
+        Class c3=int.class ;
+        Class c4=interface.class ;
+        Class c5=Class.class ;
+```
+- 获取运行时类的对象
+    - newInstance( deprecated ? )
+    - 运行时类得有空参构造器，不能是private的
+```java
+    Class<Person> aclass=Person.class ;
+    Person p = aclass.newInstance();
+```
+ - *获取运行时类的结构*
+     - getFields: 获取该类及其父类的属性（public的）
+     - getDeclaredFields: 获取该类的所有属性（包括private的）
+        - getModifiers: 获取属性的权限修饰符
+        - getType: 获取属性的类型
+     - getMethods: 获取该类及其父类的方法（public的）
+     
+ - 调用运行时类的结构
+    - 方法
+        -getDeclaredMethod(方法名，形参类)-->setAccessible(true)-->invoke(对象，形参)
+        
+```java
+        Method subName = aClass.getDeclaredMethod("subName", String.class); //(方法名，形参类)
+        subName.setAccessible(true);
+        Object str = subName.invoke(person, "zhiQiang");    //（对象，形参）
+                //静态方法：aStaticFunc(Person.class,"xxx")
+                //或者     aStaticFunc(null,"xxx")
+```        
+   - 属性
+        - getDeclaredField("xxx"): 获取指定的属性
+        - setAccessible(true)-->set(person,"yyy")
+```java
+        Field name = aClass.getDeclaredField("name");
+        name.setAccessible(true);       // name是private的,设为可访问的
+        name.set(person,"li");
+```
+   - 构造器
+        - getDeclaredConstructor(形参类)
+        
 ### lambda表达式
