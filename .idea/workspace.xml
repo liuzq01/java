@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/reflection/ReflectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/FunctionalInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/lambdaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,16 +95,35 @@
       <recent name="ExceptionTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionTest.test3">
-    <configuration name="ReflectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reflection.ReflectionTest" />
+  <component name="RunManager" selected="JUnit.FunctionalInterface.test3">
+    <configuration name="FunctionalInterface.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reflection.*" />
+          <option name="PATTERN" value="Java8NewFeature.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Java8NewFeature" />
+      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.FunctionalInterface" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionalInterface.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java8NewFeature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Java8NewFeature" />
+      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.FunctionalInterface" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,33 +160,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TcpTest2.client" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lambdaTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TcpTest.*" />
+          <option name="PATTERN" value="Java8NewFeature.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TcpTest" />
-      <option name="MAIN_CLASS_NAME" value="TcpTest.TcpTest2" />
-      <option name="METHOD_NAME" value="client" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TcpTest2.server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TcpTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TcpTest" />
-      <option name="MAIN_CLASS_NAME" value="TcpTest.TcpTest2" />
-      <option name="METHOD_NAME" value="server" />
+      <option name="PACKAGE_NAME" value="Java8NewFeature" />
+      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.lambdaTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FunctionalInterface.test3" />
+        <item itemvalue="JUnit.FunctionalInterface.test" />
+        <item itemvalue="JUnit.lambdaTest.test" />
         <item itemvalue="JUnit.ReflectionTest.test3" />
         <item itemvalue="JUnit.ReflectionTest.test2" />
-        <item itemvalue="Application.ReflectionTest" />
-        <item itemvalue="JUnit.TcpTest2.client" />
-        <item itemvalue="JUnit.TcpTest2.server" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +254,8 @@
       <workItem from="1590052073181" duration="19028000" />
       <workItem from="1590117088907" duration="5133000" />
       <workItem from="1590166447807" duration="4877000" />
-      <workItem from="1590226986484" duration="8487000" />
+      <workItem from="1590226986484" duration="15397000" />
+      <workItem from="1590317009743" duration="4897000" />
     </task>
     <task id="LOCAL-00001" summary="Java SE note">
       <created>1587988227964</created>
@@ -564,10 +568,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1017" y="192" key="#StringTest.test4/0.0.1920.1080@0.0.1920.1080" timestamp="1589119410576" />
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1590244657119">
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1590332698017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590244657119" />
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590332698017" />
     <state x="1040" y="135" key="CommitChangelistDialog2" timestamp="1589549754577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -580,22 +584,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587989149791" />
-    <state width="914" height="262" key="GridCell.Tab.0.bottom" timestamp="1590245891595">
+    <state width="914" height="261" key="GridCell.Tab.0.bottom" timestamp="1590334014133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590245891595" />
-    <state width="914" height="262" key="GridCell.Tab.0.center" timestamp="1590245891595">
+    <state width="914" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
+    <state width="914" height="261" key="GridCell.Tab.0.center" timestamp="1590334014133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="262" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590245891595" />
-    <state width="914" height="262" key="GridCell.Tab.0.left" timestamp="1590245891595">
+    <state width="914" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
+    <state width="914" height="261" key="GridCell.Tab.0.left" timestamp="1590334014133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="262" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590245891595" />
-    <state width="914" height="262" key="GridCell.Tab.0.right" timestamp="1590245891595">
+    <state width="914" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
+    <state width="914" height="261" key="GridCell.Tab.0.right" timestamp="1590334014133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="262" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590245891595" />
+    <state width="914" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
     <state width="1176" height="295" key="GridCell.Tab.1.bottom" timestamp="1589919270734">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

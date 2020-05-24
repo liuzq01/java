@@ -34,7 +34,7 @@
 - [泛型(*generic*)](#%e6%b3%9b%e5%9e%8bgeneric)
 - [IO流](#io%e6%b5%81)
 - [网络编程](#%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8b)
-- [反射](#%e5%8f%8d%e5%b0%84)
+- [反射(reflection )](#%e5%8f%8d%e5%b0%84reflection)
 - [lambda表达式](#lambda%e8%a1%a8%e8%be%be%e5%bc%8f)
 
 <!-- /code_chunk_output -->
@@ -947,3 +947,43 @@ public class Student<T>
         - getDeclaredConstructor(形参类)
         
 ### lambda表达式
+- 作用：简化匿名实现类的代码
+- 本质：lambda表达式是接口的一个实例
+- 对接口的要求：只有一个抽象方法，即函数式接口
+```java
+        //原来的语句
+        Comparator<Integer> comparator = new Comparator<>()
+        {
+            @Override
+            public int compare(Integer o1, Integer o2)
+            {
+                System.out.println(o1);
+                System.out.println(o2);
+                return Integer.compare(o1, o2);
+            }
+        };
+
+        //用lambda简写的语句
+        Comparator<Integer> comparator1 = (o1, o2) ->
+        {
+            System.out.println(o1);
+            System.out.println(o2);
+            return Integer.compare(o1, o2);
+        };
+
+        //只有一条执行语句
+        Comparator<Integer> comparator2 = (o1, o2) -> Integer.compare(o1, o2);
+
+        //只有1个形参
+        Consumer<String> consumer1 = s -> System.out.println(s);
+```
+- 函数式接口
+  
+| 函数式接口     | 参数类型  | 返回类型 | 用途                                                      |
+| ------------- | -------- | -------- | ------------------------------------------------------   |
+| Consumer<T>   | T        | void     | 操作T的对象，包含方法: void accept(T t)                    |
+| Supplier<R>   | 无       | R        | 返回R的对象，包含方法: R get()                             |
+| Function<T,R> | T        | R        | 操作T的对象，返回R的对象，包含方法: R apply(T t)            |
+| Predicate<T>  | T        | boolean  | 判断T的对象是否满足某种约束条件，包含方法: boolean test(T t) |
+
+ 
