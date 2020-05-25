@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GithubRepository.iml" filepath="$PROJECT_DIR$/GithubRepository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaNote.iml" filepath="$PROJECT_DIR$/.idea/JavaNote.iml" />
     </modules>
   </component>
 </project>

@@ -3,39 +3,42 @@
 
 <!-- code_chunk_output -->
 
-- [继承  (inheritance)](#%e7%bb%a7%e6%89%bf-inheritance)
-- [重写  （overwrite）](#%e9%87%8d%e5%86%99-overwrite)
-- [权限修饰符](#%e6%9d%83%e9%99%90%e4%bf%ae%e9%a5%b0%e7%ac%a6)
-- [super 关键字](#super-%e5%85%b3%e9%94%ae%e5%ad%97)
-- [super 与 this](#super-%e4%b8%8e-this)
-- [多态  （polymorphism）](#%e5%a4%9a%e6%80%81-polymorphism)
-- [包装类、基本数据类型、toString的转换](#%e5%8c%85%e8%a3%85%e7%b1%bb%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8btostring%e7%9a%84%e8%bd%ac%e6%8d%a2)
-- [static 关键字、变量的分类](#static-%e5%85%b3%e9%94%ae%e5%ad%97%e5%8f%98%e9%87%8f%e7%9a%84%e5%88%86%e7%b1%bb)
-- [单例模式](#%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f)
-- [代码块](#%e4%bb%a3%e7%a0%81%e5%9d%97)
+- [继承  (inheritance)](#继承-inheritance)
+- [重写  （overwrite）](#重写-overwrite)
+- [权限修饰符](#权限修饰符)
+- [super 关键字](#super-关键字)
+- [super 与 this](#super-与-this)
+- [多态  （polymorphism）](#多态-polymorphism)
+- [包装类、基本数据类型、toString的转换](#包装类基本数据类型tostring的转换)
+- [static 关键字、变量的分类](#static-关键字变量的分类)
+- [单例模式](#单例模式)
+- [代码块](#代码块)
 - [final](#final)
-- [抽象类、抽象方法 (*abstract*)](#%e6%8a%bd%e8%b1%a1%e7%b1%bb%e6%8a%bd%e8%b1%a1%e6%96%b9%e6%b3%95-abstract)
-- [接口（interface）](#%e6%8e%a5%e5%8f%a3interface)
-- [异常（*Exception*)](#%e5%bc%82%e5%b8%b8exception)
-- [多线程](#%e5%a4%9a%e7%ba%bf%e7%a8%8b)
-- [同步(*synchronized*)](#%e5%90%8c%e6%ad%a5synchronized)
-- [死锁](#%e6%ad%bb%e9%94%81)
-- [创建多线程的新方法](#%e5%88%9b%e5%bb%ba%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%9a%84%e6%96%b0%e6%96%b9%e6%b3%95)
-- [值传递](#%e5%80%bc%e4%bc%a0%e9%80%92)
-- [常用类](#%e5%b8%b8%e7%94%a8%e7%b1%bb)
-- [时间、日期](#%e6%97%b6%e9%97%b4%e6%97%a5%e6%9c%9f)
+- [抽象类、抽象方法 (*abstract*)](#抽象类抽象方法-abstract)
+- [接口（interface）](#接口interface)
+- [异常（*Exception*)](#异常exception)
+- [多线程](#多线程)
+- [同步(*synchronized*)](#同步synchronized)
+- [死锁](#死锁)
+- [创建多线程的新方法](#创建多线程的新方法)
+- [值传递](#值传递)
+- [常用类](#常用类)
+- [时间、日期](#时间日期)
 - [Comparable、Comparator](#comparablecomparator)
-- [Enum类](#enum%e7%b1%bb)
-- [注解（*Annotation*）](#%e6%b3%a8%e8%a7%a3annotation)
-- [集合](#%e9%9b%86%e5%90%88)
+- [Enum类](#enum类)
+- [注解（*Annotation*）](#注解annotation)
+- [集合](#集合)
   - [**List**](#list)
   - [**Map**](#map)
 - [Collections](#collections)
-- [泛型(*generic*)](#%e6%b3%9b%e5%9e%8bgeneric)
-- [IO流](#io%e6%b5%81)
-- [网络编程](#%e7%bd%91%e7%bb%9c%e7%bc%96%e7%a8%8b)
-- [反射(reflection )](#%e5%8f%8d%e5%b0%84reflection)
-- [lambda表达式](#lambda%e8%a1%a8%e8%be%be%e5%bc%8f)
+- [泛型(*generic*)](#泛型generic)
+- [IO流](#io流)
+- [网络编程](#网络编程)
+- [反射(reflection )](#反射reflection-)
+- [lambda表达式](#lambda表达式)
+- [StreamAPI](#streamapi)
+- [Java9、10、11 新特性](#java91011-新特性)
+- [The End](#the-end)
 
 <!-- /code_chunk_output -->
 
@@ -979,11 +982,11 @@ public class Student<T>
 ```
 - 函数式接口
   
-| 函数式接口     | 参数类型  | 返回类型 | 用途                                                      |
-| ------------- | -------- | -------- | ------------------------------------------------------   |
-| Consumer<T>   | T        | void     | 操作T的对象，包含方法: void accept(T t)                    |
-| Supplier<R>   | 无       | R        | 返回R的对象，包含方法: R get()                             |
-| Function<T,R> | T        | R        | 操作T的对象，返回R的对象，包含方法: R apply(T t)            |
+| 函数式接口    | 参数类型 | 返回类型 | 用途                                                         |
+| ------------- | -------- | -------- | ------------------------------------------------------------ |
+| Consumer<T>   | T        | void     | 操作T的对象，包含方法: void accept(T t)                      |
+| Supplier<R>   | 无       | R        | 返回R的对象，包含方法: R get()                               |
+| Function<T,R> | T        | R        | 操作T的对象，返回R的对象，包含方法: R apply(T t)             |
 | Predicate<T>  | T        | boolean  | 判断T的对象是否满足某种约束条件，包含方法: boolean test(T t) |
 
 - 方法引用
@@ -992,7 +995,7 @@ public class Student<T>
     - c 类::非静态方法 
     - 使用条件：要求接口中的抽象方法的形参列表、返回值类型，和被引用方法的参、返相同(a、b)
     
-- StreamAPI
+### StreamAPI
    - 实例化
         - list.stream(),list.parallelSteam()
         - Arrays.stream(array)
@@ -1014,10 +1017,28 @@ public class Student<T>
         - reduce
    - 收集
         - collect
-- Java9 新特性
-    - 模块化
+### Java9、10、11 新特性
+
+- Java9
+   - 模块化
         - 在package外面包了个module，module与module之间的公共类不能直接调用，需分别新建module-info.java文件，做出声明
         - 作用：对模块内的数据进行封装，提高模块之间的独立性，降低耦合性
-    - jShell命令
+   - jShell命令
         - 在命令行直接写Java语句，输出helloWorld，不需要定义一个类
-        
+   - String 底层改用 byte[] 存储
+- Java10 局部变量类型推断
+    - 由右边推断出左边的类型
+    - lambda表达式、方法引用等不能用 
+    - .class文件中不是var,是推断后的类型
+```java
+        var j=22;
+        var integers1 = new ArrayList<Integer>();
+        integers1.add(j);
+        for (var k:integers1)
+        {
+            System.out.println(k);
+        }
+```
+- Java11 垃圾回收器
+    
+### The End
