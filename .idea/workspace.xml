@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782709ad-e8b2-48c7-a891-f42a605b3f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/FunctionalInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/lambdaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/FunctionCitationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/StreamAPItest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/StreamAPItest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Java9to11/Java9Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java9to11/src/Java9/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java9to11/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionExercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/FunctionalInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Java8NewFeature/FunctionalInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/employeeTest/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/employeeTest/SalariedEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/polymorphism1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/polymorphism1/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -73,7 +84,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11 (2)" />
     <property name="last_opened_file_path" value="D:/a新建文件夹/Java学习笔记/src" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
@@ -95,8 +106,21 @@
       <recent name="ExceptionTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionalInterface.test3">
-    <configuration name="FunctionalInterface.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Java9Test">
+    <configuration name="Java9Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java9to11.Java9Test" />
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java9to11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionCitationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
@@ -105,14 +129,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Java8NewFeature" />
-      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.FunctionalInterface" />
+      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.FunctionCitationTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalInterface.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java9Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java9to11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Java9to11" />
+      <option name="MAIN_CLASS_NAME" value="Java9to11.Java9Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamAPItest1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
@@ -121,46 +161,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Java8NewFeature" />
-      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.FunctionalInterface" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.StreamAPItest1" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="reflection" />
-      <option name="MAIN_CLASS_NAME" value="reflection.ReflectionTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReflectionTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="reflection" />
-      <option name="MAIN_CLASS_NAME" value="reflection.ReflectionTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lambdaTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StreamAPItest2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
@@ -169,7 +177,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Java8NewFeature" />
-      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.lambdaTest" />
+      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.StreamAPItest2" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -178,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FunctionalInterface.test3" />
-        <item itemvalue="JUnit.FunctionalInterface.test" />
-        <item itemvalue="JUnit.lambdaTest.test" />
-        <item itemvalue="JUnit.ReflectionTest.test3" />
-        <item itemvalue="JUnit.ReflectionTest.test2" />
+        <item itemvalue="Application.Java9Test" />
+        <item itemvalue="JUnit.Java9Test.test" />
+        <item itemvalue="JUnit.StreamAPItest2.test" />
+        <item itemvalue="JUnit.StreamAPItest1.test" />
+        <item itemvalue="JUnit.FunctionCitationTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +263,7 @@
       <workItem from="1590117088907" duration="5133000" />
       <workItem from="1590166447807" duration="4877000" />
       <workItem from="1590226986484" duration="15397000" />
-      <workItem from="1590317009743" duration="4897000" />
+      <workItem from="1590317009743" duration="26743000" />
     </task>
     <task id="LOCAL-00001" summary="Java SE note">
       <created>1587988227964</created>
@@ -568,38 +576,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1017" y="192" key="#StringTest.test4/0.0.1920.1080@0.0.1920.1080" timestamp="1589119410576" />
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1590332698017">
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1590420125260">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590332698017" />
+    <state x="1245" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590420125260" />
     <state x="1040" y="135" key="CommitChangelistDialog2" timestamp="1589549754577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1040" y="135" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1589549754577" />
-    <state x="1201" y="298" key="FileChooserDialogImpl" timestamp="1589436737836">
+    <state x="1201" y="298" key="FileChooserDialogImpl" timestamp="1590419406487">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1201" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1589436737836" />
+    <state x="1201" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1590419406487" />
     <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog" timestamp="1587989149791">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1315" y="434" width="273" height="219" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587989149791" />
-    <state width="914" height="261" key="GridCell.Tab.0.bottom" timestamp="1590334014133">
+    <state width="914" height="259" key="GridCell.Tab.0.bottom" timestamp="1590421898306">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
-    <state width="914" height="261" key="GridCell.Tab.0.center" timestamp="1590334014133">
+    <state width="914" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590421898306" />
+    <state width="914" height="259" key="GridCell.Tab.0.center" timestamp="1590421898305">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
-    <state width="914" height="261" key="GridCell.Tab.0.left" timestamp="1590334014133">
+    <state width="914" height="259" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590421898305" />
+    <state width="914" height="259" key="GridCell.Tab.0.left" timestamp="1590421898305">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
-    <state width="914" height="261" key="GridCell.Tab.0.right" timestamp="1590334014133">
+    <state width="914" height="259" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590421898305" />
+    <state width="914" height="259" key="GridCell.Tab.0.right" timestamp="1590421898305">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590334014133" />
+    <state width="914" height="259" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590421898305" />
     <state width="1176" height="295" key="GridCell.Tab.1.bottom" timestamp="1589919270734">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -616,10 +624,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1176" height="295" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589919270733" />
-    <state x="880" y="185" key="SettingsEditor" timestamp="1590049701120">
+    <state x="880" y="185" key="SettingsEditor" timestamp="1590419534501">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="880" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590049701120" />
+    <state x="880" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590419534501" />
     <state x="1032" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589552407556">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -640,18 +648,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="645" y="139" width="802" height="801" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1589704967910" />
-    <state x="644" y="205" key="new project wizard" timestamp="1588003731991">
+    <state x="644" y="205" key="new project wizard" timestamp="1590419936003">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="644" y="205" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1588003731991" />
+    <state x="644" y="205" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1590419936003" />
     <state x="1096" y="252" key="run.anything.popup" timestamp="1588616553129">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1096" y="252" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588616553129" />
-    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1590240181355">
+    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1590403158948">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590240181355" />
+    <state x="1068" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590403158948" />
     <state x="1270" y="334" key="svn.repositoryBrowser" timestamp="1587989108560">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

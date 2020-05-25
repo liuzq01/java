@@ -947,7 +947,7 @@ public class Student<T>
         - getDeclaredConstructor(形参类)
         
 ### lambda表达式
-- 作用：简化匿名实现类的代码
+- 作用：简化匿名实现类的代码(简化函数式接口实例化的代码)
 - 本质：lambda表达式是接口的一个实例
 - 对接口的要求：只有一个抽象方法，即函数式接口
 ```java
@@ -986,4 +986,38 @@ public class Student<T>
 | Function<T,R> | T        | R        | 操作T的对象，返回R的对象，包含方法: R apply(T t)            |
 | Predicate<T>  | T        | boolean  | 判断T的对象是否满足某种约束条件，包含方法: boolean test(T t) |
 
- 
+- 方法引用
+    - a 对象::非静态方法
+    - b 类::静态方法
+    - c 类::非静态方法 
+    - 使用条件：要求接口中的抽象方法的形参列表、返回值类型，和被引用方法的参、返相同(a、b)
+    
+- StreamAPI
+   - 实例化
+        - list.stream(),list.parallelSteam()
+        - Arrays.stream(array)
+        - Stream.of()
+        - 每次终止操作结束以后，需要重新创建一个stream，不能用原来的；类似于Iterator
+   - 中间操作(intermediate operation)
+        - 映射
+            - map：形参为函数式接口的对象，对象可以是单个元素，也可以是集合， 集合作为一个整体被映射
+            - flatMap：形参为函数式接口的对象，对象可以是单个元素，也可以是集合，但集合中的元素会被拿出来，所有的元素一起被映射
+        - 排序
+            - sorted(): 自然排序，元素所在的类需要实现Comparable接口
+            - sorted(Comparator c)
+        - 筛选、切片
+            - filter,limit(取前n个),skip(跳过前n个),distinct(去重)
+   - 终止操作(terminal operation)
+        - 匹配与查找
+            - allMatch,anyMatch, noneMatch,findFirst,findAny,count,max,min,forEach
+   - 归约
+        - reduce
+   - 收集
+        - collect
+- Java9 新特性
+    - 模块化
+        - 在package外面包了个module，module与module之间的公共类不能直接调用，需分别新建module-info.java文件，做出声明
+        - 作用：对模块内的数据进行封装，提高模块之间的独立性，降低耦合性
+    - jShell命令
+        - 在命令行直接写Java语句，输出helloWorld，不需要定义一个类
+        

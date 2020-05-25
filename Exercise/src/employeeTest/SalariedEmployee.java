@@ -1,6 +1,5 @@
 package employeeTest;
 
-import javax.naming.Name;
 import java.util.Date;
 //抽象类测试：子类1
 public class SalariedEmployee extends Employee
@@ -41,6 +40,8 @@ public class SalariedEmployee extends Employee
     @Override
     public String toString()
     {
-        return super.toString();
+        return "SalariedEmployee{" +super.toString()+
+                "monthlySalary=" + monthlySalary +
+                '}';
     }
 }

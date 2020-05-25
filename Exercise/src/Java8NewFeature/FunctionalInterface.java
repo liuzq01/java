@@ -47,8 +47,7 @@ public class FunctionalInterface
         integers.add(44);
         integers.add(55);
         integers.add(66);
-        FunctionalInterface functionalInterface = new FunctionalInterface();
-        ArrayList arrayList = functionalInterface.addL( integers, new Predicate<>()
+        ArrayList arrayList = addL( integers, new Predicate<>()
         {
             @Override
             public boolean test(Integer integer)
@@ -59,7 +58,7 @@ public class FunctionalInterface
         System.out.println(arrayList);
         System.out.println("**************");
         //lambda写法
-        ArrayList arrayList1 = functionalInterface.addL(integers, integer -> integer > 50);
+        ArrayList arrayList1 = addL(integers, integer -> integer > 50);
         System.out.println(arrayList1);
     }
     public ArrayList addL(ArrayList<Integer> arrayList, Predicate<Integer> predicate)

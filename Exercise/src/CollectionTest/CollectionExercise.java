@@ -2,7 +2,6 @@ package CollectionTest;
 
 import org.junit.Test;
 
-import java.awt.*;
 import java.util.*;
 
 public class CollectionExercise

@@ -1,6 +1,5 @@
 package polymorphism1;
 
-import com.sun.tools.javac.Main;
 
 public class Circle extends GeometricObject
 {
