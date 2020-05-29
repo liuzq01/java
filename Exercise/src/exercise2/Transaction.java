@@ -66,4 +66,15 @@ public class Transaction
     {
         this.description = description;
     }
+
+    @Override
+    public String toString()
+    {
+        return "{" +
+                "type " + type +
+                ", amount " + amount +
+                ", 余额 " + balance +
+                ", 日期 " + description + '}'+
+                '\n' ;
+    }
 }

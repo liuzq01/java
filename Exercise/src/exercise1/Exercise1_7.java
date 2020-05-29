@@ -2,7 +2,7 @@ package exercise1;
 
 import org.junit.Test;
 
-public class Exercise7
+public class Exercise1_7
 {
     //借助泰勒公式估算PI的值
     @Test

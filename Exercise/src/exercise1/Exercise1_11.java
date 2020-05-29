@@ -2,7 +2,7 @@ package exercise1;
 
 import org.junit.Test;
 
-public class Exercise11
+public class Exercise1_11
 {
     @Test
     public void test()

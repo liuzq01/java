@@ -1,10 +1,10 @@
-package exercise2;
+package exercise1;
 
 import org.junit.Test;
 
 import java.util.Scanner;
 
-public class Exercise13
+public class Exercise2_13
 {
     public static void main(String[] args)
     {

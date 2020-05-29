@@ -1,6 +1,6 @@
-package exercise3;
+package exercise1;
 
-public class Exercise28
+public class Exercise3_28
 {
     /*
      **************************************

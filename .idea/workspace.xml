@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/Java9to11/Java9test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/Java9to11/Java9Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Java9to11/Java9Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java9to11/src/Java9/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java9to11/src/module-info.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_27.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_27.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_28.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_28.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter10.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter9.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/subAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/subAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/singletonTest/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/singletonTest/SingletonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +27,22 @@
   <component name="FavoritesManager">
     <favorites_list name="java" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/liuzhiqiang19/java.git" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -29,6 +53,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1cPke5MZ2q9Xfpo8BFv2mKf4Pzy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,20 +65,89 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager">
-    <configuration name="Java10Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="exercise2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Chapter17.test3">
+    <configuration name="Chapter12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter12" />
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java9to11.*" />
+          <option name="PATTERN" value="exercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Java9to11" />
-      <option name="MAIN_CLASS_NAME" value="Java9to11.Java10Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter11.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter11" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter17.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter17" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter17.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter17" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter17.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter17" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -59,7 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Java10Test.test" />
+        <item itemvalue="JUnit.Chapter17.test3" />
+        <item itemvalue="JUnit.Chapter17.test1" />
+        <item itemvalue="JUnit.Chapter17.test" />
+        <item itemvalue="Application.Chapter12" />
+        <item itemvalue="JUnit.Chapter11.test" />
       </list>
     </recent_temporary>
   </component>
@@ -85,29 +185,104 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590437707607</updated>
-      <workItem from="1590437709066" duration="532000" />
+      <workItem from="1590437709066" duration="3971000" />
+      <workItem from="1590478709014" duration="211000" />
+      <workItem from="1590479156120" duration="54000" />
+      <workItem from="1590479727395" duration="11000" />
+      <workItem from="1590479899213" duration="463000" />
+      <workItem from="1590481930623" duration="276000" />
+      <workItem from="1590482397578" duration="31000" />
+      <workItem from="1590502766653" duration="3430000" />
+      <workItem from="1590506380937" duration="16518000" />
+      <workItem from="1590571599183" duration="17487000" />
+      <workItem from="1590630790335" duration="17729000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="946" height="292" key="GridCell.Tab.0.bottom" timestamp="1590437988363">
+    <state x="1154" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590760410380">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="946" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590437988363" />
-    <state width="946" height="292" key="GridCell.Tab.0.center" timestamp="1590437988363">
+    <state x="1154" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590760410380" />
+    <state x="1197" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1590581557853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="946" height="292" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590437988363" />
-    <state width="946" height="292" key="GridCell.Tab.0.left" timestamp="1590437988363">
+    <state x="1197" y="259" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1590581557853" />
+    <state x="1040" y="132" key="CommitChangelistDialog2" timestamp="1590503895758">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="946" height="292" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590437988363" />
-    <state width="946" height="292" key="GridCell.Tab.0.right" timestamp="1590437988363">
+    <state x="1040" y="132" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590503895758" />
+    <state x="368" y="96" key="DiffContextDialog" timestamp="1590503884296">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="946" height="292" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590437988363" />
+    <state x="368" y="96" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590503884296" />
+    <state width="1166" height="346" key="GridCell.Tab.0.bottom" timestamp="1590765696680">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1166" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
+    <state width="1166" height="346" key="GridCell.Tab.0.center" timestamp="1590765696680">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1166" height="346" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
+    <state width="1166" height="346" key="GridCell.Tab.0.left" timestamp="1590765696680">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1166" height="346" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
+    <state width="1166" height="346" key="GridCell.Tab.0.right" timestamp="1590765696680">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1166" height="346" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
+    <state width="914" height="362" key="GridCell.Tab.1.bottom" timestamp="1590759035093">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
+    <state width="914" height="362" key="GridCell.Tab.1.center" timestamp="1590759035093">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
+    <state width="914" height="362" key="GridCell.Tab.1.left" timestamp="1590759035093">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
+    <state width="914" height="362" key="GridCell.Tab.1.right" timestamp="1590759035093">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
+    <state x="1232" y="250" key="RollbackChangesDialog" timestamp="1590503704497">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1232" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590503704497" />
+    <state x="839" y="218" key="SettingsEditor" timestamp="1590594093798">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="839" y="218" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590594093798" />
+    <state x="1021" y="100" width="806" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590439764474">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1021" y="100" width="806" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590439764474" />
+    <state x="669" y="149" key="new project wizard" timestamp="1590438568859">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="669" y="149" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1590438568859" />
+    <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1590631913587">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590631913587" />
   </component>
 </project>

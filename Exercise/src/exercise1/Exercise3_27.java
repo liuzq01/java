@@ -1,10 +1,10 @@
-package exercise3;
+package exercise1;
 
 import org.junit.Test;
 
 import java.util.Scanner;
 
-public class Exercise27
+public class Exercise3_27
 {
     //0<y<-x/2+100
     //&& 0<x<200

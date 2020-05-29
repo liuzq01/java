@@ -151,7 +151,7 @@ super: **在子类中**调用父类的属性、方法、构造器。
   - 实例变量：随着对象的创建而加载
   - 静态变量：随着类的加载而加载，只加载一次，在内存中仅存一份
 
-```
+```java
         private String name;   //实例变量name
         private int    age;    //实例变量age
         private static String nation="CN";  //静态变量nation
@@ -199,8 +199,8 @@ super: **在子类中**调用父类的属性、方法、构造器。
     - 默认初始化     //int a;
     - 显示初始化     //int a=1;
     - 代码块内初始化
-     - 构造器初始化 
-    - set方法
+    - 构造器初始化 
+    - 方法
 
 ### final
 
@@ -220,7 +220,7 @@ super: **在子类中**调用父类的属性、方法、构造器。
 
 - 抽象类：public abstract class Person(){}
     - 没有对象，不可实例化
-    - 必定有构造器，便于子类对象的全实例化
+    - 必定有构造器，便于子类对象的全实例化(子类不能继承父类的构造器？)
     - 必定有子类，子类对象实例化，实现相关功能
     
 - 抽象方法：public abstract void aFunction();
@@ -242,8 +242,8 @@ super: **在子类中**调用父类的属性、方法、构造器。
 ### 异常（*Exception*)
 - 常见异常
 
-| 编译时异常 | IOException(FileNotFoundException) | ClassNotFoundException         |                    |
-| ---------- | ---------------------------------- | ------------------------------ | ------------------ |
+| 编译时异常 | IOException(FileNotFoundException) | ClassNotFoundException         |                    |                   |
+| ---------- | ---------------------------------- | ------------------------------ | ------------------ |------------------ |
 | 运行时异常 | NullPointerException               | ArrayIndexOutOfBoundsException | ClassCastException | NumberFormatException |
 
 - why:出异常被catch住，使得后面的代码可以继续执行
@@ -269,7 +269,7 @@ super: **在子类中**调用父类的属性、方法、构造器。
     - new一个该类的对象 p
     - 启动线程：p.start()
 
-``` 
+```java
             a. 继承Thread类
 class PrimeThread extends Thread {
          long minPrime;
@@ -285,21 +285,21 @@ class PrimeThread extends Thread {
               . . .
 
      PrimeThread p = new PrimeThread(143);  c. new一个该类的对象 p
-     p.start();                             d. 启动线程：p.start()
+     p.start();                             d. 启动线程: p.start()
 ```
 
 2. 实现Runnable接口
     - 重写run（）
     - new一个该实现类的对象 p
     - 启动线程：new Thread(p).start()
-```
+```java
               a.实现Runnable接口
 class PrimeRun implements Runnable {
          long minPrime;
          PrimeRun(long minPrime) {
              this.minPrime = minPrime;
          }
-              b.重写run（）
+              b.重写run()
          public void run() {
              // compute primes larger than minPrime
               . . .
@@ -317,7 +317,7 @@ class PrimeRun implements Runnable {
     - 共享变量被改变的代码需要被同步
     - 代码块包住的代码既不可多，也不可少，恰好才行
     
-```
+```java
     synchronzied(锁)
 {
 //需要同步的代码
@@ -344,7 +344,7 @@ class PrimeRun implements Runnable {
     - p.lock()加锁，p.unlock()解锁
     - 常常借用try-finally，解锁的语句放在finally中，保证一定会解锁
     - 继承Thread类创建的多线程，p不唯一，需设为静态的
-    - p不是同步监视器(此法中无此概念)，但可以当做锁来看
+    - p不是同步监视器(此法中无此概念)，但可以当做锁来看,也必须是唯一的
     
 - 线程通信
     - 可联合使用notify()-wait()
@@ -378,12 +378,12 @@ class PrimeRun implements Runnable {
         - 关闭线程池
         - 线程需执行的操作写在run()中，它所在的类实现了Runnable接口
 ```java
-//    public static void main(String[] args)
-//    {
-//        ExecutorService executorService = Executors.newFixedThreadPool(10);  step1. 调用Executors的静态方法，创建线程池 p
-//        executorService.execute(new Even());  step2. 线程池对象 p 执行(execute)线程
-//        executorService.shutdown();           step3. 关闭线程池
-//    }
+    public static void main(String[] args)
+    {
+        ExecutorService executorService = Executors.newFixedThreadPool(10);  step1. 调用Executors的静态方法,创建线程池 p
+        executorService.execute(new Even());  step2. 线程池对象 p 执行(execute)线程
+        executorService.shutdown();           step3. 关闭线程池
+    }
 
 class Even implements Runnable
 {
@@ -398,10 +398,10 @@ class Even implements Runnable
         - 提高线程的重复利用率，效率高，节约内存
         - Executors功能更丰富，便于线程的管理
         
-```
+```java
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         ThreadPoolExecutor executorService1 = (ThreadPoolExecutor) executorService;   //转换为ThreadPoolExecutor类型后，
-        executorService1.setCorePoolSize(15);                                           可设置、管理线程池
+        executorService1.setCorePoolSize(15);                                           可设置&&管理线程池
 ```
 
 ### 值传递
@@ -412,15 +412,15 @@ class Even implements Runnable
 
 ### 常用类
 - String
-    - String s1="abc";     //"abc" 存储在方法区的常量池中，仅有一份
+    - String s1="abc";     //"abc" 存储在方法区的常量池中，仅有一份(现在改成堆了？)
     - String s3=new String("abc");   //new String("abc")存储在堆中
     - String s4="ab"+"cd";      //存储在常量池中
     - String s5=s1+"cd";(String s1="ab")  //有变量s1参与，存储在堆中
 
 - StringBuffer、StringBuilder
-    - String: 不可变的字符序列，底层使用char[]存储
-    - StringBuffer：可变的字符序列，线程安全，效率低，底层用char[]存储
-    - StringBuilder：可变的字符序列，线程不安全，效率高，底层用char[]存储
+    - String: 不可变的字符序列，底层使用char[]存储(现在改成byte[])
+    - StringBuffer：可变的字符序列，线程安全，效率低，底层用char[]存储(现在改成byte[])
+    - StringBuilder：可变的字符序列，线程不安全，效率高，底层用char[]存储(现在改成byte[])
     
 ### 时间、日期
 
@@ -437,7 +437,7 @@ class Even implements Runnable
             - LocalDateTime.now():获取当前时间日期的对象
         - 方法：getXxx()
         - 设置时间、日期：withXxx()
-```
+```java
         //now()
         LocalDateTime localDateTime=LocalDateTime.now();
         System.out.println(localDateTime);
@@ -457,7 +457,7 @@ class Even implements Runnable
     - Instant.now()：实例化/获取当前时间的对象
     - toEpochMilli()：时间戳，毫秒数
         
-```
+```java
         Instant instant=Instant.now();      //实例化/获取当前时间的对象
         System.out.println(instant);
         long l = instant.toEpochMilli();    //时间戳，毫秒数
@@ -473,7 +473,7 @@ class Even implements Runnable
     - 解析(字符串-->日期)
         - parse()
 
-```
+```java
         DateTimeFormatter dateTimeFormatter=DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
         //格式化
         String s= dateTimeFormatter.format(LocalDateTime.now());
@@ -492,7 +492,7 @@ class Even implements Runnable
     - 自定义类(Class A)需实现Comparable，并重写**compareTo**(),才能进行排序
     - Arrays.sort(array)
     
-```
+```java
     @Override       //重写compareTo()方法
     public int **compareTo**(Object o)
     {
@@ -522,7 +522,7 @@ class Even implements Runnable
     - 私有化属性，并设为常量
     - 私有化构造器
 
-```
+```java
     //enum修饰类名
 enum Season
 {
@@ -564,7 +564,7 @@ enum Season
     - Documented
     - Inherited
     
-```
+```java
 @Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE, MODULE})
 @Retention(RetentionPolicy.SOURCE)
 public @interface SuppressWarnings {
@@ -708,8 +708,8 @@ public @interface SuppressWarnings {
         
 ### 泛型(*generic*)
 
-- 泛型 
-    - 指定集合中元素的类型(都是引用数据类型)，安全，便于排序
+- 泛型类 
+    - 指定集合中元素的类型(都是引用数据类型)，安全，便于排序//
     - 静态方法中不能调用带泛型的属性：泛型在类的实例化时才指定具体类型，晚于静态方法的加载
     - 适用范围：集合
 - 泛型方法
@@ -766,7 +766,7 @@ public class Student<T>
     }
 ```
 - 通配符 ?
-    - ArrayList<?>是ArrayList<String>、ArrayList<Object>的父类，可以用多态写通用方法
+    - ArrayList<?>是ArrayList<String>、ArrayList<Object>的父类//，可以用多态写通用方法
 - 有限制的通配符 
     - List<? extends Person>是List<Person>、List<Student>的父类(Student是Person的子类)
         - 可读不可写
@@ -996,6 +996,7 @@ public class Student<T>
     - 使用条件：要求接口中的抽象方法的形参列表、返回值类型，和被引用方法的参、返相同(a、b)
     
 ### StreamAPI
+   - 适用范围： 集合
    - 实例化
         - list.stream(),list.parallelSteam()
         - Arrays.stream(array)
@@ -1041,4 +1042,18 @@ public class Student<T>
 ```
 - Java11 垃圾回收器
     
-### The End
+### Git Bash 的使用
+- 流程
+    - init->数字签名->clone->随便新建个文件，commit->master真正落地到本地仓库->new branch->...->
+    - commit->checkout 到 master->merge 新分支->删除新分支->pull request
+- 常用命令
+    - git checkout aNewBranch:切换之前，必须commit(或暂存),保证当前分支是clean的
+    - merge: 回到master，merge新分支，还要删除新分支
+    - git status: 查看状态，是否commit
+    - git log/git reflog
+    - mkdir aDir
+    - echo "Hello" > xxx.txt 
+    - git branch(查)/git branch aNewBranch(增)/git branch -d aNewBranch(删)
+    - rm file/rm -f aDir
+    - git config core.editor code: 设置 vs code为默认文本编辑器
+    

@@ -3,7 +3,7 @@ package singletonTest;
 import polymorphism.Test;
 
 public class SingletonTest
-{
+{   //video: 326
     //构造器私有化，不允许在类外部创建对象
     private SingletonTest()
     {
