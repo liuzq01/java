@@ -1,4 +1,4 @@
-package ListTest;
+package CollectionTest;
 
 import org.junit.Test;
 import CollectionTest.Person;
@@ -18,7 +18,7 @@ public class ListTest
         list.add(2,"abc");
         list.add(new Person("liu",22));
         System.out.println(list);
-        System.out.println("***********");
+        System.out.println("*****add******");
         //addAll
         ArrayList list1=new ArrayList();
         list1.add(333);
@@ -26,7 +26,7 @@ public class ListTest
         System.out.println(list1);
         list.addAll(list1);
         System.out.println(list);
-        System.out.println("***********");
+        System.out.println("******addAll*****");
         //remove
         list.remove("abc");
         System.out.println(list);

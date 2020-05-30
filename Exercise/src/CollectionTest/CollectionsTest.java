@@ -21,21 +21,21 @@ public class CollectionsTest
         System.out.println(list);
         Collections.reverse(list);
         System.out.println(list);
-        System.out.println("*******1*******");
+        System.out.println("*******reverse*******");
 //        Collections.sort(list);
 //        System.out.println(list);
         Collections.swap(list,2,3);
         System.out.println(list);
-        System.out.println("********2******");
+        System.out.println("********swap******");
         Collections.shuffle(list);
         System.out.println(list);
-        System.out.println("*********3*****");
+        System.out.println("*********shuffle*****");
         List list1= Arrays.asList("dingdong","haha");
 //        List list1= Arrays.asList(new Object[list.size()]);
 //        Collections.copy(list1,list);   //使得list1的元素个数与list相同，此处list1中都是null
         Collections.copy(list,list1);   //list前面的元素被list1覆盖了
         System.out.println(list);
-        System.out.println("**********4****");
+        System.out.println("**********copy****");
         Collections.replaceAll(list,"meng",666);
         System.out.println(list);
 //        System.out.println(Collections.min(list));

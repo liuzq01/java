@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise1_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise2_6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_27.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_28.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise1/Exercise3_28.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter10.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter9.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/subAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/subAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/singletonTest/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/singletonTest/SingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/ListTest/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/ListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/ListTest/ListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/exercise2/Chapter17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/exercise2/Chapter17.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,21 +64,8 @@
       <recent name="exercise2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Chapter17.test3">
-    <configuration name="Chapter12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter12" />
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter11.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Chapter18.test3">
+    <configuration name="Chapter18.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
@@ -98,46 +74,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter11" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter17.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter17" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter17.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter17" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chapter17.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Chapter18.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
@@ -146,8 +90,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter17" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter18.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18" />
       <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CollectionTest" />
+      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionsTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CollectionTest" />
+      <option name="MAIN_CLASS_NAME" value="CollectionTest.ListTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Chapter17.test3" />
-        <item itemvalue="JUnit.Chapter17.test1" />
-        <item itemvalue="JUnit.Chapter17.test" />
-        <item itemvalue="Application.Chapter12" />
-        <item itemvalue="JUnit.Chapter11.test" />
+        <item itemvalue="JUnit.Chapter18.test3" />
+        <item itemvalue="JUnit.Chapter18.test1" />
+        <item itemvalue="JUnit.Chapter18.test2" />
+        <item itemvalue="JUnit.CollectionsTest.test" />
+        <item itemvalue="JUnit.ListTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +187,7 @@
       <workItem from="1590502766653" duration="3430000" />
       <workItem from="1590506380937" duration="16518000" />
       <workItem from="1590571599183" duration="17487000" />
-      <workItem from="1590630790335" duration="17729000" />
+      <workItem from="1590630790335" duration="34335000" />
     </task>
     <servers />
   </component>
@@ -232,38 +224,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="368" y="96" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590503884296" />
-    <state width="1166" height="346" key="GridCell.Tab.0.bottom" timestamp="1590765696680">
+    <state width="1008" height="506" key="GridCell.Tab.0.bottom" timestamp="1590847411370">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1166" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
-    <state width="1166" height="346" key="GridCell.Tab.0.center" timestamp="1590765696680">
+    <state width="1008" height="506" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
+    <state width="1008" height="506" key="GridCell.Tab.0.center" timestamp="1590847411370">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1166" height="346" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
-    <state width="1166" height="346" key="GridCell.Tab.0.left" timestamp="1590765696680">
+    <state width="1008" height="506" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
+    <state width="1008" height="506" key="GridCell.Tab.0.left" timestamp="1590847411370">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1166" height="346" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
-    <state width="1166" height="346" key="GridCell.Tab.0.right" timestamp="1590765696680">
+    <state width="1008" height="506" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
+    <state width="1008" height="506" key="GridCell.Tab.0.right" timestamp="1590847411370">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1166" height="346" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590765696680" />
-    <state width="914" height="362" key="GridCell.Tab.1.bottom" timestamp="1590759035093">
+    <state width="1008" height="506" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
+    <state width="1877" height="362" key="GridCell.Tab.1.bottom" timestamp="1590845373878">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
-    <state width="914" height="362" key="GridCell.Tab.1.center" timestamp="1590759035093">
+    <state width="1877" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373878" />
+    <state width="1877" height="362" key="GridCell.Tab.1.center" timestamp="1590845373878">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
-    <state width="914" height="362" key="GridCell.Tab.1.left" timestamp="1590759035093">
+    <state width="1877" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373878" />
+    <state width="1877" height="362" key="GridCell.Tab.1.left" timestamp="1590845373877">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
-    <state width="914" height="362" key="GridCell.Tab.1.right" timestamp="1590759035093">
+    <state width="1877" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373877" />
+    <state width="1877" height="362" key="GridCell.Tab.1.right" timestamp="1590845373878">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590759035093" />
+    <state width="1877" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373878" />
     <state x="1232" y="250" key="RollbackChangesDialog" timestamp="1590503704497">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
