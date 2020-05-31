@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/ListTest/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/ListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/ListTest/ListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/exercise2/Chapter17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/exercise2/Chapter17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter18_review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter18.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise2/Chapter18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/exercise2/Chapter18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/exercise2/Chapter18.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +63,8 @@
       <recent name="exercise2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Chapter18.test3">
-    <configuration name="Chapter18.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Chapter18_review.test6">
+    <configuration name="Chapter18_review.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
@@ -74,30 +73,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter18.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18_review" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chapter18.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Chapter18_review.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
@@ -106,40 +89,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="exercise2" />
-      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18_review" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Chapter18_review.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="PATTERN" value="exercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionsTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18_review" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Chapter18_review.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
+          <option name="PATTERN" value="exercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.ListTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18_review" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter18_review.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise2" />
+      <option name="MAIN_CLASS_NAME" value="exercise2.Chapter18_review" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Chapter18.test3" />
-        <item itemvalue="JUnit.Chapter18.test1" />
-        <item itemvalue="JUnit.Chapter18.test2" />
-        <item itemvalue="JUnit.CollectionsTest.test" />
-        <item itemvalue="JUnit.ListTest.test" />
+        <item itemvalue="JUnit.Chapter18_review.test6" />
+        <item itemvalue="JUnit.Chapter18_review.test5" />
+        <item itemvalue="JUnit.Chapter18_review.test4" />
+        <item itemvalue="JUnit.Chapter18_review.test3" />
+        <item itemvalue="JUnit.Chapter18_review.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +186,8 @@
       <workItem from="1590502766653" duration="3430000" />
       <workItem from="1590506380937" duration="16518000" />
       <workItem from="1590571599183" duration="17487000" />
-      <workItem from="1590630790335" duration="34335000" />
+      <workItem from="1590630790335" duration="49828000" />
+      <workItem from="1590909532734" duration="10625000" />
     </task>
     <servers />
   </component>
@@ -208,6 +208,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1032" y="198" width="816" height="731" key="#Intentions" timestamp="1590911089972">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1032" y="198" width="816" height="731" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1590911089972" />
     <state x="1154" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590760410380">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -224,38 +228,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="368" y="96" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590503884296" />
-    <state width="1008" height="506" key="GridCell.Tab.0.bottom" timestamp="1590847411370">
+    <state width="914" height="250" key="GridCell.Tab.0.bottom" timestamp="1590928349162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1008" height="506" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
-    <state width="1008" height="506" key="GridCell.Tab.0.center" timestamp="1590847411370">
+    <state width="914" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590928349162" />
+    <state width="914" height="250" key="GridCell.Tab.0.center" timestamp="1590928349162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1008" height="506" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
-    <state width="1008" height="506" key="GridCell.Tab.0.left" timestamp="1590847411370">
+    <state width="914" height="250" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590928349162" />
+    <state width="914" height="250" key="GridCell.Tab.0.left" timestamp="1590928349162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1008" height="506" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
-    <state width="1008" height="506" key="GridCell.Tab.0.right" timestamp="1590847411370">
+    <state width="914" height="250" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590928349162" />
+    <state width="914" height="250" key="GridCell.Tab.0.right" timestamp="1590928349162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1008" height="506" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590847411370" />
-    <state width="1877" height="362" key="GridCell.Tab.1.bottom" timestamp="1590845373878">
+    <state width="914" height="250" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590928349162" />
+    <state width="914" height="466" key="GridCell.Tab.1.bottom" timestamp="1590865186212">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373878" />
-    <state width="1877" height="362" key="GridCell.Tab.1.center" timestamp="1590845373878">
+    <state width="914" height="466" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590865186212" />
+    <state width="914" height="466" key="GridCell.Tab.1.center" timestamp="1590865186211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373878" />
-    <state width="1877" height="362" key="GridCell.Tab.1.left" timestamp="1590845373877">
+    <state width="914" height="466" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590865186211" />
+    <state width="914" height="466" key="GridCell.Tab.1.left" timestamp="1590865186211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373877" />
-    <state width="1877" height="362" key="GridCell.Tab.1.right" timestamp="1590845373878">
+    <state width="914" height="466" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590865186211" />
+    <state width="914" height="466" key="GridCell.Tab.1.right" timestamp="1590865186211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590845373878" />
+    <state width="914" height="466" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590865186211" />
     <state x="1232" y="250" key="RollbackChangesDialog" timestamp="1590503704497">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -272,6 +276,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="669" y="149" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1590438568859" />
+    <state x="1141" y="167" key="refactoring.ChangeSignatureDialog" timestamp="1590914261695">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1141" y="167" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590914261695" />
     <state x="1103" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1590631913587">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

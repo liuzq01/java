@@ -38,7 +38,7 @@
 - [lambda表达式](#lambda表达式)
 - [StreamAPI](#streamapi)
 - [Java9、10、11 新特性](#java91011-新特性)
-- [The End](#the-end)
+- [Git Bash 的使用](#git-bash-的使用)
 
 <!-- /code_chunk_output -->
 
@@ -1056,4 +1056,30 @@ public class Student<T>
     - git branch(查)/git branch aNewBranch(增)/git branch -d aNewBranch(删)
     - rm file/rm -f aDir
     - git config core.editor code: 设置 vs code为默认文本编辑器
-    
+### 递归
+- 特点
+    - 递归方法使用if-else来引导不同的情况
+    - 一个或多个基础情况来停止递归
+    - 每次递归调用都会简化原始问题，让它不断地接近基础情况，直到变成基础情况为止
+- 递归与迭代
+    - 递归是不用循环控制的重复，必须有选择语句控制是否继续调用递归方法
+    - 任何用递归解决的问题都可以用非递归的迭代解决
+    - 缺点：占用内存大，耗时，效率低。改进方案:尾递归
+```java
+//尾递归
+    public long factorial(int n)
+    {
+        return factorial(n, 1);
+    }
+
+    /****辅助方法****/
+    private long factorial(int n, int result)
+    {
+        if (n == 0)
+            return result;
+        else
+            return factorial(n - 1, n * result);
+    }
+//辅助方法方法包括了一个辅助参数result, 它存储了n的阶乘结果。这个方法在第1077行被递归
+//调用,之后，就没有后续的操作
+```
