@@ -584,7 +584,7 @@ public @interface SuppressWarnings {
         - LinkedHashSet
         - TreeSet
     - 常用方法
-        - size(),add(),addAll(),clear(),isEmpty()
+        - size(),add(),addAll()(类似于并集),clear(),isEmpty()
         - contains(new A())： A需重写equals()方法    
         - remove(a)：A需重写equals()方法
         - coll.removeAll(collection)

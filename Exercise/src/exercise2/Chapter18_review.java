@@ -99,11 +99,12 @@ public class Chapter18_review
         int i = binarySearch(doubles, 0, doubles.size(), 56.7);
         System.out.println(i);
     }
-    public int binarySearch(ArrayList<Double> arrayList,int a,int b,double x)
+    public int binarySearch(ArrayList<Double> arrayList,int a,int b, double x)
     {
        int index=(a+b)/2;
        if (index==a)
        {
+
            if (Math.abs(arrayList.get(a)-x)<1e-6) return a;
            if (Math.abs(arrayList.get(b)-x)<1e-6) return b;
            else return -1;
