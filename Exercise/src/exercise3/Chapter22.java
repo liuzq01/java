@@ -99,7 +99,7 @@ public class Chapter22
         int read = fileReader.read();
         //取出所有的字符，一个一个的存入list
         char ch;
-        while (read != -1)
+    while (read != -1)
         {
             ch = (char) read;
             list.add(ch);
