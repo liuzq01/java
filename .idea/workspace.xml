@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/IOtest/FindTittle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/exercise3/Chapter22.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/exercise3/Chapter22.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/META-INF/GithubRepository.kotlin_module" beforeDir="false" />
-    </list>
+    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,9 +36,6 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1cPke5MZ2q9Xfpo8BFv2mKf4Pzy" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="新增" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,6 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -189,6 +183,7 @@
       <workItem from="1591100200177" duration="4803000" />
       <workItem from="1591171648146" duration="55000" />
       <workItem from="1591181049617" duration="104000" />
+      <workItem from="1591197491458" duration="229000" />
     </task>
     <servers />
   </component>
@@ -284,6 +279,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1081" y="287" width="540" height="524" key="StructurePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1591085403499" />
+    <state x="1032" y="272" key="Vcs.Push.Dialog.v2" timestamp="1591197525021">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1032" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591197525021" />
     <state x="1191" y="383" key="cloudConfig.SelfSettingsDialog" timestamp="1591071333915">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
