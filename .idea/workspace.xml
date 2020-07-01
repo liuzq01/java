@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="" />
+    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Exercise/src/aRename/Rename.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Student.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +43,9 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1cPke5MZ2q9Xfpo8BFv2mKf4Pzy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,23 +66,7 @@
       <recent name="exercise2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindTittle.test">
-    <configuration name="Chapter21.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exercise3" />
-      <option name="MAIN_CLASS_NAME" value="exercise3.Chapter21" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Rename.test">
     <configuration name="Chapter22.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
@@ -121,17 +115,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamAPItest1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Rename.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java8NewFeature.*" />
+          <option name="PATTERN" value="aRename.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Java8NewFeature" />
-      <option name="MAIN_CLASS_NAME" value="Java8NewFeature.StreamAPItest1" />
+      <option name="PACKAGE_NAME" value="aRename" />
+      <option name="MAIN_CLASS_NAME" value="aRename.Rename" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rename.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aRename.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aRename" />
+      <option name="MAIN_CLASS_NAME" value="aRename.Rename" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Rename.test" />
+        <item itemvalue="JUnit.Rename.test2" />
         <item itemvalue="JUnit.FindTittle.test" />
         <item itemvalue="JUnit.Chapter22.test2" />
         <item itemvalue="JUnit.Chapter22.test" />
-        <item itemvalue="JUnit.StreamAPItest1.test" />
-        <item itemvalue="JUnit.Chapter21.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +194,15 @@
       <workItem from="1591171648146" duration="55000" />
       <workItem from="1591181049617" duration="104000" />
       <workItem from="1591197491458" duration="229000" />
+      <workItem from="1591260950575" duration="702000" />
+      <workItem from="1592658273621" duration="105000" />
+      <workItem from="1593422627154" duration="5123000" />
+      <workItem from="1593444157471" duration="105000" />
+      <workItem from="1593503395187" duration="1045000" />
+      <workItem from="1593504482409" duration="308000" />
+      <workItem from="1593507234619" duration="1833000" />
+      <workItem from="1593512047857" duration="9000" />
+      <workItem from="1593534102871" duration="3122000" />
     </task>
     <servers />
   </component>
@@ -231,42 +250,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1118" y="317" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591080035914" />
-    <state width="1114" height="403" key="GridCell.Tab.0.bottom" timestamp="1591171703722">
+    <state width="1211" height="175" key="GridCell.Tab.0.bottom" timestamp="1593537185710">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1114" height="403" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591171703722" />
-    <state width="1114" height="403" key="GridCell.Tab.0.center" timestamp="1591171703722">
+    <state width="1211" height="175" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
+    <state width="1211" height="175" key="GridCell.Tab.0.center" timestamp="1593537185710">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1114" height="403" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591171703722" />
-    <state width="1114" height="403" key="GridCell.Tab.0.left" timestamp="1591171703722">
+    <state width="1211" height="175" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
+    <state width="1211" height="175" key="GridCell.Tab.0.left" timestamp="1593537185710">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1114" height="403" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591171703722" />
-    <state width="1114" height="403" key="GridCell.Tab.0.right" timestamp="1591171703722">
+    <state width="1211" height="175" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
+    <state width="1211" height="175" key="GridCell.Tab.0.right" timestamp="1593537185710">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1114" height="403" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591171703722" />
-    <state width="1138" height="461" key="GridCell.Tab.1.bottom" timestamp="1591023413281">
+    <state width="1211" height="175" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
+    <state width="914" height="461" key="GridCell.Tab.1.bottom" timestamp="1593423066753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1138" height="461" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591023413281" />
-    <state width="1138" height="461" key="GridCell.Tab.1.center" timestamp="1591023413281">
+    <state width="914" height="461" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1593423066753" />
+    <state width="914" height="461" key="GridCell.Tab.1.center" timestamp="1593423066753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1138" height="461" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591023413281" />
-    <state width="1138" height="461" key="GridCell.Tab.1.left" timestamp="1591023413281">
+    <state width="914" height="461" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1593423066753" />
+    <state width="914" height="461" key="GridCell.Tab.1.left" timestamp="1593423066753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1138" height="461" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591023413281" />
-    <state width="1138" height="461" key="GridCell.Tab.1.right" timestamp="1591023413281">
+    <state width="914" height="461" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1593423066753" />
+    <state width="914" height="461" key="GridCell.Tab.1.right" timestamp="1593423066753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1138" height="461" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591023413281" />
-    <state x="198" y="282" key="IDE.errors.dialog" timestamp="1591102549182">
+    <state width="914" height="461" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1593423066753" />
+    <state x="198" y="282" key="IDE.errors.dialog" timestamp="1591261534550">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="198" y="282" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591102549182" />
+    <state x="198" y="282" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591261534550" />
     <state x="1232" y="250" key="RollbackChangesDialog" timestamp="1590503704497">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

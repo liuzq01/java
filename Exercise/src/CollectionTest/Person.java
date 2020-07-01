@@ -17,6 +17,23 @@ public class Person
         this.age = age;
     }
 
+    public int aMehtod()
+    {
+        return 0;
+    }
+    private void aMethod()
+    {
+        //
+    }
+    public static void aMethod1()
+    {
+        //
+    }
+    public final void aMethod2()
+    {
+        //
+    }
+
     public String getName()
     {
         return name;

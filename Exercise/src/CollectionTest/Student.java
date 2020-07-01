@@ -2,7 +2,7 @@ package CollectionTest;
 
 import java.util.Objects;
 
-public class Student
+public class Student extends Person
 {
     private String name;
     private int score;
@@ -14,6 +14,22 @@ public class Student
         this.score = score;
         this.id = id;
     }
+    public int aMehtod()    //重写
+    {
+        return 0;
+    }
+    private void aMethod()  //private,不是重写
+    {
+        //
+    }
+    public static void aMethod1() //static,不是重写
+    {
+        //
+    }
+//    public final void aMethod2()  //报错，final，不能重写
+//    {
+//        //
+//    }
 
     public String getName()
     {
