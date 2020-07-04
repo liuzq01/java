@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/aRename/Rename.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/Student.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +198,8 @@
       <workItem from="1593507234619" duration="1833000" />
       <workItem from="1593512047857" duration="9000" />
       <workItem from="1593534102871" duration="3122000" />
+      <workItem from="1593631699331" duration="1405000" />
+      <workItem from="1593633651865" duration="364000" />
     </task>
     <servers />
   </component>

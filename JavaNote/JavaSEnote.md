@@ -9,12 +9,12 @@
 - [super 关键字](#super-关键字)
 - [super 与 this](#super-与-this)
 - [多态  （polymorphism）](#多态-polymorphism)
-- [包装类、基本数据类型、toString的转换](#包装类基本数据类型tostring的转换)
-- [static 关键字、变量的分类](#static-关键字变量的分类)
+- [包装类、基本数据类型、toString的转换](#包装类-基本数据类型-tostring的转换)
+- [static 关键字、变量的分类](#static-关键字-变量的分类)
 - [单例模式](#单例模式)
 - [代码块](#代码块)
 - [final](#final)
-- [抽象类、抽象方法 (*abstract*)](#抽象类抽象方法-abstract)
+- [抽象类、抽象方法 (*abstract*)](#抽象类-抽象方法-abstract)
 - [接口（interface）](#接口interface)
 - [异常（*Exception*)](#异常exception)
 - [多线程](#多线程)
@@ -23,8 +23,8 @@
 - [创建多线程的新方法](#创建多线程的新方法)
 - [值传递](#值传递)
 - [常用类](#常用类)
-- [时间、日期](#时间日期)
-- [Comparable、Comparator](#comparablecomparator)
+- [时间、日期](#时间-日期)
+- [Comparable、Comparator](#comparable-comparator)
 - [Enum类](#enum类)
 - [注解（*Annotation*）](#注解annotation)
 - [集合](#集合)
@@ -34,10 +34,10 @@
 - [泛型(*generic*)](#泛型generic)
 - [IO流](#io流)
 - [网络编程](#网络编程)
-- [反射(reflection )](#反射reflection-)
+- [反射(reflection )](#反射reflection)
 - [lambda表达式](#lambda表达式)
 - [StreamAPI](#streamapi)
-- [Java9、10、11 新特性](#java91011-新特性)
+- [Java9、10、11 新特性](#java9-10-11-新特性)
 - [Git Bash 的使用](#git-bash-的使用)
 - [递归](#递归)
 
@@ -637,7 +637,7 @@ public @interface SuppressWarnings {
     - LinkedHashMap
         - HashMap的子类，可按添加的顺序遍历元素，适用于频繁遍历的情况
     - TreeMap
-        - 存储方式为红黑树，可按添加的顺序排序、遍历
+        - 存储方式为红黑树，可按添加的顺序排序、遍历(?)
     - Hashtable
     - Properties
         - 处理配置文件
