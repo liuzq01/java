@@ -107,5 +107,33 @@ public class Rename
             files[i].renameTo(file1);
         }
     }
+    @Test
+    public void test3()
+    {
+        //计算纳指(纳指100、三倍做多)年增长率
+//        double a=2114;  //2010.8.31       纳指的点数
+//        double b=11019; //2020.8.14
+
+        double a=32.528;  //2010.8.31       纳指100的点数
+        double b=272.160; //2020.8.14
+
+//        double a=0.100;  //2010.8.31      纳指100三倍做多的点数
+//        double b=127.53; //2020.8.14      10年涨1000多倍，恐怖
+
+        double rate;    //年均增长率
+        double money;   //涨跌幅度
+        rate = Math.pow(b/a,0.1) - 1;   //复利模型：(1+r)^10=b/a
+        System.out.println("***************************************");
+        System.out.println("年均增长率: "+rate);
+        System.out.println("***************************************");
+        //逐年计算涨跌幅度
+        for (int i = 1; i <=10; i++)
+        {
+            money= Math.pow(1+rate,i)-1;
+            System.out.printf(i+" , "+"%.3f",money*100);
+            System.out.println("%");
+        }
+        System.out.println("***************************************");
+    }
 
 }

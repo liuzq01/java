@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/aRename/Rename.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/aRename/Rename.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,39 +61,7 @@
       <recent name="exercise2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Rename.test">
-    <configuration name="Chapter22.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exercise3" />
-      <option name="MAIN_CLASS_NAME" value="exercise3.Chapter22" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter22.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="exercise3" />
-      <option name="MAIN_CLASS_NAME" value="exercise3.Chapter22" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Rename.test3">
     <configuration name="FindTittle.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GithubRepository" />
       <extension name="coverage">
@@ -142,13 +110,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Rename.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aRename.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aRename" />
+      <option name="MAIN_CLASS_NAME" value="aRename.Rename" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rename.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GithubRepository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aRename.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aRename" />
+      <option name="MAIN_CLASS_NAME" value="aRename.Rename" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Rename.test3" />
+        <item itemvalue="JUnit.Rename.test4" />
         <item itemvalue="JUnit.Rename.test" />
         <item itemvalue="JUnit.Rename.test2" />
         <item itemvalue="JUnit.FindTittle.test" />
-        <item itemvalue="JUnit.Chapter22.test2" />
-        <item itemvalue="JUnit.Chapter22.test" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +200,9 @@
       <workItem from="1593534102871" duration="3122000" />
       <workItem from="1593631699331" duration="1405000" />
       <workItem from="1593633651865" duration="364000" />
+      <workItem from="1596619128351" duration="645000" />
+      <workItem from="1596716737324" duration="153000" />
+      <workItem from="1597500401238" duration="6851000" />
     </task>
     <servers />
   </component>
@@ -247,22 +250,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1118" y="317" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591080035914" />
-    <state width="1211" height="175" key="GridCell.Tab.0.bottom" timestamp="1593537185710">
+    <state width="1211" height="350" key="GridCell.Tab.0.bottom" timestamp="1597506794853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1211" height="175" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
-    <state width="1211" height="175" key="GridCell.Tab.0.center" timestamp="1593537185710">
+    <state width="1211" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597506794853" />
+    <state width="1211" height="350" key="GridCell.Tab.0.center" timestamp="1597506794853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1211" height="175" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
-    <state width="1211" height="175" key="GridCell.Tab.0.left" timestamp="1593537185710">
+    <state width="1211" height="350" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597506794853" />
+    <state width="1211" height="350" key="GridCell.Tab.0.left" timestamp="1597506794853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1211" height="175" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
-    <state width="1211" height="175" key="GridCell.Tab.0.right" timestamp="1593537185710">
+    <state width="1211" height="350" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597506794853" />
+    <state width="1211" height="350" key="GridCell.Tab.0.right" timestamp="1597506794853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1211" height="175" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1593537185710" />
+    <state width="1211" height="350" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597506794853" />
     <state width="914" height="461" key="GridCell.Tab.1.bottom" timestamp="1593423066753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
