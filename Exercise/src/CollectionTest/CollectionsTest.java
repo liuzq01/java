@@ -36,7 +36,7 @@ public class CollectionsTest
         Collections.copy(list,list1);   //list前面的元素被list1覆盖了
         System.out.println(list);
         System.out.println("**********copy****");
-        Collections.replaceAll(list,"meng",666);
+        Collections.replaceAll(list,"meng",666);//replaceAll类似word中的查找与替换
         System.out.println(list);
 //        System.out.println(Collections.min(list));
 //        System.out.println(Collections.max(list));

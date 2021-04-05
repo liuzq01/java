@@ -18,6 +18,7 @@ public class HashSetTest
         System.out.println(hashSet);    //[Person{name='liu', age=23}, Person{name='li', age=22}]
         p1.setName("gao");
         hashSet.remove(p1);     // 按照内存中的地址值查找元素: NO; 按照hashCode()和equals()查找元素: YES.
+                                //按照hashCode()查找，没找到，没删掉
         System.out.println(hashSet);    //[Person{name='liu', age=23}, Person{name='gao', age=22}]
         Person p3=new Person("gao",22);
         hashSet.add(p3);

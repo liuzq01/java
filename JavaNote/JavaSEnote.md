@@ -9,12 +9,12 @@
 - [super 关键字](#super-关键字)
 - [super 与 this](#super-与-this)
 - [多态  （polymorphism）](#多态-polymorphism)
-- [包装类、基本数据类型、toString的转换](#包装类-基本数据类型-tostring的转换)
-- [static 关键字、变量的分类](#static-关键字-变量的分类)
+- [包装类、基本数据类型、toString的转换](#包装类基本数据类型tostring的转换)
+- [static 关键字、变量的分类](#static-关键字变量的分类)
 - [单例模式](#单例模式)
 - [代码块](#代码块)
 - [final](#final)
-- [抽象类、抽象方法 (*abstract*)](#抽象类-抽象方法-abstract)
+- [抽象类、抽象方法 (*abstract*)](#抽象类抽象方法-abstract)
 - [接口（interface）](#接口interface)
 - [异常（*Exception*)](#异常exception)
 - [多线程](#多线程)
@@ -23,8 +23,8 @@
 - [创建多线程的新方法](#创建多线程的新方法)
 - [值传递](#值传递)
 - [常用类](#常用类)
-- [时间、日期](#时间-日期)
-- [Comparable、Comparator](#comparable-comparator)
+- [时间、日期](#时间日期)
+- [Comparable、Comparator](#comparablecomparator)
 - [Enum类](#enum类)
 - [注解（*Annotation*）](#注解annotation)
 - [集合](#集合)
@@ -34,10 +34,10 @@
 - [泛型(*generic*)](#泛型generic)
 - [IO流](#io流)
 - [网络编程](#网络编程)
-- [反射(reflection )](#反射reflection)
+- [反射(reflection )](#反射reflection-)
 - [lambda表达式](#lambda表达式)
 - [StreamAPI](#streamapi)
-- [Java9、10、11 新特性](#java9-10-11-新特性)
+- [Java9、10、11 新特性](#java91011-新特性)
 - [Git Bash 的使用](#git-bash-的使用)
 - [递归](#递归)
 
@@ -409,7 +409,7 @@ class Even implements Runnable
 
 - function(int a){...}    基本数据类型，传递的是值
 
-- function(String a){...}     引用数据类型，传递的是地址值？不是a指向的对象？
+- function(String a){...}     引用数据类型，传递的是对象的内容，属性、方法、构造器等
 
 ### 常用类
 - String
@@ -419,9 +419,9 @@ class Even implements Runnable
     - String s5=s1+"cd";(String s1="ab")  //有变量s1参与，存储在堆中
 
 - StringBuffer、StringBuilder
-    - String: 不可变的字符序列，底层使用char[]存储(现在改成byte[])
-    - StringBuffer：可变的字符序列，线程安全，效率低，底层用char[]存储(现在改成byte[])
-    - StringBuilder：可变的字符序列，线程不安全，效率高，底层用char[]存储(现在改成byte[])
+    - String: 不可变的字符序列，底层使用byte[]存储
+    - StringBuffer：可变的字符序列，线程安全，效率低，底层用byte[]存储
+    - StringBuilder：可变的字符序列，线程不安全，效率高，底层用byte[]存储
     
 ### 时间、日期
 
@@ -812,7 +812,7 @@ public class Student<T>
 - File类常用方法
     - getAbsolutePath,getPath,getName,getParent
     - length,lastModified,renameTo，delete,createNewFile
-    - list(),listFiles():返回所有的文件和文件夹
+    - list(),listFiles():返回所有的文件和文件夹(带路径/不带路径)
     - isDirectory(),isFile(),exists(),canRead(),canWrite(),isHidden()
     - mkdir;mkdirs:创建目录，上层目录不存在，不创建；创建
     - 目录下有文件，无法删除该目录，需先删除所有文件，再遍历目录并由里到外删除所有目录
@@ -880,8 +880,8 @@ public class Student<T>
     - 常用方法：getHostName,getHostAddress
     - socket=ip+端口号 
 - TCP编程
-    - client: socket对象(ip+端口号)-->输出流-->写出数据-->关闭流、socket    
-    - server: socket对象(端口号)-->调用accept-->输入流-->读入数据-->资源关闭
+    - client: Socket对象(ip+端口号)-->输出流-->写出数据-->关闭流、socket    
+    - server: ServerSocket对象(端口号)-->调用accept-->输入流-->读入数据-->资源关闭
     - socket.shutdownOutput(); : 客户端发送完毕，主动关闭输出
 - UDP编程
     - sender: DatagramSocket对象socket-->DatagramPacket对象packet-->socket.sent(packet)-->关闭socket    
@@ -1045,7 +1045,7 @@ public class Student<T>
     
 ### Git Bash 的使用
 - 流程
-    - init->数字签名->clone->随便新建个文件，commit->master真正落地到本地仓库->new branch->...->
+    - init->数字签名->clone->随便新建个文件，commit->master真正落地到本地仓库->git branch aNewBranch(增)->...->
     - commit->checkout 到 master->merge 新分支->删除新分支->pull request
 - 常用命令
     - git checkout aNewBranch:切换之前，必须commit(或暂存),保证当前分支是clean的
