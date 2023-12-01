@@ -1002,7 +1002,7 @@ public class Student<T>
         - list.stream(),list.parallelSteam()
         - Arrays.stream(array)
         - Stream.of()
-        - 每次终止操作结束以后，需要重新创建一个stream，不能用原来的；类似于Iterator
+        - 每次终止操作结束以后，需要重新创建一个stream，不能用原来的
    - 中间操作(intermediate operation)
         - 映射
             - map：形参为函数式接口的对象，对象可以是单个元素，也可以是集合， 集合作为一个整体被映射
