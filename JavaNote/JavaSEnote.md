@@ -1067,7 +1067,7 @@ public class Student<T>
     - 任何用递归解决的问题都可以用非递归的迭代解决
     - 缺点：占用内存大，耗时，效率低。改进方案:尾递归
 ```java
-//尾递归
+//尾递归，在程序的最后一行，自己调自己
     public long factorial(int n)
     {
         return factorial(n, 1);
