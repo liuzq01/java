@@ -8,7 +8,7 @@ public class CollectionExercise
 {
     public static void main(String[] args)
     {
-        // 由键盘输入10个数，保存到List,倒序、从大到小输出
+        // 由键盘输入10个数，保存到List；倒序；从大到小输出。
         Scanner scanner=new Scanner( System.in);
         System.out.println("plz input :");
         int i1;
