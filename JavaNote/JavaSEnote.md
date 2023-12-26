@@ -656,7 +656,7 @@ public @interface SuppressWarnings {
 ```    
         
     - 计算key的hash值，找到Node[]上对应的位置，没有元素，这一对(key,value)添加成功；
-    - 有元素，该位置上的元素以链表的方式存储。需要把新元素与链表上的所有元素做对比，比较两者的key的hash值，都不相同，添加成功；
+    - 有元素，该位置上的元素以链表的方式存储。需要把新元素与链表上的所有元素做对比，比较两者的key的hash值(?)，都不相同，添加成功；
     - 有相同的，调用equals()比较两者的key，不同，添加成功；
     - 相同，以新的(key,value)替换掉原来的(key,value1)，相当于修改了元素。
     - 缺点：需要遍历链表上所有的元素并逐个做对比，当元素过多，效率变低
@@ -1002,7 +1002,7 @@ public class Student<T>
         - list.stream(),list.parallelSteam()
         - Arrays.stream(array)
         - Stream.of()
-        - 每次终止操作结束以后，需要重新创建一个stream，不能用原来的；类似于Iterator
+        - 每次终止操作结束以后，需要重新创建一个stream，不能用原来的
    - 中间操作(intermediate operation)
         - 映射
             - map：形参为函数式接口的对象，对象可以是单个元素，也可以是集合， 集合作为一个整体被映射
@@ -1067,7 +1067,7 @@ public class Student<T>
     - 任何用递归解决的问题都可以用非递归的迭代解决
     - 缺点：占用内存大，耗时，效率低。改进方案:尾递归
 ```java
-//尾递归
+//尾递归，在程序的最后一行，自己调自己
     public long factorial(int n)
     {
         return factorial(n, 1);

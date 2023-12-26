@@ -12,7 +12,7 @@ public class CollectionExercise1
     @Test
     public  void test1()
     {
-        TreeSet treeSet=new TreeSet(new Comparator()
+        TreeSet treeSet=new TreeSet(new Comparator()//为什么不先往集合里添加数据，然后再排序？
         {
             @Override
             public int compare(Object o1, Object o2)
@@ -26,7 +26,7 @@ public class CollectionExercise1
                 throw new RuntimeException("输入数据有误");
             }
         });
-        treeSet.add(new Student("li",88,01));
+        treeSet.add(new Student("li",88,01));//如果new的元素一样，会怎样？能不能都存在treeSet里面？
         treeSet.add(new Student("liu",77,05));
         treeSet.add(new Student("lin",66,04));
         treeSet.add(new Student("wang",90,07));
