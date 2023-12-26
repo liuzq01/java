@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/ListT21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/MapT21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/ComparableTest/Comparable21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/ComparableTest/Good21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/tooler/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/tooler/EmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/tooler/FirstSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/CollectionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/CollectionTest/HashSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/CollectionTest/HashSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/aRename/Rename.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/aRename/Rename.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaNote/JavaSEnote.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/HashSetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GithubRepository/CollectionTest/HashSetTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -222,7 +212,24 @@
       <workItem from="1616578185751" duration="2939000" />
       <workItem from="1616796808429" duration="3204000" />
       <workItem from="1617266813979" duration="39000" />
-      <workItem from="1617581853670" duration="5692000" />
+      <workItem from="1617581853670" duration="6900000" />
+      <workItem from="1617782221045" duration="22000" />
+      <workItem from="1637080350933" duration="522000" />
+      <workItem from="1637813880346" duration="69000" />
+      <workItem from="1644970709881" duration="76000" />
+      <workItem from="1645219620104" duration="26000" />
+      <workItem from="1645219652935" duration="12000" />
+      <workItem from="1645219739533" duration="74000" />
+      <workItem from="1645844666654" duration="277000" />
+      <workItem from="1645997059573" duration="190000" />
+      <workItem from="1654299213561" duration="340000" />
+      <workItem from="1654488239996" duration="14000" />
+      <workItem from="1692285891908" duration="266000" />
+      <workItem from="1692286220067" duration="54000" />
+      <workItem from="1692287882376" duration="25000" />
+      <workItem from="1692292685662" duration="28000" />
+      <workItem from="1692292722932" duration="16000" />
+      <workItem from="1692296054496" duration="14000" />
     </task>
     <servers />
   </component>
@@ -250,22 +257,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="710" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1617585757001" />
-    <state width="1877" height="452" key="GridCell.Tab.0.bottom" timestamp="1617587485284">
+    <state width="1877" height="452" key="GridCell.Tab.0.bottom" timestamp="1617622640060">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617587485284" />
-    <state width="1877" height="452" key="GridCell.Tab.0.center" timestamp="1617587485284">
+    <state width="1877" height="452" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640060" />
+    <state width="1877" height="452" key="GridCell.Tab.0.center" timestamp="1617622640044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617587485284" />
-    <state width="1877" height="452" key="GridCell.Tab.0.left" timestamp="1617587485284">
+    <state width="1877" height="452" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640044" />
+    <state width="1877" height="452" key="GridCell.Tab.0.left" timestamp="1617622640044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617587485284" />
-    <state width="1877" height="452" key="GridCell.Tab.0.right" timestamp="1617587485284">
+    <state width="1877" height="452" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640044" />
+    <state width="1877" height="452" key="GridCell.Tab.0.right" timestamp="1617622640044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617587485284" />
+    <state width="1877" height="452" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640044" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617586855962">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
