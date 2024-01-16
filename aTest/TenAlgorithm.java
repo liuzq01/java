@@ -14,9 +14,9 @@ public class TenAlgorithm {
             arr[i]=random.nextInt(101); // 生成0到100之间的随机数
         }
         int temp=0; 
-        for (int k = 0; k < arr.length-1; k++)
+        for (int k = arr.length-2; k >=0; k--)
          {
-            for(int i=0 ;i<k;i++)
+            for(int i=0 ;i<=k;i++)
             {
                 if (arr[i]>arr[i+1])
                 {
@@ -27,8 +27,11 @@ public class TenAlgorithm {
             }
         }
         //System.out.println(arr.toString());
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        for (int i=0;i<arr.length;i++) {
+            System.out.printf("%d ",arr[i]);
+            if ((i+1)%5==0 ) {
+                System.out.println();
+            }
         }
     }
     @Test
@@ -41,16 +44,16 @@ public class TenAlgorithm {
             arr[i]=random.nextInt(101); // 生成0到100之间的随机数
         }
         int temp=arr[0];int n =0;                       //可以同时找最大、最小值
-        for (int k = 0; k < arr.length; k++) {
-            for (int i = 0; i < k; i++) {
+        for (int k = arr.length-1; k >=1; k--) {
+            for (int i = 0; i <= k; i++) {
                 if (arr[i]>temp) {
                     temp=arr[i];
                     n=i;
                 }
-                if (i==k-1) {   //to modify
-                    temp=arr[i];
-                    arr[i]=arr[n];
-                    arr[n]=temp;
+                if (i==k) {   
+                    arr[n]=arr[i];
+                    arr[i]=temp;
+                    temp=arr[0]; n=0;   //重置temp和n的值
                 }
     
             }
@@ -72,6 +75,6 @@ public class TenAlgorithm {
         for (int i = 0; i < arr.length; i++) {
             arr[i]=random.nextInt(101); // 生成0到100之间的随机数
         }
-        
+
     }
 }
