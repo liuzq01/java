@@ -3,7 +3,7 @@ import java.util.Random;
 
 import org.junit.Test;
 
-public class TenAlgorithm {
+public class ThreeAlgorithm {
     @Test
     public  void test1()
     {
@@ -97,42 +97,5 @@ public class TenAlgorithm {
                 System.out.println();
             }
         }
-
- /**        int temp=0;int k=0;int i = 0; int j = 0;
-        if (arr[1]<arr[0]) {
-            temp=arr[1];
-            arr[1]=arr[0];
-            arr[0]=temp;
-        }
-        for ( k = 2; k <= arr.length-1; k++) {
-            for (i = 0; i <= k-2; i++) {
-                if (arr[k]>=arr[k-1]) {
-                    break;
-                }
-                if (arr[k]<=arr[i]) {
-                    temp=arr[k];
-                    for ( j = k-1; j >= i; j--) {
-                        arr[j+1]=arr[j];
-                    }
-                    arr[i]=temp;
-                    temp=0;
-                }
-                if (arr[i]<=arr[k]&&arr[k]<=arr[i+1]) {
-                    temp=arr[k];
-                    for ( j = k-1; j >= i+1; j--) {
-                        arr[j+1]=arr[j];
-                    }
-                    arr[i+1]=temp;
-                    temp=0;
-                }
-            }
-            }
-            for ( i=0;i<arr.length;i++) {
-                System.out.printf("%d ",arr[i]);
-                if ((i+1)%5==0 ) {
-                    System.out.println();
-                }
-            }
-        */
     }
 }
