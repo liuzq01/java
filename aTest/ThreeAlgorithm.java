@@ -79,7 +79,7 @@ public class ThreeAlgorithm {
         int i,  k, temp=0;
         for ( k = 1; k <= arr.length-1; k++) 
         {
-            for ( i = k; i >=1; i--) 
+            for ( i = k; i >=1; i--)        //a[k]是待插入的数，a[k]之前的数已经排好序
             {
                 if (arr[i]<arr[i-1]) 
                 {
@@ -87,6 +87,7 @@ public class ThreeAlgorithm {
                     arr[i]=arr[i-1];
                     arr[i-1]=temp;
                 }
+                else break;
             }
         }
         for ( i=0;i<arr.length;i++)
