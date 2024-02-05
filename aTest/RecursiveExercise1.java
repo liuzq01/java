@@ -1,8 +1,9 @@
+import java.io.File;
 import org.junit.Test;
 
 public class RecursiveExercise1 {
     @Test
-    public void Test(){
+    public void test(){
         //二分查找
         RecursiveExercise rec=new RecursiveExercise();
         //int[] arr = rec.generateArrary();
@@ -35,5 +36,44 @@ public class RecursiveExercise1 {
             }
         else index=-1;
         return index;
+    }
+    @Test
+    public void test1(){
+        //计算目录的大小
+        File file=new File("/users/neirong/desktop/oss-browser-darwin-x64");
+        float size=getSize(file);
+        System.out.println(size);
+    }
+    private float getSize(File file){
+        File[] files= file.listFiles();
+        float size=0;
+        for (File file2 : files) {
+            if (file2.isFile()) {
+                size=size+file2.length();
+            }
+            if (file2.isDirectory()) {
+                size=size+getSize(file2);
+            }
+        }
+        return size;
+    }
+    @Test
+    public void test2(){
+        //han nuo 塔
+        hTower(4);
+    }
+    public void hTower(int n){
+        hTower(n, 'A', 'B', 'C');
+    }
+    private void hTower(int n,char from,char temp, char to){
+        if (n>=2) {
+            hTower(n-1, from, to, temp);
+            //hTower(1, from, temp, to);
+            System.out.println(n+", "+from+" -> "+to);
+            hTower(n-1, temp, from, to);
+            }
+        if (n==1) {
+            System.out.println(n+", "+from+" -> "+to);//hTower(1, from, temp, to)就是移动一步，用打印出来代替它
+        }
     }
 }
