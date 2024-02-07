@@ -76,4 +76,35 @@ public class RecursiveExercise1 {
             System.out.println(n+", "+from+" -> "+to);//hTower(1, from, temp, to)就是移动一步，用打印出来代替它
         }
     }
+    @Test
+    public void test3(){
+        //尾递归写阶乘函数
+        System.out.println(factorial(6));
+    }
+    public int factorial(int n){
+        return factorial(n, 1); //初始化s（s用来存储阶乘的结果）
+    }
+    private int factorial(int n,int s){
+        if (n==0) return s;
+        else if(n>=1) {
+            s=n*s;
+            return factorial(n-1,s);    //factorial函数只起到「赋值」作用：n=n-1, s=s;
+        }
+        else return -1;
+    }
+    @Test
+    public void test4(){
+        //尾递归写斐波那契函数
+        System.out.println(fib(10));
+    }
+    public int fib(int n){
+        int[] f =new int[n+1];
+        f[0]=0; f[1]=1;
+        return fib(2, n,f); 
+        }
+    private int fib(int i, int s, int[] f){
+        f[i]=f[i-1]+f[i-2];
+        if(i>s-1) return f[s];
+        else return fib(i+1,s,f);
+    }
 }
