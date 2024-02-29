@@ -1,4 +1,6 @@
 import java.math.BigInteger;
+import java.util.Scanner;
+
 import org.junit.Test;
 
 public class RecursiveExercise2 {
@@ -99,4 +101,48 @@ public class RecursiveExercise2 {
             return factorial2(n-1,k)+factorial2(n-2,k);
         }
     }
+    @Test
+    public void test6(){
+        //逆序输出整数
+       Scanner scanner =new Scanner(System.in);
+       System.out.println("输入一个整数：");
+       int number = scanner.nextInt();
+       int outNumber=reverseNumber(number);
+       System.out.println("逆序："+outNumber);
+       scanner.close();
+    }
+    private int reverseNumber(int n){
+        return reverseNumber(n,0,0,0);
+    }
+    private int reverseNumber(int n, int outNumber,int a,int b){
+        b=n/10;         //  12345/10 = 1234
+        a=n%10;         //  12345%10 = 5
+        outNumber=a+outNumber*10;
+        if (b==0)   return  outNumber;
+        else        return reverseNumber(b, outNumber,a,b);
+    }
+    @Test
+    public void test7(){
+        //逆序输出整数
+        int outNumber=reverseNumber(12345);
+        System.out.println("逆序："+outNumber);
+     }
+    @Test
+    public void test8(){
+        //逆序输出字符串
+        String str="liuZhiqiang";
+        String reverseStr=reverseString(str);
+        System.out.println("逆序："+reverseStr);
+     }
+    private String reverseString(String str){
+        int l=str.length();
+        return reverseString(str,l,"");
+     }
+    private String reverseString(String str,int l,String s){
+        if(l==0) return s;
+        else {
+            s=s+str.charAt(l-1);
+            return reverseString(str,l-1,s);
+            }
+     }
 }
