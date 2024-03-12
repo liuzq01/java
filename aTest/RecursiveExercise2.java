@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.math.BigInteger;
 import org.junit.Test;
 
@@ -270,13 +274,101 @@ public class RecursiveExercise2 {
     }
     @Test
     public void test15(){
-        //输出一个字符串的所有排列组合
+        //输出一个字符串的所有排列组合（length=n)
+        /*任选一个字符放在第一位（以交换的方式实现），有n种可能。第一个字符放好后，从剩下的字符中任选一个，放在第二位，有n-1种可能。
+        以此类推，共n!种可能。字符中有相同的，还需要去重，这里只考虑所有字符都不相同的情况。 可以使用set存储字符串来去重。*/
+        String str="abcd";
+        displayPermutation(str);
     }
-    private  void displayPermutation(String s){
-
+    private  void displayPermutation(String str){
+        int[] sum={0};
+        int l=str.length();
+        char[] arr=strToarr(str,l);
+        displayPermutation(arr,0,l,sum);
+    }
+    private  void displayPermutation(char[] chars,int i, int l,int[] sum){
+        if (i==l-1) {   //递归结束
+            sum[0]++;   //计数
+            System.out.println(String.valueOf(chars)+" , "+sum[0]);
+        }
+        else{
+            for(int j=i;j<l;j++){       //j从i开始，选定原字符串的第1个字符，作为第一个字符。
+                swap(chars,i,j);        //任选一个字符放在第一位（以交换的方式实现）
+                displayPermutation(chars,i+1,l,sum);    //选定第一个字符的每一种情况，都对子字符串重复同样的操作，所以用递归，且递归放在循环体里面
+                swap(chars,i,j);        //恢复到原字符串，选定原字符串的第2个字符，作为第一个字符......
+            }
+        }
+         
+    }
+    private char[] strToarr(String string,int l){   //把字符串存入字符数组，字符的移动，映射成数组下标对应的矩阵
+        char[] chars=new char[l];
+        for (int i = 0; i < l; i++) {
+            chars[i]=string.charAt(i);
+        }
+        return chars;
+    }
+    private void swap(char[] chars,int i,int j){    //交换数组中的字符
+        char temp=' ';
+        temp=chars[j];
+        chars[j]=chars[i];
+        chars[i]=temp;
+    }
+    @Test
+    public void test16(){
+    //某个目录下的文件数目
+        String dir="/users/neirong/desktop/截图1";
+        System.out.println(fileSum(dir));
+    }
+    private int fileSum(String dir){
+        File file1=new File(dir);
+        return fileSum(file1,0);
+    }
+    private int fileSum(File file2,int sum){
+        File[]files= file2.listFiles();
+        for (File file : files) {
+            //System.out.println(file.getName());
+            if(file.isFile() && !file.getName().startsWith(".")) sum++;
+            if(file.isDirectory()) return fileSum(file, sum);
+        }
+        return sum;
     }
     //非递归目录大小
-    //某个目录下的文件数目
-    //递归地找出某个目录下的所有文件中某个单词出现的次数
     //递归地用一个新单词替换某个目录下的所有文件中出现的某个单词
+    @Test
+    public void test17(){
+        //递归地找出某个目录下的所有文件中某个单词出现的次数
+        String dir="/users/neirong/desktop/截图1";
+        String word="the";
+        System.out.println(wordSum(dir, word));
+    }
+    private int wordSum(String str1,String word){
+        File file1=new File(str1);
+        return wordSum(file1,word,0);
+    } 
+    private int wordSum(File file2,String word,int sum){    //统计目录下所有文件中的该单词数
+        File[]files= file2.listFiles();
+        for (File file : files) {
+            if(file.isFile()) sum=sum+wordSum1(file, word);
+            if(file.isDirectory()) return wordSum(file, word,sum);
+        }
+        return sum;
+    } 
+    private int wordSum1(File file3,String word){   //统计一个文件中的该单词数
+        int count=0;
+        try (BufferedReader reader = new BufferedReader(new FileReader(file3))) {
+            String line; 
+            while ((line = reader.readLine()) != null) {
+                // 使用 split 方法将每行按照空格分割为单词数组
+                String[] words = line.split("\\s+");
+                for (String w : words) {
+                    // 如果单词与目标单词相同，则增加计数器
+                    if (w.equals(word)) {
+                        count++;
+                    }
+                }
+            }        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return count;
+    }
 }
