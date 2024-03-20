@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigInteger;
 import org.junit.Test;
@@ -332,8 +334,6 @@ public class RecursiveExercise2 {
         }
         return sum;
     }
-    //非递归目录大小
-    //递归地用一个新单词替换某个目录下的所有文件中出现的某个单词
     @Test
     public void test17(){
         //递归地找出某个目录下的所有文件中某个单词出现的次数
@@ -371,4 +371,40 @@ public class RecursiveExercise2 {
         }
         return count;
     }
+    //递归地用一个新单词替换某个目录下的所有文件中出现的某个单词
+    @Test
+    public void test18(){
+        String oldWord=" the ";                                 //（".the , The, the."等情况忽略不计）
+        String newWord=" ABCDEF ";      //单词两边带空格，否则会出现：they -> ABCDEFy。
+        String dir="/users/neirong/desktop/截图1";
+        replaceWord(dir,oldWord,newWord);
+    }
+    private void replaceWord(String directory,String oldWord,String newWord){   
+        File file1=new File(directory);
+        replaceWord1(file1, oldWord, newWord);
+     }
+
+    private void replaceWord1(File file1,String oldWord,String newWord){    //查找所有的文件
+        File[] files=file1.listFiles();
+        for(File file2:files){
+            if(file2.isFile()) replaceWord2(file2,oldWord,newWord);
+            if(file2.isDirectory()) replaceWord1(file2,oldWord,newWord);
+        }
+    }
+    private void replaceWord2(File file3,String oldWord,String newWord){    //在一个文件中替换单词
+        try (BufferedReader reader = new BufferedReader(new FileReader(file3))) {
+            String line= reader.readLine();               //读取一行
+            BufferedWriter writer= new BufferedWriter(new FileWriter(file3));//默认文件覆盖模式。文件追加模式：new FileWriter(fileName, true)。
+            while(line!=null){
+                String newLine=line.replaceAll(oldWord,newWord);    
+                writer.write(newLine);
+                line=reader.readLine();
+            }
+            System.out.println(file3.getName());
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+      }
 }
+    //非递归目录大小
