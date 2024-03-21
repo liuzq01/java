@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="" />
+    <list default="true" id="1961a43e-8d3b-4cea-851a-6d4453292201" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/GithubRepository/META-INF/GithubRepository.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,106 +58,91 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
+  <component name="PerforceDirect.Settings">
+    <option name="SHOW_BRANCHES_HISTORY" value="false" />
+    <option name="SHOW_INTEGRATED_IN_COMMITTED_CHANGES" value="false" />
+  </component>
   <component name="ProjectId" id="1cPke5MZ2q9Xfpo8BFv2mKf4Pzy" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <OptionsSetting value="false" id="更新" />
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="新增" />
+    <ConfirmationsSetting value="2" id="移除" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aTest" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="exercise2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComparableTest.test2">
-    <configuration name="CollectionsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.CollectionsTest" />
-      <option name="METHOD_NAME" value="test" />
+  <component name="RunManager" selected="JUnit.RecursiveExercise2.test6">
+    <configuration name="RecursiveExercise2.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecursiveExercise2" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Comparable21.sortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ComparableTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ComparableTest" />
-      <option name="MAIN_CLASS_NAME" value="ComparableTest.Comparable21" />
-      <option name="METHOD_NAME" value="sortTest" />
+    <configuration name="RecursiveExercise2.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecursiveExercise2" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparableTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ComparableTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ComparableTest" />
-      <option name="MAIN_CLASS_NAME" value="ComparableTest.ComparableTest" />
+    <configuration name="TenAlgorithm.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TenAlgorithm" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparableTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ComparableTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ComparableTest" />
-      <option name="MAIN_CLASS_NAME" value="ComparableTest.ComparableTest" />
+    <configuration name="TenAlgorithm.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TenAlgorithm" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashSetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GithubRepository" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CollectionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CollectionTest" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest.HashSetTest" />
-      <option name="METHOD_NAME" value="test" />
+    <configuration name="TenAlgorithm.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TenAlgorithm" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,16 +150,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComparableTest.test2" />
-        <item itemvalue="JUnit.ComparableTest.test1" />
-        <item itemvalue="JUnit.Comparable21.sortTest" />
-        <item itemvalue="JUnit.CollectionsTest.test" />
-        <item itemvalue="JUnit.HashSetTest.test" />
+        <item itemvalue="JUnit.RecursiveExercise2.test6" />
+        <item itemvalue="JUnit.RecursiveExercise2.test7" />
+        <item itemvalue="JUnit.TenAlgorithm.test3" />
+        <item itemvalue="JUnit.TenAlgorithm.test2" />
+        <item itemvalue="JUnit.TenAlgorithm.test1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\ntumc\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -230,6 +235,10 @@
       <workItem from="1692292685662" duration="28000" />
       <workItem from="1692292722932" duration="16000" />
       <workItem from="1692296054496" duration="14000" />
+      <workItem from="1705326897946" duration="2278000" />
+      <workItem from="1705329242032" duration="418000" />
+      <workItem from="1705329742252" duration="581000" />
+      <workItem from="1709208914611" duration="704000" />
     </task>
     <servers />
   </component>
@@ -248,34 +257,41 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <confirmRemoveEmptyChangelist value="2" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="198" width="816" height="731" key="#Intentions" timestamp="1617586703264">
+    <state x="740" y="229" key="FileChooserDialogImpl" timestamp="1705327716076">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="198" width="816" height="731" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1617586703264" />
-    <state x="710" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1617585757001">
+    <state x="740" y="229" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1705327716076" />
+    <state width="1877" height="452" key="GridCell.Tab.0.bottom" timestamp="1709209624447">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="710" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1617585757001" />
-    <state width="1877" height="452" key="GridCell.Tab.0.bottom" timestamp="1617622640060">
+    <state width="1877" height="452" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1709209624447" />
+    <state width="1877" height="452" key="GridCell.Tab.0.center" timestamp="1709209624447">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640060" />
-    <state width="1877" height="452" key="GridCell.Tab.0.center" timestamp="1617622640044">
+    <state width="1877" height="452" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1709209624447" />
+    <state width="1877" height="452" key="GridCell.Tab.0.left" timestamp="1709209624447">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640044" />
-    <state width="1877" height="452" key="GridCell.Tab.0.left" timestamp="1617622640044">
+    <state width="1877" height="452" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1709209624447" />
+    <state width="1877" height="452" key="GridCell.Tab.0.right" timestamp="1709209624447">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640044" />
-    <state width="1877" height="452" key="GridCell.Tab.0.right" timestamp="1617622640044">
+    <state width="1877" height="452" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1709209624447" />
+    <state x="600" y="243" key="NewModule_or_Project.wizard" timestamp="1705327747567">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="452" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617622640044" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617586855962">
+    <state x="600" y="243" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1705327747567" />
+    <state x="326" y="160" key="SettingsEditor" timestamp="1705330147124">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1617586855962" />
+    <state x="326" y="160" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1705330147124" />
+    <state x="658" y="431" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1705327807142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="658" y="431" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1705327807142" />
   </component>
 </project>
