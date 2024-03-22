@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
-public class Solution1 {
+public class Solution1 {        //两数之和
     @Test
     public void test(){
         int[]nums={2,4,8,16,32,64,128,256,512,1024};
