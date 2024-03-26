@@ -33,6 +33,7 @@ public class Solution3 {    //无重复字符的最长子串
         return 1;
     }
     //检验一个子串是否有重复字符。
+    /*
     private boolean checkDuplicateChars(char[]chars ,int i,int j){
         //取到的子字符串：[j,j+i-1]，检验每个字符是否与它后面的所有字符相同
         for (int k = j; k <j+i-1; k++) {
@@ -42,6 +43,7 @@ public class Solution3 {    //无重复字符的最长子串
         }
         return true;
     }
+     */
     //法二：使用hashSet检验一个子串是否有重复字符。
     private boolean checkDuplicateCharss(char[]chars ,int i,int j){
         //取到的子字符串：[j,j+i-1]，存入hashSet看元素个数是否减少
