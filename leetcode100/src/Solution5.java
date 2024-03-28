@@ -38,8 +38,18 @@ public class Solution5 {
     //检验一个子串是否回文
     private boolean isPalindrome(char[]chars,int i,int j){
         if(chars[j]!=chars[j+i-1])  return false;
-        if(chars.length==1) return true;
-        if(chars.length==2) return true;
+        if(i==1 || i==2) return true;   //上一步执行通过的情况下，chars[j]==chars[j+i-1]，此时意味着待测字符串的最短子串也检测为真
         return isPalindrome(chars, i-2, j+1);
     }
+    /* 
+    @Test
+    public void test1(){
+       String   str= "1221xxliuuilyyqianggnaiqzz2333"; 
+       System.out.println(longestPalindrome1(str));
+    }
+    //法二：动态规划
+    public String longestPalindrome1(String s) {
+        return findSubString1(s);
+    }
+    */
 }
