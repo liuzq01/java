@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 import org.junit.Test;
 
@@ -10,41 +9,55 @@ public class Solution10 {
      */
     @Test
     public void test(){
-        String s="liuzhiqiang";
-        //String p="li.*ang";     //s,p只包含3种字符：a-z  .  *，*的前面肯定有一个字符
+     //   String s="liuzhiqiang";
+        //String p="li.*ang";     //s只包含2种字符(a-z .), p只包含3种字符(a-z  .  *)，*的前面肯定有一个字符, **不存在
         //String p="li.*ing";
         //String p="li.*ang.";
-        String p="li.*ang*";
+    //    String p="li.*ang*";
         //String p="li.x*ang";
-        ArrayList<String>  aList=segmentation(p);
-        for(String str:aList) System.out.println(str);
         //System.out.println(isMatch(s, p));
     }
-            //把p拆分成3类：只包含a-z的字符串、"."、"*"，保持原有顺序存入arraylist。再把s作对应的拆分，并对比。
-    public boolean isMatch(String s, String p) {
-        ArrayList<String>  aList=segmentation(p);
-        return comparison(s, aList);
-    }
-    //分割p
-    private ArrayList<String> segmentation(String p){
-        ArrayList<String>   pList=new ArrayList<>();
-        StringBuffer sBuffer=new StringBuffer();
-        char c;     
-        for (int i = 0; i < p.length(); i++) {
-                c=p.charAt(i); 
-                if('a'<=c && c<='z') sBuffer.append(c);
-                if(c=='.' || c=='*' || i==p.length()-1) {    
-                    if(sBuffer.length()!=0) {
-                        pList.add(sBuffer.toString());
-                        sBuffer.delete(0,sBuffer.length()); //重置
-                    }
-                    if(c=='.' || c=='*' ) pList.add(String.valueOf(c));     //加条件 if(c=='.' || c=='*' ) ，可避免最后一个字符属于(a,z)时被重复添加
-                }
+        //  _*_   _*   _ _
+        //  
+        //  .*.  a*.  .*a  a*a   .*  a*  ..  .a  a.  aa
+        public boolean isMatch(String s, String p) {
+            int end=p.length()-1;
+            return isMatch(s, p,end);
         }
-        return pList;
-    }
-    //对比是否匹配
-    private boolean comparison(String s,ArrayList<String> pList){
+    public boolean isMatch(String s, String p, int end) {
+        char c0=p.charAt(end);  char c1=p.charAt(end-1);  char c2=p.charAt(end-2);
+    //    char s0=s.charAt(end);  char s1=s.charAt(end-1);  char s2=s.charAt(end-2);
+        if(c0=='.'&& c1=='*' && c2=='.')  {
+            return isMatch(s, p,end-3); //
+        }
+        if(c0=='.'&& c1=='*' && ('a'<=c2 && c2<='z'))  {
 
+        }
+        if(('a'<=c0 && c0<='z') && c1=='*' && c2=='.')  {
+
+        }
+        if(('a'<=c0 && c0<='z') && c1=='*' && ('a'<=c2 && c2<='z'))  {
+
+        }
+
+        if(c0=='*' && c1=='.') {
+
+        }
+        if(c0=='*' &&  ('a'<=c1 && c1<='z')) {
+
+        }
+        if(c0=='.' && c1=='.') {
+
+        }
+        if(('a'<=c0 && c0<='z') && c1=='.') {
+
+        }
+        if(c0=='.' && ('a'<=c1 && c1<='z')) {
+
+        }
+        if(('a'<=c0 && c0<='z') && ('a'<=c1 && c1<='z')) {
+
+        }
+        return false;
     }
 }
