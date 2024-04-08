@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import javax.sound.midi.Soundbank;
-
 public class Solution23 {
     @Test
     public void test(){
@@ -21,7 +19,8 @@ public class Solution23 {
         ListNode l3=new ListNode(2);    ListNode n6=new ListNode(6);
         l3.next=n6;
         ListNode[] lists=new ListNode[]{l1,l2,l3};
-        ListNode listNode=mergeKLists(lists);
+        //ListNode listNode=mergeKLists(lists);
+        ListNode listNode=mergeKLists1(lists);
         if (listNode==null) System.out.println("空节点");
         else {
             while (listNode!=null){
@@ -31,7 +30,7 @@ public class Solution23 {
         }
    }
     public ListNode mergeKLists(ListNode[] lists) {
-        //在合并 2个升序链表的基础上迭代
+        //在合并 2个升序链表的基础上 迭代
         if (lists==null || lists[0]==null) return null;
         Solution21 solution21=new Solution21();
         ListNode listNode=lists[0];
@@ -41,4 +40,20 @@ public class Solution23 {
         }
         return listNode;
     }
+    public ListNode mergeKLists1(ListNode[] lists) {
+        //法二：在合并2个升序链表的基础上 递归合并
+        int k=lists.length;
+        return mergeKLists1(lists,0,k);
+    }
+    Solution21 solution21=new Solution21();
+    ListNode listNode1;
+    public ListNode mergeKLists1(ListNode[] lists,int m,int k) {    //把lists的下标为[m,k)的链表合并为一个
+        if (k-m>2) {
+            listNode1=solution21.mergeTwoLists(mergeKLists1(lists,m,k/2),mergeKLists1(lists,k/2,k));
+            return listNode1;
+        }
+        else if (k-m==2) return solution21.mergeTwoLists(lists[m], lists[m+1]);
+        else return lists[m];
+    }
+
 }
