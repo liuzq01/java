@@ -73,4 +73,35 @@ public class Solution34 {
         }
         return new int[]{l,r};
     }
+    public int[] searchRange2(int[] nums, int target) {
+        //法二: 用二分法找左端点l，再用二分法找右端点r
+        if(nums.length==0) return new int[]{-1,-1};
+        if (nums.length==1) {
+            if(nums[0]==target) return new int[]{0,0};
+            else return new int[]{-1,-1};
+        }
+        int left=0, right=nums.length-1, medium=(left+right)/2;
+        while (left!=medium) {
+            if (nums[medium]<target) left=medium;
+            else right=medium;
+            medium=(left+right)/2;
+        }
+        int l, r;   
+        if (nums[left]==target) l=left;
+        else if(nums[right]==target) l=right;
+        else return new int[]{-1,-1};
+        //重置left, right, 用二分法找右端点r
+        left=0;     right=nums.length-1;   medium=(left+right)/2;
+        while (left!=medium) {
+            if(nums[medium]<=target) left=medium;
+            else right=medium;
+            medium=(left+right)/2;
+        }
+        if (nums[right]==target) r=right;
+        else if(nums[left]==target)   r=left;
+        else return new int[]{-1,-1};
+
+        return new int[]{l,r};
+    }
+
 }
