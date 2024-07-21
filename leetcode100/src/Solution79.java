@@ -15,31 +15,69 @@ public class Solution79 {
     */
     @Test
     public void test(){
+        char[][] board={
+            {'A','B','C','E'},
+            {'S','F','C','S'},
+            {'A','D','E','E'} };
+        String word="ABCCED";
+        //String word="SEE";
+        //String word="ABCB";
 
+        System.out.println(exist(board, word));
     }
-    public void exist(char[][] board, String word) {
-
+    public boolean exist(char[][] board, String word) {
+        boolean[] flag={false};
+        int[] temp={1,0,0}; //  temp[0]==1, 第一步往右
+        exist(board, word,0,0,0,flag,temp);
+        return flag[0];
     }
-    public void exist(char[][] board, String word,int i,int j,int n,boolean[] flag) {
+    public void exist(char[][] board, String word,int i,int j,int n,boolean[] flag,int [] temp) {
         if(i<0 || i>board.length-1 || j<0 || j>board[0].length-1) return;
+        if(flag[0]==true) return;
         if(board[i][j]==word.charAt(n)) {
             if(n==word.length()-1) {
                 flag[0]=true;
                 return;
-            } 
-            int ii=0,jj=0;
-            if(n==0){
-                 ii=i;  jj=j;     // 暂存首字母的位置
             }
-            exist(board, word,i-1,j,n+1,flag);   //  左
-            exist(board, word,i+1,j,n+1,flag);   //  右
-            exist(board, word,i,j+1,n+1,flag);   //  下
-            n=0; i=ii;  j=jj;   //回溯，准备寻找下一个首字母的位置
+            if(n==0){
+                 temp[1]=i;  temp[2]=j;     // 暂存首字母的位置
+            }
+            if(temp[0]==0 || temp[0]==2)  {     //  temp[0]==0, 代表上一步是往左，则可继续往左
+                int t=temp[0];      //暂存
+                temp[0]=0;                      //  这一步即将往左，记下来
+                exist(board, word,i,j-1,n+1,flag,temp);   //    左
+                temp[0]=t;          //回溯
+            }
+            if(temp[0]==1 || temp[0]==2)  {
+                int t=temp[0];
+                temp[0]=1;
+                exist(board, word,i,j+1,n+1,flag,temp);   //  右
+                temp[0]=t;
+            }
+            int t=temp[0];
+            temp[0]=2;
+            exist(board, word,i+1,j,n+1,flag,temp);   //  下
+            temp[0]=t;
+            n=0; i=temp[1];  j=temp[2];   //  3个方向都匹配不上，回溯，准备寻找下一个首字母的位置
         }
-        if(n==0){   //  找word的首字母
-            exist(board, word,i-1,j,n,flag);   //  左
-            exist(board, word,i+1,j,n,flag);   //  右
-            exist(board, word,i,j+1,n,flag);   //  下
+        if(flag[0]==true) return;
+        if(n==0){   //  找word首字母的位置
+            if(temp[0]==0 || temp[0]==2)  {
+                int t=temp[0];
+                temp[0]=0;
+                exist(board, word,i,j-1,n,flag,temp);   //    左
+                temp[0]=t;
+            }
+            if(temp[0]==1 || temp[0]==2)  {
+                int t=temp[0];
+                temp[0]=1;
+                exist(board, word,i,j+1,n,flag,temp);   //  右
+                temp[0]=t;
+            }
+            int t=temp[0];
+            temp[0]=2;
+            exist(board, word,i+1,j,n,flag,temp);   //  下
+            temp[0]=t;
         }
     }
 }
