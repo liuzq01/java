@@ -56,7 +56,7 @@ public class Solution94 {
     先序：1 2 4 6 7 8 3 5
     中序：4 7 6 8 2 1 3 5
     */
-    public List<Integer> preorderTraversal(TreeNode root) {
+    private List<Integer> preorderTraversal(TreeNode root) {
         if(root==null) return new ArrayList<>();
         List<Integer> list=new ArrayList<>();
         preorderTraversal( root,list);
