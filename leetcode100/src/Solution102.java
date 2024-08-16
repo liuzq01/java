@@ -18,26 +18,37 @@ public class Solution102 {
         输入：root = []
         输出：[]
          */
+        TreeNode treeNode1=new TreeNode(1);
+        TreeNode treeNode2=new TreeNode(2);                                             TreeNode treeNode3=new TreeNode(2);
+        TreeNode treeNode4=new TreeNode(3); TreeNode treeNode5=new TreeNode(4);     TreeNode treeNode6=new TreeNode(4); TreeNode treeNode7=new TreeNode(3);
+        treeNode1.left=treeNode2; treeNode1.right=treeNode3;
+        treeNode2.left=treeNode4; treeNode2.right=treeNode5;    treeNode3.left=treeNode6; treeNode3.right=treeNode7;
+        /** ** ** * */
+        TreeNode treeNode8=new TreeNode(1);
+        TreeNode treeNode9=new TreeNode(2); TreeNode treeNode10=new TreeNode(2);
+        TreeNode treeNode11=new TreeNode(3); TreeNode treeNode12=new TreeNode(3);
+        treeNode8.left=treeNode9; treeNode8.right=treeNode10;
+        treeNode9.right=treeNode11; treeNode10.right=treeNode12;
+        /** ** ** * */
+        TreeNode treeNode13=new TreeNode(1);
+
+        System.out.println(levelOrder(treeNode1));
+        System.out.println(levelOrder(treeNode8));
+        System.out.println(levelOrder(treeNode13));
+        System.out.println(levelOrder(null));
     }
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> aLists=new ArrayList<>();
-        List<HashMap<Integer,Integer>> aListsB=new ArrayList<>();
-        int[] maxLevel={0};     // maxLevel[0] 是最大层数
-        levelOrder(root,aListsB,0,maxLevel);
-        levelOrder(aLists,aListsB,maxLevel);
+        HashMap<Integer,List<Integer>> hashMap=new HashMap<>();
+        levelOrder(root,hashMap,0);
+        aLists=new ArrayList<>(hashMap.values());
         return aLists;
     }
-    private void levelOrder(TreeNode root,List<HashMap<Integer,Integer>> aListsB,int i,int[] maxLevel) {
-        //先序遍历，把每一层的数标记上层级，结果存入List<HashMap<i,root.val>> ; 遍历此list，按层级分离数据。
+    private void levelOrder(TreeNode root,HashMap<Integer,List<Integer>>hashMap,int i) {
+        // 先序遍历，把每一层的数标记上层级，结果存入HashMap<Integer i,List<Integer> root.val>
         if(root==null) return;
-        if(maxLevel[0]<i) maxLevel[0]=i;
-        aListsB.add(new HashMap<>(i,root.val));
-        levelOrder(root.left,aListsB,i+1,maxLevel);
-        levelOrder(root.right,aListsB,i+1,maxLevel);
-    }
-    private void levelOrder(List<List<Integer>> aLists,List<HashMap<Integer,Integer>> aListsB,int[] maxLevel){
-        for (int i = 0; i <= maxLevel[0]; i++) {
-            aLists.add(new ArrayList<>());
-        }
+        hashMap.computeIfAbsent(i, k -> new ArrayList<>()).add(root.val);
+        levelOrder(root.left,hashMap,i+1);
+        levelOrder(root.right,hashMap,i+1);
     }
 }
