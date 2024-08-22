@@ -22,7 +22,7 @@ public class Solution94a {
         System.out.println(inorderTraversal1(treeNodeRoot));
         System.out.println(preorderTraversal1(treeNodeRoot));
     }
-    public List<Integer> inorderTraversal1(TreeNode root) {
+    private List<Integer> inorderTraversal1(TreeNode root) {
         //迭代。用栈存数据，遍历二叉树。
         List<Integer> list=new ArrayList<>();
         inorderTraversal1(root,list);
