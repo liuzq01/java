@@ -33,16 +33,23 @@ public class Solution114 {
     }
             
     public void flatten(TreeNode root) {
-        TreeNode newNode=new TreeNode();
-        flatten(root,newNode);
-        root=newNode.right;
+        if(root==null) return;
+        List<TreeNode> list=new ArrayList<>();
+        flatten(root,list);
+        for (int i = 0; i < list.size()-1; i++) {
+            list.get(i).right=list.get(i+1);
+        }
+        //root=list.get(0);   // java传递参数，传递的都是值的副本。此赋值有效范围仅限于当前函数内部。赋值无效，改变位于此地址上的数据有效。
+        root.val=list.get(0).val;
+        root.left=null;
+        root.right=list.get(0).right;
     }
-    private void flatten(TreeNode root,TreeNode frontNode) {
+    private void flatten(TreeNode root,List<TreeNode> list) {
         if(root==null) return;
         TreeNode node=new TreeNode(root.val);
-        frontNode.right=node;
-        flatten(root.left,node);
-        flatten(root.right,node);
+        list.add(node);
+        flatten(root.left,list);
+        flatten(root.right,list);
     }
     private void check(TreeNode root){
         List<Integer> list=new ArrayList<>();
