@@ -18,6 +18,7 @@ public class Solution148 {
     }
     public ListNode148 sortList(ListNode148 head) {
         //逐一读取node存入arraylist，按值排序（快排），按顺序构造新链表
+        if(head==null) return null;
         ArrayList<ListNode148> alist=new ArrayList<>();
         while (head!=null) {
             alist.add(head);
@@ -27,11 +28,13 @@ public class Solution148 {
         for (int i = 0; i < alist.size()-1; i++) {
             alist.get(i).next=alist.get(i+1);
         }
+        alist.get(alist.size()-1).next=null;
         return alist.get(0);
     }
     private void fastSort(ArrayList<ListNode148> alist ,int left,int right) {
         //选left,(left+right)/2,right三个元素，按值排序。排好之后，选中间的元素为分割点。
         //通过交换，使得分割点左边的元素值都小于它，右边的都大于它。
+        if(right<=left) return;
         int middle=(left+right)/2;
         if(alist.get(left).val>alist.get(middle).val) swap(alist, left, middle);
         if(alist.get(middle).val>alist.get(right).val) swap(alist, right, middle);
@@ -46,8 +49,8 @@ public class Solution148 {
             }
             if(i<pivot && j>pivot) swap(alist, i, j);
         }
-        if(i>=pivot){    //分割点左边全部交换完毕，检查右边的元素：（pivot,j)
-            for (int k = pivot+1; k < j; k++) {
+        if(i>=pivot && j>pivot){    //分割点左边全部交换完毕，检查右边的元素：（pivot,j]
+            for (int k = pivot+1; k <= j; k++) {
                 if(alist.get(k).val<alist.get(pivot).val) {
                     ListNode148 temp=alist.get(k);
                     for (int l = k; l >pivot; l--) {
@@ -58,8 +61,8 @@ public class Solution148 {
                 }
             }
         }
-        if (j<=pivot) {     // (i,pivot)
-            for (int k = i+1; k < pivot; k++) {
+        if (j<=pivot && i<pivot) {     // [i,pivot)
+            for (int k = i; k < pivot; k++) {
                 if (alist.get(k).val>alist.get(pivot).val) {
                     ListNode148 temp=alist.get(k);
                     for (int l = k; l < pivot; l++) {
@@ -70,7 +73,7 @@ public class Solution148 {
                 }
             }
         }
-        fastSort(alist, left, pivot);   //
+        fastSort(alist, left, pivot);   
         fastSort(alist, pivot+1, right);
     }
     private void swap(ArrayList<ListNode148> alist,int i,int j){
