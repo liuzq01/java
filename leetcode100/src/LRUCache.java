@@ -1,6 +1,5 @@
 import java.util.HashMap;
 
-import org.junit.Test;
 /**
  * Your LRUCache object will be instantiated and called as such:
  * LRUCache obj = new LRUCache(capacity);
@@ -8,8 +7,17 @@ import org.junit.Test;
  * obj.put(key,value);
  */
 public class LRUCache {
-    @Test
-    public void test(){
+    public static void main(String[] args){
+        LRUCache lRUCache = new LRUCache(2);
+        lRUCache.put(1, 1); // 缓存是 {1=1}
+        lRUCache.put(2, 2); // 缓存是 {1=1, 2=2}
+        System.out.println(lRUCache.get(1));  // 返回 1
+        lRUCache.put(3, 3); // 该操作会使得关键字 2 作废，缓存是 {1=1, 3=3}
+        System.out.println(lRUCache.get(2));   // 返回 -1 (未找到)
+        lRUCache.put(4, 4); // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}
+        System.out.println(lRUCache.get(1));    // 返回 -1 (未找到)
+        System.out.println(lRUCache.get(3));    // 返回 3
+        System.out.println(lRUCache.get(4));    // 返回 4
     }
     //用双向链表、HashMap实现LinkedHashMap
     int capacity;
@@ -22,39 +30,71 @@ public class LRUCache {
         Node node=hashMap.get(key);
         if(node==null) return -1;
         else {
-            //移到末尾
-            node.prev.next=node.next;
-            node.next.prev=node.prev;
-            tail.next=node;
-            node.prev=tail;
+            //原节点移至末尾
+            moveToTheEnd(node);
             return node.value;
         }
     }
     
     public void put(int key, int value) {
+        Node node=new Node(key,value);
         if (hashMap.size()==0) {
-            head=new Node(value);
+            head=node;
             tail=head;
-            hashMap.put(key, head);
+            hashMap.put(key, node);
+            return;
         }
-        if (1<=hashMap.size() && hashMap.size()<capacity ||(hashMap.size()==capacity && hashMap.get(key)!=null) ) {
-            Node node=new Node(value);
+        if (1<=hashMap.size() && hashMap.size()<capacity  ) {
+            //新节点添加到末尾
             tail.next=node;
             node.prev=tail;
             tail=node;
+            hashMap.put(key,node);
+            return;
+        }
+        if ((hashMap.size()==capacity && hashMap.get(key)!=null)) {
+            //移至末尾
+            moveToTheEnd(node);
             hashMap.put(key, node);
+            return;
         }
         if (hashMap.size()==capacity && hashMap.get(key)==null) {
-            //删除head对应的(key,head), head的下一个节点为新的头节点
-            //hashMap.remove(key);
+            //删除head, head的下一个节点为新的头节点, 新节点添加到末尾
+            Node temp=head.next;
+            hashMap.remove(head.key);
+            head=temp;
+            tail.next=node;
+            node.prev=tail;
+            tail=node;
+            hashMap.put(key,node);
+            return;
+        }
+    }
+    private void moveToTheEnd(Node node){
+        //把node节点移动到末尾
+        if (node.prev==null && node.next!=null) {
+            head=node.next;
+            node.next.prev=null;
+            node.next=null;
+            tail.next=node;
+            node.prev=tail;
+            tail=node;
+        }
+        if (node.prev!=null && node.next!=null) {
+            node.prev.next=node.next;
+            node.next.prev=node.prev;
+            tail.next=node;
+            node.prev=tail;
+            tail=node;
         }
     }
 }
 class Node{
-    int value;
+    int key,value;
     Node prev;
     Node next;
-    Node(int value){
+    Node(int key,int value){
+        this.key=key;
         this.value=value;
         prev=null;
         next=null;
