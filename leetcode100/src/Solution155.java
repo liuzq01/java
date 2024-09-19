@@ -1,34 +1,47 @@
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class Solution155 {
     @Test
     public void test(){
+        MinStack minStack = new MinStack();
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        System.out.println(minStack.getMin());   //--> 返回 -3.
+        minStack.pop();
+        System.out.println(minStack.top());     //--> 返回 0.
+        System.out.println(minStack.getMin());  //--> 返回 -2.
     }
     class MinStack {
 
         public MinStack() {
     
         }
+        //用双链连接栈元素，push、pop对应链的前移、后移，tail对应top。
+        //用list逐一记录每次push时的最小值，pop时删除最后一个元素，则当前最后一个元素就是当前的最小值。
         ListNode tail;
         int min;
+        ArrayList<Integer> arrayList=new ArrayList<>();
         public void push(int val) {
             ListNode node=new ListNode(val);
             if (tail==null) {
                 tail=node;
                 min=node.val;
+                arrayList.add(min);
                 return;
             }
             if (node.val<min) min=node.val;
+            arrayList.add(min);
             tail.next=node;
             node.prev=tail;
             tail=node;
         }
         
         public void pop() {
+            arrayList.remove(arrayList.size()-1);
             ListNode temp=tail.prev;
-            if (tail.val==min) {
-                //
-            }
             temp.next=null;
             tail.prev=null;
             tail=temp;
@@ -39,7 +52,7 @@ public class Solution155 {
         }
         
         public int getMin() {
-            return min;
+            return arrayList.get(arrayList.size()-1);
         }
     }
     class ListNode {
@@ -51,7 +64,7 @@ public class Solution155 {
             next = null;
             prev=null;
         }
-}
+    }
     /**
      * Your MinStack object will be instantiated and called as such:
      * MinStack obj = new MinStack();
