@@ -1,28 +1,45 @@
+import java.util.HashSet;
+
 import org.junit.Test;
 
 public class Solution160 {
     @Test
     public void test(){
+        ListNode headA=new ListNode(1); ListNode headA1=new ListNode(9); ListNode headA2=new ListNode(1);
+        ListNode headA3=new ListNode(2); ListNode headA4=new ListNode(4);
+        headA.next=headA1; headA1.next=headA2; headA2.next=headA3; headA3.next=headA4;
+        ListNode headB=new ListNode(3); headB.next=headA3; 
+        ListNode node=getIntersectionNode(headA, headB);
+        if(node==null) System.out.println("返回为null");
+        else System.out.println(node.val);
+        /*******************/
+        ListNode headC=new ListNode(3); ListNode headC1=new ListNode(2); ListNode headC2=new ListNode(4);
+        headC.next=headC1; headC1.next=headC2;
+        ListNode node1=getIntersectionNode(headA, headC);
+        if(node1==null) System.out.println("返回为null");
+        else System.out.println(node1.val);
     }
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        return null;
+        //遍历一个链表，存入hashset。遍历另外一个链表，用hashset判断是否重复，第一个重复的元素即为所求。
+        HashSet<ListNode> hashSet=new HashSet<>();
+        while (headA!=null) {
+            hashSet.add(headA);
+            headA=headA.next;
+        }
+        while (headB!=null) {
+            if(hashSet.contains(headB)) break;
+            headB=headB.next;
+        }
+        return headB;
     }
 }
 /*    相交链表
  * 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。
- * 题目数据 保证 整个链式结构中不存在环。进阶：你能否设计一个时间复杂度 O(m + n) 、仅用 O(1) 内存的解决方案？
-注意，函数返回结果后，链表必须 保持其原始结构 。
+ * 题目数据 保证 整个链式结构中不存在环。
+ * 
+ * 进阶：你能否设计一个时间复杂度 O(m + n) 、仅用 O(1) 内存的解决方案？
+
+ 注意，函数返回结果后，链表必须 保持其原始结构 。
 自定义评测：
 评测系统 的输入如下（你设计的程序 不适用 此输入）：
 intersectVal - 相交的起始节点的值。如果不存在相交节点，这一值为 0
