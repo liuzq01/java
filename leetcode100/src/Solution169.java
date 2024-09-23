@@ -1,11 +1,28 @@
+import java.util.HashMap;
 import org.junit.Test;
 
 public class Solution169 {
     @Test
     public void test(){
+        int[] nums={2,2,1,1,1,2,2};
+        System.out.println(majorityElement(nums));
     }
     public int majorityElement(int[] nums) {
-        return 0;
+        //遍历数组，计数各元素并存入hashmap;再遍历hashMap，找出个数最大者。
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if(hashMap.containsKey(nums[i])) hashMap.put(nums[i], hashMap.get(nums[i])+1);
+            else hashMap.put(nums[i], 1);
+        }
+        int max=hashMap.get(nums[0]);
+        int key0=nums[0];
+        for (Integer i:hashMap.keySet()) {
+            if (hashMap.get(i)>max) {
+                max=hashMap.get(i);
+                key0=i;
+            }
+        }
+        return key0;
     }
 }
 /*  多数元素
