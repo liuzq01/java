@@ -3,9 +3,29 @@ import org.junit.Test;
 public class Solution198 {
     @Test
     public void test(){
+        int[] nums={2,7,9,3,1};
+        System.out.println(rob(nums));
+        int[] nums1={2,7,9,3,4,1,1,2};
+        System.out.println(rob(nums1));
+
     }
     public int rob(int[] nums) {
-        return 0;
+        //选第一个数（或第二个数）开始累加，每次可以跳2步或3步。跳4步时，加上跳2步的数更大，回到跳2步。
+        int sum1=0, sum2=0, max[]={0};
+        rob(nums,sum1,0,max);
+        sum1=max[0];
+        rob(nums,sum2,1,max);
+        sum2=max[0];
+        return Math.max(sum1, sum2);
+    }
+    private void rob(int[] nums, int sum,int i,int[] max) {
+        if(i>=nums.length) {
+            if(sum> max[0]) max[0]=sum;
+            return;
+        }
+        sum=sum+nums[i];
+        rob(nums,sum,i+2,max);
+        rob(nums,sum,i+3,max);
     }
 
 }
