@@ -1,28 +1,26 @@
+import java.util.HashSet;
 import org.junit.Test;
-/**
- * Your Trie object will be instantiated and called as such:
- * Trie obj = new Trie();
- * obj.insert(word);
- * boolean param_2 = obj.search(word);
- * boolean param_3 = obj.startsWith(prefix);
- */public class Solution208 {
+
+public class Solution208 {
     @Test
     public void test(){
     }
-    //public Trie() {
-
-    //}
-    
-    public void insert(String word) {
-
-    }
-    
-    public boolean search(String word) {
-        return true;
-    }
-    
-    public boolean startsWith(String prefix) {
-        return true;
+    class Trie {
+            public Trie() {
+        }
+        HashSet<String> hashSet=new HashSet<>();
+        public void insert(String word) {
+            hashSet.add(word);
+        }
+        
+        public boolean search(String word) {
+            if(hashSet.contains(word)) return true;
+            return false;
+        }
+        
+        public boolean startsWith(String prefix) {
+            return true;
+        }
     }
 }
 /*      实现 Trie (前缀树)

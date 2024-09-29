@@ -3,9 +3,47 @@ import org.junit.Test;
 public class Solution215 {
     @Test
     public void test(){
+        int[]nums={3,2,1,5,6,4};
+        System.out.println(findKthLargest(nums, 2));
+        int[]nums1={3,2,3,1,2,4,5,5,6};
+        System.out.println(findKthLargest(nums1, 4));
     }
     public int findKthLargest(int[] nums, int k) {
-        return 0;
+        // 快排并选择
+        int[] result={0};
+        findKthLargest(nums, k,0,nums.length-1,result);
+        return result[0];
+    }
+    private void findKthLargest(int[] nums, int k, int left, int right,int[] result) {
+        int pivot = (left+right)/2;
+        if(nums[left]>nums[pivot]) swap(nums,left,pivot);
+        if(nums[right]<nums[pivot]) swap(nums,right,pivot);
+        if(nums[left]>nums[pivot]) swap(nums,left,pivot);
+        while (left<pivot || right>pivot) {
+            while (nums[left]<=nums[pivot] && left<pivot) {
+                left++;
+            }
+            while (nums[right]>=nums[pivot] && right>pivot) {
+                right--;
+            }
+            if(left<pivot && right>pivot) swap(nums, left, right);
+            if (left==pivot) {
+                swap(nums, right, pivot);
+                pivot++; left++;
+            }
+            if (pivot==right) {
+                swap(nums, left, pivot);
+                pivot--; right--;
+            }
+        }
+        if (nums.length-k==pivot)  result[0]=nums[pivot];
+        if (nums.length-k<pivot)  findKthLargest(nums, k, left, pivot, result);
+        if (nums.length-k>pivot)  findKthLargest(nums, k, pivot, right, result);
+    }
+    private void swap(int[] nums, int i, int j) {
+        int temp=nums[i];
+        nums[i]=nums[j];
+        nums[j]=temp;
     }
 }
 /*      数组中的第K个最大元素

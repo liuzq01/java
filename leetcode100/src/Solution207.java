@@ -1,25 +1,39 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import org.junit.Test;
 
 public class Solution207 {
     @Test
     public void test(){
+        int[][] prerequisites={{0,1},{2,1},{2,0}};
+        System.out.println(canFinish(3, prerequisites));
+        int[][] prerequisites1={{1,2},{3,1},{4,1},{2,4},{0,3},{0,4}};
+        System.out.println(canFinish(5, prerequisites1));
     }
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         //按行遍历先修课程数组，逐一查找“环”，结果存入list。每次最多可能有n个分叉，n叉树。
         int l=prerequisites.length;
         ArrayList<Boolean> list=new ArrayList<>();
+        HashSet<Integer> hashSet=new HashSet<>();
         for (int i = 0; i < l; i++) {
-            canFinish(i, prerequisites,list);
-            if (list.get(list.size()-1)==false) return false;
+            hashSet.add(i);
+            canFinish(i,prerequisites,list,hashSet);
+            hashSet.clear();
+            if (list.size()!=0 && list.get(list.size()-1)==false) return false;   // 存在“环”
         }
         return true;
     }
-    private void canFinish(int i,int[][] prerequisites,ArrayList<Boolean> list) {
+    private void canFinish(int i,int[][] prerequisites,ArrayList<Boolean> list,HashSet<Integer> hashSet) {
+        // 遍历先修课程数组，找后置课程，找到了，行号存入hashSet。hashSet中的行号再次出现，则存在“环”，list存入false。不存在“环”，list什么都不存。
         for (int j = 0; j < prerequisites.length; j++) {
-            if (prerequisites[i][1]==prerequisites[j][0]) {
-                
+            if (prerequisites[i][0]==prerequisites[j][1]) {
+                if(hashSet.contains(j)) {   // 存在“环”
+                    list.add(false);
+                    return;
+                }
+                hashSet.add(j);
+                canFinish(j, prerequisites, list, hashSet);
             }
         }
     }
