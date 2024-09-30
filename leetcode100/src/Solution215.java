@@ -16,6 +16,7 @@ public class Solution215 {
     }
     private void findKthLargest(int[] nums, int k, int left, int right,int[] result) {
         int pivot = (left+right)/2;
+        int tempL=left, tempR=right;
         if(nums[left]>nums[pivot]) swap(nums,left,pivot);
         if(nums[right]<nums[pivot]) swap(nums,right,pivot);
         if(nums[left]>nums[pivot]) swap(nums,left,pivot);
@@ -27,15 +28,18 @@ public class Solution215 {
                 right--;
             }
             if(left<pivot && right>pivot) swap(nums, left, right);
-            if (left==pivot) {
+            if (left==pivot && right>pivot) {  // pivot左边的都小于它，开始向右移动pivot
                 swap(nums, right, pivot);
+                swap(nums, right, pivot+1);
                 pivot++; left++;
             }
-            if (pivot==right) {
+            if (pivot==right && left<pivot) {
                 swap(nums, left, pivot);
+                swap(nums, left, pivot-1);
                 pivot--; right--;
             }
         }
+        left=tempL; right=tempR;    // 恢复left、right
         if (nums.length-k==pivot)  result[0]=nums[pivot];
         if (nums.length-k<pivot)  findKthLargest(nums, k, left, pivot, result);
         if (nums.length-k>pivot)  findKthLargest(nums, k, pivot, right, result);

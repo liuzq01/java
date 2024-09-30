@@ -3,9 +3,43 @@ import org.junit.Test;
 public class Solution234 {
     @Test
     public void test(){
-    }
+        ListNode head=new ListNode(1); head.next=new ListNode(2); head.next.next=new ListNode(2);head.next.next.next=new ListNode(1);
+        System.out.println(isPalindrome(head));
+
+        ListNode head1=new ListNode(1); head1.next=new ListNode(2); head1.next.next=new ListNode(4);head1.next.next.next=new ListNode(2);head1.next.next.next=new ListNode(1);
+        System.out.println(isPalindrome(head1));
+
+        ListNode head2=new ListNode(1); head2.next=new ListNode(2); head2.next.next=new ListNode(3);head2.next.next.next=new ListNode(1);
+        System.out.println(isPalindrome(head2));
+        
+        ListNode head3=new ListNode(1); head3.next=new ListNode(2); 
+        System.out.println(isPalindrome(head3));
+  }
     public boolean isPalindrome(ListNode head) {
-        return true;
+        if(head.next==null) return true;
+        // 从中间位置断开单链表，反转其中一半，对比
+        ListNode fast=head, slow=head;
+        while (fast!=null) {
+            fast=fast.next;
+            if(fast!=null && fast.next!=null)  fast=fast.next;
+            else break;
+            slow=slow.next;
+        }
+        ListNode head1=slow.next;
+        slow.next=null;
+        // 如果反转前半段链表，节点个数为奇数时，下面的逻辑不成立，所以反转后半段链表。
+        ListNode n1=null, n2=head1, n3=head1.next;
+        while (n3!=null) {
+            n2.next=n1; n1=n2; n2=n3; n3=n3.next;
+        }
+        // 对比
+        head1=n2;
+        while (head!=null && head1!=null) {
+            if(head.val!=head1.val) return false;
+            head=head.next;
+            head1=head1.next;
+        }
+        return true; 
     }
 }
 /*      回文链表
@@ -16,16 +50,5 @@ public class Solution234 {
 
 输入：head = [1,2]
 输出：false
- */
-
- /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
  */
 
