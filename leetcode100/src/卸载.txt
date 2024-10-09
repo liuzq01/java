@@ -1,0 +1,61 @@
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.analytics
+小米广告分析，必删）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.xiaomi.scanner  
+小米扫描）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.bugreport  
+bug 反馈）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.milink.service  
+米连服务）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.yellowpage  
+黄页）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.xiaomi.midrop  
+小米快传）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.xiaomi.payment  
+小米支付）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.android.soundrecorder  
+录音机）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.miwallpaper 
+//
+壁纸）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.android.cellbroadcastreceiver  
+小米广播）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.android.thememanager  
+个性主题管理）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.android.wallpaper.livepicker  
+动态壁纸获取）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.miservice
+ 服务反馈
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.guardprovider
+反诈
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.android.updater
+//
+系统更新）
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0  com.mi.globalminusscreen
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.googlequicksearchbox
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.gm
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.apps.maps
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.calendar
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.apps.safetyhub
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.xiaomi.midrop
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.xiaomi.scanner
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.google.android.apps.googleassistant
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.mi.globalbrowser
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.miservice
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.miui.videoplayer
+
+adb -s dmzhw8lrb6o77xnr shell pm uninstall --user 0 com.xiaomi.glgm
+
