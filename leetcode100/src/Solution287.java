@@ -3,10 +3,28 @@ import org.junit.Test;
 public class Solution287 {
     @Test
     public void test(){
-
+        int[] nums={1,3,4,2,2};
+        int[] nums1={3,1,3,4,2};
+        int[] nums2={3,3,3,3,3};
+        System.out.println(findDuplicate(nums));
+        System.out.println(findDuplicate(nums1));
+        System.out.println(findDuplicate(nums2));
     }
     public int findDuplicate(int[] nums) {
-        return 0;
+        // 遍历数组，逐个检查
+        int result=0;
+        for (int i = 1; i < nums.length; i++) {
+            int k=0;
+            for (int j = 0; j < nums.length; j++) {
+                if(i==nums[j])  k++;
+                if(k==2) {
+                    result=i;
+                    break;
+                }
+            }
+            if(k==2) break;
+        }
+        return result;
     }
 }
 /*  寻找重复数

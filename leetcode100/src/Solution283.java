@@ -1,12 +1,28 @@
-import org.junit.Test;
+import java.util.Arrays;
+import org.junit.Test; 
 
 public class Solution283 {
     @Test
     public void test(){
-
+        int[] nums={0,1,0,3,12};
+        moveZeroes(nums);
+        System.out.println(Arrays.toString(nums));
     }
     public void moveZeroes(int[] nums) {
-
+        // 倒序遍历数组，不为0，跳过；是0，移动到末尾。
+        if(nums.length<=1) return;
+        for (int i = nums.length-2; i >=0; i--) {   // 不论最后一个数是否为0，都不需要从它开始检查
+            if (nums[i]==0) {
+                for (int j = i; j < nums.length-1; j++) {
+                    swap(nums,j,j+1);
+                }
+            }
+        }
+    }
+    private void swap(int[] nums, int j, int i) {
+        int temp=nums[j];
+        nums[j]=nums[i];
+        nums[i]=temp;
     }
 
 }

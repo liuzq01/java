@@ -19,9 +19,11 @@ adb -s dmzhw8lrb6o77xnr shell pm enable com.miui.miwallpaper
 
 adb -s dmzhw8lrb6o77xnr shell pm disable-user --user 0 com.android.thememanager  
 个性主题管理）
+adb -s dmzhw8lrb6o77xnr shell pm enable com.android.thememanager  
 
 adb -s dmzhw8lrb6o77xnr shell pm disable-user --user 0 com.android.wallpaper.livepicker  
 动态壁纸获取）
+adb -s dmzhw8lrb6o77xnr shell pm enable com.android.wallpaper.livepicker
 
 adb -s dmzhw8lrb6o77xnr shell pm disable-user --user 0 com.android.cellbroadcastreceiver  
 小米广播）
