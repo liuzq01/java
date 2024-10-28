@@ -21,13 +21,13 @@ public class Solution309 {
             return;
         }
         if (condition==false) {
-            maxProfit(prices,i+1,profit,condition,arr);                     // 跳过
-            if(i==0) maxProfit(prices,i+1,profit-prices[i] ,true,arr);    // 买prices[i] 
-            else maxProfit(prices,i+2,profit-prices[i] ,true,arr);  // 冷冻期
+            if(i!=0)    i++;                                                     // 冷冻期
+            maxProfit(prices,i+1,profit,condition,arr);                         // 跳过
+            maxProfit(prices,i+1,profit-prices[i] ,true,arr);        // 买prices[i] 
         }
         else {
             maxProfit(prices,i+1,profit,condition,arr);                     // 跳过
-            maxProfit(prices,i+1,profit+prices[i] ,false,arr);    // 卖prices[i]   
+            maxProfit(prices,i+1,profit+prices[i] ,false,arr);   // 卖prices[i]   
         }
     }
 }

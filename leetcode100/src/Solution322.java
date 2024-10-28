@@ -3,9 +3,27 @@ import org.junit.Test;
 public class Solution322 {
     @Test
     public void test(){
+        int[] coins={1, 2, 5}; int amount=11;
+        System.out.println(coinChange(coins, amount));
+        int[] coins1={2}; int amount1=3;
+        System.out.println(coinChange(coins1, amount1));
+        int[] coins2={1}; int amount2=0;
+        System.out.println(coinChange(coins2, amount2));
     }
     public int coinChange(int[] coins, int amount) {
-        return 0;
+        int[] arr={coins.length+1};
+        coinChange(coins, amount,arr,0);
+        if(arr[0]==coins.length+1) return -1;
+        return arr[0];
+    }
+    private void coinChange(int[] coins, int amount, int[] arr, int sum) {
+        if(amount<0) return;
+        if(amount==0) {
+            if(arr[0]>sum) arr[0]=sum;
+        }
+        for (int j = 0; j < coins.length; j++) {
+            coinChange(coins, amount-coins[j],arr,sum+1);
+        }
     }
 }
 /*
@@ -30,6 +48,6 @@ public class Solution322 {
 示例 3：
 
 输入：coins = [1], amount = 0
-输出：0
+输出：0     (输出：-1)
 
  */
