@@ -1,11 +1,28 @@
 import org.junit.Test;
-
+//todo
 public class Solution394 {
     @Test
     public void test(){
+        String s = "rs3[ad]mn2[bc]ef";
+        System.out.println(decodeString(s));
     }
     public String decodeString(String s) {
-        return null;
+        // 遍历s,英文字母直接添加到list; 数字,则开始入栈,跳过下一个字符'[' ; ‘]’, 则出栈直到数字;把出栈字符乘以数字;栈空,则反转字符; 添加到list
+        return decodeString(s,0);
+    }
+    private String decodeString(String s, int i) {
+        String str=""; String coefficient=""; 
+        for (int j = i; j < s.length(); j++) {
+            char c=s.charAt(j);
+            if ('0'<=c && c<='9')  coefficient=coefficient+c;
+            if (c=='[') {
+                str=str+decodeString(s,j).repeat(Integer.valueOf(coefficient));
+                coefficient="";
+            }
+            if ('a'<=c && c<='z')  str=str+c;
+            if (c==']') return str;
+        }
+        return str;
     }
 }
 /*
