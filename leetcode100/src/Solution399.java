@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Test;
@@ -7,6 +9,29 @@ public class Solution399 {
     public void test(){
     }
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+        //  equations元素正序+正序拼接 --> 相乘 ； 正序+逆序拼接 --> 相除 ；查找equations元素的组合，每个元素可以是正序的、逆序的
+        //  先把equations的元素化简成最简形式；再用hashmap存equations的元素和与之对应的values元素，正序的、逆序的都存
+        //  把问题化简成最简形式，通过hashmap查找，查找的过程中累乘对应的values元素
+        HashMap<String,HashMap<String,Double>> hMap=new HashMap<>();
+        List<String> simplify=new ArrayList<>();
+        for (int i = 0; i < equations.size(); i++) {
+            simplify=simplify(equations,i);
+            hMap.putIfAbsent(simplify.get(0), new HashMap<>()); 
+            hMap.get(simplify.get(0)).put(simplify.get(1), values[i]);
+            hMap.putIfAbsent(simplify.get(1), new HashMap<>()); 
+            hMap.get(simplify.get(1)).put(simplify.get(0), 1.0/values[i]);
+            simplify.clear();
+        }
+        double[] results=new double[queries.size()];
+        for (int i = 0; i < queries.size(); i++) {
+            simplify=simplify(queries,i);
+            while (true) {
+                //hMap.get(simplify.get(0)).
+            }
+        }
+        return null;
+    }
+    private List<String> simplify(List<List<String>> equations, int i) {
         return null;
     }
 }
