@@ -22,6 +22,8 @@ public class Solution399 {
             hMap.get(simplify.get(1)).put(simplify.get(0), 1.0/values[i]);
             simplify.clear();
         }
+        /*
+         * 
         double[] results=new double[queries.size()];
         for (int i = 0; i < queries.size(); i++) {
             simplify=simplify(queries,i);
@@ -29,6 +31,7 @@ public class Solution399 {
                 //hMap.get(simplify.get(0)).
             }
         }
+        */
         return null;
     }
     private List<String> simplify(List<List<String>> equations, int i) {

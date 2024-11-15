@@ -5,6 +5,8 @@ public class Solution406 {
     public void test(){
     }
     public int[][] reconstructQueue(int[][] people) {
+        // 较小元素无论是否存在，对较大元素的计数都无影响。因此，可以先从最小的元素开始处理，一旦它的位置确定，就可从剩余元素中找最小元素并处理，迭代。
+        // 最小元素：ki=i ；有多个，不忽略它、计算相对位置；只有一个，可忽略它、计算相对位置
         return null;
     }
 }
@@ -37,4 +39,7 @@ public class Solution406 {
 0 <= ki < people.length
 题目数据确保队列可以被重建
  */
+// ① hj+kj 近似升序，即：(hi-hj)(ki-kj)<=0 近似成立
+// ② 若kj相同，则hj是升序的；若hj相同，则kj是升序的
+// ③ kj <= j （第一个位置: kj=0）
 
