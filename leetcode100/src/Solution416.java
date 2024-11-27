@@ -3,9 +3,34 @@ import org.junit.Test;
 public class Solution416 {
     @Test
     public void test(){
+        int[] nums={1,5,11,5};
+        int[] nums1={1,2,3,5};
+        System.out.println(canPartition(nums));
+        System.out.println(canPartition(nums1));
     }
     public boolean canPartition(int[] nums) {
-        return false;
+        // 求出所有元素的和S。S是奇数，false; S是偶数，取半 S/2，在nums中找数，使得它们的和为 S/2 。
+        int sum=0;
+        for (int i = 0; i < nums.length; i++) {
+            sum=sum+nums[i];
+        }
+        if (sum%2!=0) {
+            return false;
+        }
+        boolean[] arr={false};
+        canPartition(nums,sum/2,0,arr);
+        return arr[0];
+    }
+    private void canPartition(int[] nums, int sum, int i, boolean[] arr) {
+        if (sum<0 || i==nums.length) {
+            return;
+        }
+        if (sum==0) {
+            arr[0]=true;
+            return;
+        }
+        canPartition(nums,sum-nums[i],i++,arr);
+        canPartition(nums,sum,i++,arr);
     }
 }
 /*

@@ -1,13 +1,57 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import org.junit.Test;
 
 public class Solution406 {
     @Test
     public void test(){
+        int[][] people= {{7,0},{4,4},{7,1},{5,0},{6,1},{5,2}};
+        System.out.println(Arrays.deepToString(reconstructQueue(people)));
+        int[][] people1 = {{6,0},{5,0},{4,0},{3,2},{2,2},{1,4}};
+        System.out.println(Arrays.deepToString(reconstructQueue(people1)));
     }
     public int[][] reconstructQueue(int[][] people) {
-        // 较小元素无论是否存在，对较大元素的计数都无影响。因此，可以先从最小的元素开始处理，一旦它的位置确定，就可从剩余元素中找最小元素并处理，迭代。
-        // 最小元素：ki=i ；有多个，不忽略它、计算相对位置；只有一个，可忽略它、计算相对位置
-        return null;
+        // 较小元素无论是否存在，对较大元素的计数都无影响。因此，可以先从最小的元素开始处理，一旦它的位置确定，就可从剩余元素中找最小元素并处理，可迭代。
+        // 对于people中的最小元素hi：ki=i （i是queue中空闲位置的相对值）；
+        // 在people中找hi的最小值，根据ki得到i（相对值）。遍历queue，计算i（相对值）和此时的kj（绝对值）。把这些最小值复制给queue，然后在people中删除它们。
+        int[][] queue=new int[people.length][2];
+        ArrayList<int[]> aList=new ArrayList<>();
+        ArrayList<Integer> delList=new ArrayList<>();
+        int relativeJ=0, absoluteJ=0;
+        for (int i = 0; i < people.length; i++) {
+            aList.add(people[i]);
+        }
+        while (!aList.isEmpty()) {
+            int min=aList.get(0)[0];
+            for (int i = 0; i < aList.size(); i++) {    // 找hi的最小值
+                if (aList.get(i)[0]<min) {
+                    min=aList.get(i)[0];
+                }
+            }
+            for (int i = 0; i < aList.size(); i++) {    // 给queue赋值
+                if (aList.get(i)[0]==min) {
+                    delList.add(i);
+                    for (int j = absoluteJ; j < queue.length; j++) {
+                        if (queue[j][0]==0) {
+                            if (relativeJ==aList.get(i)[1]) {
+                                queue[j]=aList.get(i);
+                                absoluteJ=j+1;
+                                relativeJ++;
+                                break;
+                            }
+                            relativeJ++;
+                        }
+                    }            
+                }
+            }
+            relativeJ=0; absoluteJ=0;
+            for (int i = delList.size()-1; i >= 0; i--) {   // 删除已赋值的最小值
+                aList.remove(aList.get(delList.get(i)));
+            }
+            delList.clear();
+        }
+        return queue;
     }
 }
 /*
@@ -28,8 +72,8 @@ public class Solution406 {
 编号为 4 的人身高为 4 ，有 4 个身高更高或者相同的人排在他前面，即编号为 0、1、2、3 的人。
 编号为 5 的人身高为 7 ，有 1 个身高更高或者相同的人排在他前面，即编号为 1 的人。
 因此 [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]] 是重新构造后的队列。
-示例 2：
 
+示例 2：
 输入：people = [[6,0],[5,0],[4,0],[3,2],[2,2],[1,4]]
 输出：[[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]
 提示：
@@ -39,7 +83,8 @@ public class Solution406 {
 0 <= ki < people.length
 题目数据确保队列可以被重建
  */
-// ① hj+kj 近似升序，即：(hi-hj)(ki-kj)<=0 近似成立
-// ② 若kj相同，则hj是升序的；若hj相同，则kj是升序的
-// ③ kj <= j （第一个位置: kj=0）
-
+/*  找规律：
+    ① hj+kj 近似升序，即：(hi-hj)(ki-kj)<=0 近似成立
+    ② 若kj相同，则hj是升序的；若hj相同，则kj是升序的
+    ③ kj <= j （第一个位置: kj=0）
+*/
