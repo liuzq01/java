@@ -3,9 +3,31 @@ import org.junit.Test;
 public class Solution647 {
     @Test
     public void test(){
+        String s = "aaa";
+        System.out.println(countSubstrings(s));
+        System.out.println(countSubstrings("abc"));
+        System.out.println(countSubstrings("aba"));
     }
     public int countSubstrings(String s) {
-        return 0;
+        //截取长度为l的子串，逐个判断，l∈[2, s.length()]
+        int count=0;
+        for (int l = 2; l <= s.length(); l++) {
+            for (int j = 0; j <=s.length()-l; j++) {
+                String subStr=s.substring(j, j+l);
+                if (symmetryString(subStr)) {
+                    count++;
+                }
+            }
+        }
+        return count+s.length();
+    }
+    private boolean symmetryString(String s){
+        for (int i = 0; i <= s.length()/2; i++) {
+            if (s.charAt(i)!=s.charAt(s.length()-1-i)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 /*

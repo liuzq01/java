@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import org.junit.Test;
@@ -5,9 +7,23 @@ import org.junit.Test;
 public class Solution448 {
     @Test
     public void test(){
+        int[] nums = {4,3,2,7,8,2,3,1};
+        System.out.println(findDisappearedNumbers(nums).toString());
     }
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        return null;
+        //[1, n]的整数存入hashSet，遍历数组，删去hashSet中对应的数，剩余的即为所求
+        HashSet<Integer> hashSet=new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            hashSet.add(i+1);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            hashSet.remove(nums[i]);
+        }
+        List<Integer> list=new ArrayList<>();
+        for (Integer integer : hashSet) {
+            list.add(integer);
+        }
+        return list;
     }
 }
 /*

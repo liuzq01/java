@@ -3,9 +3,25 @@ import org.junit.Test;
 public class Solution494 {
     @Test
     public void test(){
+        int[] nums = {1,1,1,1,1};
+        int target=3;
+        System.out.println(findTargetSumWays(nums, target));
     }
     public int findTargetSumWays(int[] nums, int target) {
-        return 0;
+        // 遍历nums，每个元素有两种可能：乘以-1、乘以1，递归回溯，搜索所有可能的组合
+        int[] count=new int[]{0};
+        findTargetSumWays(nums, target,count,0);
+        return count[0];
+    }
+    private void findTargetSumWays(int[] nums, int target, int[] count, int k) {
+        if ( k==nums.length) {
+            if(target==0) {
+                count[0]++;
+            }
+            return;
+        }
+        findTargetSumWays(nums, target+nums[k], count, k+1);
+        findTargetSumWays(nums, target-nums[k], count, k+1);
     }
 }
 /*
